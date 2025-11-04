@@ -1,0 +1,1802 @@
+[
+  {
+    "subdirectory": "abc325_a_Java",
+    "complexity": 1,
+    "total_token_count": 63,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nSystem.out.print(sc.nextLine().replaceAll(\" .*\", \" san\"));\n}\n}"
+  },
+  {
+    "subdirectory": "abc271_a_Java",
+    "complexity": 1,
+    "total_token_count": 65,
+    "code": "import java.util.Scanner;\npublic class Main_4{\npublic static void main(String []args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.printf(\"%02X\",n);\n}\n}"
+  },
+  {
+    "subdirectory": "abc252_a_Java",
+    "complexity": 1,
+    "total_token_count": 67,
+    "code": "import java.util.Scanner;\npublic class Main_1 {\npublic static void main(String []args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nchar c = (char)n;\nSystem.out.println(c);\n}\n}"
+  },
+  {
+    "subdirectory": "abc266_a_Java",
+    "complexity": 1,
+    "total_token_count": 68,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nSystem.out.println(s.charAt(s.length()/2));\n}\n}"
+  },
+  {
+    "subdirectory": "abc222_a_Java",
+    "complexity": 1,
+    "total_token_count": 70,
+    "code": "import java.util.Scanner;\npublic class Main_1{\npublic static void main(String []args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.println(String.format(\"%04d\",n));\n}\n}"
+  },
+  {
+    "subdirectory": "abc360_a_Java",
+    "complexity": 2,
+    "total_token_count": 71,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nSystem.out.print(sc.next().matches(\".*R.*M.*\") ? \"Yes\" : \"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc226_a_Java",
+    "complexity": 1,
+    "total_token_count": 73,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\ndouble a = scan.nextDouble();\nint answer = (int) Math.round(a);\nSystem.out.println(answer);\n}\n}"
+  },
+  {
+    "subdirectory": "abc292_a_Java",
+    "complexity": 1,
+    "total_token_count": 73,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString string = scan.next();\nstring = string.toUpperCase();\nSystem.out.println(string);\nscan.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc244_a_Java",
+    "complexity": 1,
+    "total_token_count": 74,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nString K = sc.next();\nSystem.out.println(K.charAt(N-1));\n}\n}"
+  },
+  {
+    "subdirectory": "abc235_a_Java",
+    "complexity": 1,
+    "total_token_count": 76,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String... args) {\nScanner s = new Scanner(System.in);\nint n = s.nextInt();\nSystem.out.println((n / 100 + (n % 100) / 10 + n % 10) * 111);\n}\n}"
+  },
+  {
+    "subdirectory": "abc273_a_Java",
+    "complexity": 2,
+    "total_token_count": 77,
+    "code": "import java.util.Scanner;\nclass Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nlong ans = 1;\nwhile(N>0)\nans *= N--;\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc286_b_Java",
+    "complexity": 1,
+    "total_token_count": 78,
+    "code": "import java.util.Scanner;\npublic class Main{\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nString S = sc.next();\nSystem.out.println(S.replace(\"na\", \"nya\"));\n}\n}"
+  },
+  {
+    "subdirectory": "abc305_a_Java",
+    "complexity": 1,
+    "total_token_count": 78,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nSystem.out.println((Math.round(N/5.0)*5));\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc283_a_Java",
+    "complexity": 1,
+    "total_token_count": 79,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner scanner=new Scanner(System.in);\nint a=scanner.nextInt();\nint b=scanner.nextInt();\nSystem.out.println((int)Math.pow(a,b));\n}\n}"
+  },
+  {
+    "subdirectory": "abc258_a_Java",
+    "complexity": 1,
+    "total_token_count": 80,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.printf(\"%2d:%02d\",(21 + n/60),(n%60));\n}\n}"
+  },
+  {
+    "subdirectory": "abc242_b_Java",
+    "complexity": 1,
+    "total_token_count": 80,
+    "code": "import java.util.Arrays;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nchar[] a = sc.next().toCharArray();\nArrays.sort(a);\nSystem.out.println(a);\n}\n}"
+  },
+  {
+    "subdirectory": "abc223_a_Java",
+    "complexity": 3,
+    "total_token_count": 82,
+    "code": "import java.util.*;\npublic class Main_10 {\npublic static void main(String[] args) throws Exception {\nScanner in = new Scanner(System.in);\nint X = in.nextInt();\nSystem.out.println((X%100 == 0 && X != 0) ? \"Yes\":\"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc257_a_Java",
+    "complexity": 1,
+    "total_token_count": 82,
+    "code": "import java.util.*;\npublic class Main_3\n{\npublic static void main(String[] args)\n{\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint x = sc.nextInt();\nSystem.out.println((char)(65+(x-1)/n));\n}\n}"
+  },
+  {
+    "subdirectory": "abc230_a_Java",
+    "complexity": 2,
+    "total_token_count": 83,
+    "code": "import java.util.Scanner;\npublic class Main_9 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint num = scan.nextInt();\nif(num >= 42) num += 1;\nSystem.out.printf(\"AGC%03d\", num);\n}\n}"
+  },
+  {
+    "subdirectory": "abc256_a_Java",
+    "complexity": 1,
+    "total_token_count": 84,
+    "code": "import java.util.*;\nimport java.lang.Math.*;\npublic class Main_10 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = Integer.parseInt(sc.next());\nSystem.out.println((int) Math.pow(2, N));\n}\n}"
+  },
+  {
+    "subdirectory": "abc238_a_Java",
+    "complexity": 3,
+    "total_token_count": 85,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\n@SuppressWarnings(\"resource\")\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.println(n > 4  || n == 1 ? \"Yes\" : \"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc344_a_Java",
+    "complexity": 1,
+    "total_token_count": 88,
+    "code": "import java.util.Scanner;\nimport java.util.HashSet;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nSystem.out.println(String.join(\"\",sc.next().split(\"\\\\|.*\\\\|\")));\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc262_a_Java",
+    "complexity": 3,
+    "total_token_count": 88,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner input = new Scanner(System.in);\nint Y = input.nextInt();\nfor(int i = Y; i < 3004; i++) {\nif(i%4 ==2) {\nSystem.out.println(i);\nbreak;\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc282_a_Java",
+    "complexity": 2,
+    "total_token_count": 90,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint k = sc.nextInt();\nfor(int i=0;i<k;i++){\nSystem.out.print((char)('A'+i));\n}\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc251_a_Java",
+    "complexity": 2,
+    "total_token_count": 90,
+    "code": "import java.util.Scanner;\npublic class Main_2{\npublic static void main(String []args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nint n = s.length();\nint six = 6;\nfor (int i = 0;i < six / n;i++) {\nSystem.out.print(s);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc320_a_Java",
+    "complexity": 1,
+    "total_token_count": 91,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nlong A = sc.nextLong();\nlong B = sc.nextLong();\nSystem.out.println((long)Math.pow(A, B)+(long)Math.pow(B, A));\n}\n}"
+  },
+  {
+    "subdirectory": "abc254_a_Java",
+    "complexity": 2,
+    "total_token_count": 93,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nint x;\nx=scanner.nextInt();\nint res=x%100;\nif(res <10) {\nSystem.out.println(\"0\"+res);\n}\nelse {\nSystem.out.println(res);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc333_a_Java",
+    "complexity": 2,
+    "total_token_count": 94,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nsc.close();\nString s = \"\";\nfor (int i = 0; i < N; i++) {\ns += \"\" + N;\n}\nSystem.out.println(s);\n}\n}"
+  },
+  {
+    "subdirectory": "abc281_a_Java",
+    "complexity": 3,
+    "total_token_count": 95,
+    "code": "import static java.lang.System.*;\nimport java.util.*;\npublic class Main_2{\npublic static void solve(){\nScanner sc = new Scanner(in);\nint N = sc.nextInt();\nfor(int i = N; i >= 0; --i){\nout.println(i);\n}\n}\npublic static void main(String[] args) {\nsolve();\n}\n}"
+  },
+  {
+    "subdirectory": "abc279_b_Java",
+    "complexity": 2,
+    "total_token_count": 95,
+    "code": "import java.util.Scanner;\npublic class Main_3{\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString s = scan.next();\nString t = scan.next();\nif(s.contains(t)){\nSystem.out.println(\"Yes\");\n}else{\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc264_a_Java",
+    "complexity": 1,
+    "total_token_count": 95,
+    "code": "import java.util.Scanner;\nclass Main {\npublic static void main(String[] args) {\nScanner console = new Scanner(System.in);\nString word = \"atcoder\";\nint input1 = console.nextInt();\nint input2 = console.nextInt();\nString output = word.substring(input1-1, input2);\nSystem.out.println(output);\n}\n}"
+  },
+  {
+    "subdirectory": "abc240_a_Java",
+    "complexity": 3,
+    "total_token_count": 96,
+    "code": "import java.util.Scanner;\npublic class Main_5 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nSystem.out.println(b - a == 1 || b - a == 9 ? \"Yes\" : \"No\");\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc336_a_Java",
+    "complexity": 2,
+    "total_token_count": 96,
+    "code": "import java.util.*;\npublic class Main_2{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString o = \"\";\nfor (int i = 0; i < n; i++){\no += \"o\";\n}\nSystem.out.print(\"L\" + o + \"ng\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc230_b_Java",
+    "complexity": 2,
+    "total_token_count": 99,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString n = sc.next();\nString t = \"oxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxxoxx\";\nboolean check = t.contains(n);\nif(check){\nSystem.out.println(\"Yes\");\n}else{\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc239_b_Java",
+    "complexity": 2,
+    "total_token_count": 101,
+    "code": "import java.util.*;\nimport static java.lang.Math.*;\npublic class Main_3{\npublic static void main(String[] args){\nvar in = new Scanner(System.in);\nlong x = in.nextLong();\nlong ans = x / 10;\nif ( x < 0 & x % 10 != 0 ){\nans = ans - 1;\n}\nSystem.out.println( ans );\n}\n}"
+  },
+  {
+    "subdirectory": "abc326_a_Java",
+    "complexity": 3,
+    "total_token_count": 102,
+    "code": "import java.util.Scanner;\npublic class Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint X = sc.nextInt();\nint Y = sc.nextInt();\nif(-2 <= X-Y && X-Y <= 3){\nSystem.out.print(\"Yes\");\n}else{\nSystem.out.print(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc268_b_Java",
+    "complexity": 2,
+    "total_token_count": 103,
+    "code": "import java.util.*;\nimport java.io.*;\npublic class Main_2\n{\npublic static void main(String[] args)\n{\nScanner sc = new Scanner(System.in);\nString S = sc.next();\nString T = sc.next();\nif(T.startsWith(S))\n{\nSystem.out.println(\"Yes\");\n}\nelse\n{\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc335_a_Java",
+    "complexity": 1,
+    "total_token_count": 104,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nStringBuilder sb = new StringBuilder(s);\nsb.replace(s.length() - 1, s.length(), \"4\");\nString answer = sb.toString();\nSystem.out.println(answer);\n}\n}"
+  },
+  {
+    "subdirectory": "abc293_a_Java",
+    "complexity": 2,
+    "total_token_count": 107,
+    "code": "import java.util.*;\nclass Main{\npublic static void main(String args[]){\nScanner sc = new Scanner(System.in);\nString bef = sc.nextLine();\nfor (int i = 0; i + 1 <= bef.length(); i+=2){\nSystem.out.print(bef.charAt(i+1));\nSystem.out.print(bef.charAt(i));\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc302_a_Java",
+    "complexity": 2,
+    "total_token_count": 108,
+    "code": "import java.util.*;\nimport java.lang.*;\npublic class Main_2{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nlong a = sc.nextLong();\nlong b = sc.nextLong();\nif(a % b == 0){\nSystem.out.println(a / b);\n}else{\nSystem.out.println((a / b) + 1);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc269_a_Java",
+    "complexity": 1,
+    "total_token_count": 109,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nint c = sc.nextInt();\nint d = sc.nextInt();\nSystem.out.println((a+b)*(c-d));\nSystem.out.println(\"Takahashi\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc309_a_Java",
+    "complexity": 3,
+    "total_token_count": 110,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nif (a%3==0 || Math.abs(a-b) != 1) {\nSystem.out.println(\"No\");\n} else {\nSystem.out.println(\"Yes\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc285_a_Java",
+    "complexity": 4,
+    "total_token_count": 110,
+    "code": "import static java.lang.System.*;\nimport java.util.*;\npublic class Main_2{\npublic static void solve(){\nScanner sc = new Scanner(in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nout.println(a * 2 == b || a * 2 + 1 == b ? \"Yes\" : \"No\");\n}\npublic static void main(String[] args) {\nsolve();\n}\n}"
+  },
+  {
+    "subdirectory": "abc334_a_Java",
+    "complexity": 3,
+    "total_token_count": 111,
+    "code": "import java.util.ArrayList;\nimport java.util.Comparator;\nimport java.util.List;\nimport java.util.Scanner;\nrecord Card(Integer index,Integer a, Integer b){}\npublic class Main_2{\npublic static void main(String... args){\nScanner scanner = new Scanner(System.in);\nSystem.out.println(\nscanner.nextInt()<scanner.nextInt() ? \"Glove\":\"Bat\"\n);\n}\n}"
+  },
+  {
+    "subdirectory": "abc318_a_Java",
+    "complexity": 2,
+    "total_token_count": 111,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint m = sc.nextInt();\nint p = sc.nextInt();\nint watch = 0;\nn = n - m;\nwhile(n >= 0){\nn = n - p;\nwatch++;\n}\nSystem.out.println(watch);\n}\n}"
+  },
+  {
+    "subdirectory": "abc354_a_Java",
+    "complexity": 2,
+    "total_token_count": 112,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint takaHeight = scan.nextInt();\nscan.close();\nint plantHeight = 0;\nint date = 0;\nwhile (takaHeight >= plantHeight) {\nplantHeight += Math.pow(2, date);\ndate++;\n}\nSystem.out.println(date);\n}\n}"
+  },
+  {
+    "subdirectory": "abc274_a_Java",
+    "complexity": 1,
+    "total_token_count": 112,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint A = sc.nextInt();\nint B = sc.nextInt();\ndouble d = (double)B / A;\nd = Math.round(d * 10000) / 10000.0;\nSystem.out.printf(\"%.3f\", d);\nSystem.out.println();\n}\n}"
+  },
+  {
+    "subdirectory": "abc328_a_Java",
+    "complexity": 3,
+    "total_token_count": 115,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint X = sc.nextInt();\nint ans = 0;\nfor(int i = 0; i < N; i++){\nint H = sc.nextInt();\nif(X >= H){\nans += H;\n}\n}\nSystem.out.print(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc347_a_Java",
+    "complexity": 3,
+    "total_token_count": 115,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nfor(int i =1;i<=a;i++){\nint num = sc.nextInt();\nif(num%b==0){\nSystem.out.print((num/b)+\" \");\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc315_a_Java",
+    "complexity": 1,
+    "total_token_count": 116,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString str = sc.next();\nstr = str.replace(\"a\", \"\").replace(\"e\", \"\").replace(\"i\", \"\").replace(\"u\", \"\").replace(\"o\", \"\");\nSystem.out.println(str);\n}\n}"
+  },
+  {
+    "subdirectory": "abc359_a_Java",
+    "complexity": 3,
+    "total_token_count": 117,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = 0;\nn = sc.nextInt();\nsc.nextLine();\nint counter = 0;\nfor(int i = 0;i < n;i++){\nString s = sc.nextLine();\nif(s.equals(\"Takahashi\"))counter++;\n}\nSystem.out.println(counter);\n}\n}"
+  },
+  {
+    "subdirectory": "abc241_a_Java",
+    "complexity": 2,
+    "total_token_count": 117,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString str = scan.nextLine();\nstr = str.replace(\" \", \"\");\nint answer = str.charAt(0) - 48;\nfor(int i = 0; i <2; i++) {\nanswer = str.charAt(answer) -48;\n}\nSystem.out.println(answer);\n}\n}"
+  },
+  {
+    "subdirectory": "abc357_a_Java",
+    "complexity": 3,
+    "total_token_count": 118,
+    "code": "import java.util.Scanner;\npublic class Main_2{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint count = 0;\nint n = sc.nextInt();\nint m = sc.nextInt();\nfor(int i=0;i<n;i++){\nint hand = sc.nextInt();\nm-=hand;\nif(m>=0){\ncount++;\n}\n}\nSystem.out.print(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc358_a_Java",
+    "complexity": 3,
+    "total_token_count": 119,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString word1 = sc.next();\nString word2 = sc.next();\nif(word1.equals(\"AtCoder\") && word2.equals(\"Land\")) {\nSystem.out.println(\"Yes\");\n}else {\nSystem.out.println(\"No\");\n}\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc284_a_Java",
+    "complexity": 3,
+    "total_token_count": 119,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString[] s = new String[n];\nfor(int i = 0;i<n;i++){\ns[i] = sc.next();\n}\nfor(int i = n-1;i >= 0 ;i--){\nSystem.out.println(s[i]);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc289_a_Java",
+    "complexity": 4,
+    "total_token_count": 120,
+    "code": "import java.util.Scanner;\npublic class Main{\npublic static void main(String []args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nfor (int i = 0;i < s.length();i++) {\nif (s.charAt(i) == '0')\nSystem.out.print('1');\nelse if (s.charAt(i) == '1')\nSystem.out.print('0');\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc273_b_Java",
+    "complexity": 2,
+    "total_token_count": 120,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\ndouble X = sc.nextDouble();\nint K = sc.nextInt();\nfor(int i = 0; i <= K; i++) {\nX = (Math.round(X / Math.pow(10, i))) * Math.pow(10, i);\n}\nSystem.out.println((long)X);\n}\n}"
+  },
+  {
+    "subdirectory": "abc321_a_Java",
+    "complexity": 3,
+    "total_token_count": 121,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\ntry (Scanner sc = new Scanner(System.in)) {\nint n = sc.nextInt();\nint prev = -1;\nwhile (n > 0) {\nint number = n % 10;\nif (number <= prev) {\nSystem.out.println(\"No\");\nreturn;\n}\nprev = number;\nn /= 10;\n}\nSystem.out.println(\"Yes\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc330_a_Java",
+    "complexity": 3,
+    "total_token_count": 122,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) throws Exception {\nScanner scanner = new Scanner(System.in);\nint N = scanner.nextInt();\nint L = scanner.nextInt();\nint gokaku = 0;\nfor (int i = 0; i<N; i++) {\nint A = scanner.nextInt();\nif(A >= L){\ngokaku++;\n}\n}\nSystem.out.println(gokaku);\n}\n}"
+  },
+  {
+    "subdirectory": "abc265_a_Java",
+    "complexity": 2,
+    "total_token_count": 127,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nint total = 0;\nScanner scanner = new Scanner(System.in);\nint X = scanner.nextInt();\nint Y = scanner.nextInt();\nint N = scanner.nextInt();\nif(Y < X * 3){\nint m = N / 3;\nint l = N % 3;\ntotal = m * Y + l * X;\n}else{\ntotal = X * N;\n}\nSystem.out.println(total);\n}\n}"
+  },
+  {
+    "subdirectory": "abc329_a_Java",
+    "complexity": 2,
+    "total_token_count": 128,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nsc.close();\nString[] S = s.split(\"\");\nStringBuilder sb = new StringBuilder(S[0]);\nfor (int i = 1; i < S.length; i++) {\nsb.append(\" \" + S[i]);\n}\nSystem.out.println(sb);\n}\n}"
+  },
+  {
+    "subdirectory": "abc246_b_Java",
+    "complexity": 1,
+    "total_token_count": 128,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\ndouble a = sc.nextDouble();\ndouble b = sc.nextDouble();\ndouble radi = Math.atan2(a, b);\ndouble cos = Math.cos(radi);\ndouble sin = Math.sin(radi);\nSystem.out.printf(\"%.12f %.12f\",sin,cos);\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc235_b_Java",
+    "complexity": 3,
+    "total_token_count": 128,
+    "code": "import java.io.*;\nimport java.util.*;\nclass Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint correntHeight = 0;\nfor (int i = 0; i < n; i++){\nint height = sc.nextInt();\nif (correntHeight < height){\ncorrentHeight = height;\n}else{\nbreak;\n}\n}\nSystem.out.println(correntHeight);\n}\n}"
+  },
+  {
+    "subdirectory": "abc287_a_Java",
+    "complexity": 4,
+    "total_token_count": 129,
+    "code": "import java.util.*;\nimport java.lang.*;\nclass Main{\npublic static void main(String args[]){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint count = (n + 1) / 2;\nfor (int i = 0; i < n; i++) if(sc.next().equals(\"Against\")) count--;\nif (count > 0) System.out.println(\"Yes\");\nelse System.out.println(\"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc335_b_Java",
+    "complexity": 4,
+    "total_token_count": 129,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc=new Scanner(System.in);\nint a=sc.nextInt();\nfor (int x = 0; x<=a; x++) {\nfor (int y=0; y <=a-x; y ++) {\nfor(int z = 0; z <=a - x - y; z ++) {\nSystem.out.println( x+\" \"+y+\" \"+z);\n}\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc350_a_Java",
+    "complexity": 4,
+    "total_token_count": 132,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString S = sc.nextLine();\nString[] S_N = S.split(\"C\");\nint num = Integer.parseInt(S_N[1]);\nif (num > 1 && num < 350 && num != 316) {\nSystem.out.println(\"Yes\");\n} else {\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc236_a_Java",
+    "complexity": 1,
+    "total_token_count": 132,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) throws Exception {\nScanner in = new Scanner(System.in);\nchar[] arr = in.next().toCharArray();\nint a = in.nextInt();\nint b = in.nextInt();\nchar tmp = arr[a - 1];\narr[a - 1] = arr[b - 1];\narr[b - 1] = tmp;\nSystem.out.println(new String(arr));\n}\n}"
+  },
+  {
+    "subdirectory": "abc312_a_Java",
+    "complexity": 2,
+    "total_token_count": 132,
+    "code": "import java.util.Arrays;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main {\npublic static void main( String[] args ) {\nScanner sc = new Scanner( System.in );\nList<String> list = Arrays.asList( \"ACE\", \"BDF\", \"CEG\", \"DFA\", \"EGB\", \"FAC\", \"GBD\" );\nSystem.out.println( list.contains( sc.next() ) ? \"Yes\" : \"No\" );\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc326_b_Java",
+    "complexity": 3,
+    "total_token_count": 133,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint n = in.nextInt();\nfor (int i = n; i <= 919; i++) {\nint h = (i/100)%10;\nint t = (i/10)%10;\nint o = i%10;\nif (h*t == o) {\nSystem.out.println(h*100+t*10+o);\nbreak;\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc264_b_Java",
+    "complexity": 2,
+    "total_token_count": 134,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main_7 {\npublic static void main(String[] args) throws FileNotFoundException {\nScanner sc = new Scanner(System.in);\nint r = sc.nextInt();\nint c = sc.nextInt();\nif (Math.max(Math.abs(r-8), Math.abs(c-8)) % 2 == 0) System.out.println(\"white\");\nelse System.out.println(\"black\");\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "arc144_a_Java",
+    "complexity": 4,
+    "total_token_count": 135,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String args[]) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nSystem.out.println(2*n);\nList<Integer> a = new ArrayList<>();\nfor (; n >= 4; n -= 4) a.add(4);\nif (n > 0) a.add(0, n);\nfor (int x : a) {\nSystem.out.print(x);\n}\nSystem.out.println();\n}\n}"
+  },
+  {
+    "subdirectory": "abc253_a_Java",
+    "complexity": 5,
+    "total_token_count": 135,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nint c = sc.nextInt();\nif((a <= b && b <= c) || (c <= b && b <= a)){\nSystem.out.println(\"Yes\");\n} else {\nSystem.out.println(\"No\");\n}\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc226_b_Java",
+    "complexity": 2,
+    "total_token_count": 136,
+    "code": "import java.util.HashSet;\nimport java.util.Scanner;\nimport java.util.Set;\npublic class Main_2 {\npublic static void main( String args[]) {\nScanner scn = new Scanner( System.in);\nint N = Integer.parseInt( scn.nextLine());\nSet<String> arraySet = new HashSet<>();\nfor ( int i = 0; i < N; i++) {\narraySet.add( scn.nextLine());\n}\nSystem.out.println( arraySet.size());\n}\n}"
+  },
+  {
+    "subdirectory": "abc336_c_Java",
+    "complexity": 3,
+    "total_token_count": 136,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\ntry (Scanner sc = new Scanner(System.in)) {\nlong number = sc.nextLong();\nStringBuilder sb = new StringBuilder();\nnumber -= 1;\nwhile (number > 0) {\nsb.append(number % 5 * 2);\nnumber = number / 5;\n}\nsb.reverse();\nif (sb.length() < 1)\nsb.append(0);\nSystem.out.println(sb.toString());\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc351_a_Java",
+    "complexity": 3,
+    "total_token_count": 136,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint sumA = 0;\nint sumB = 0;\nfor (int i = 0; i < 9; i++) {\nsumA += Integer.parseInt(sc.next());\n}\nfor (int i = 0; i < 8; i++) {\nsumB += Integer.parseInt(sc.next());\n}\nSystem.out.print((sumA - sumB + 1));\n}\n}"
+  },
+  {
+    "subdirectory": "abc339_a_Java",
+    "complexity": 4,
+    "total_token_count": 138,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nString str = sc.nextLine();\nchar[] s = str.toCharArray();\nint counter = 0;\nfor (int i = 0; i < s.length; i++){\nif (s[i] == '.'){\ncounter = i;\n}\n}\nfor (int j = counter + 1; j < s.length; j++){\nSystem.out.print(s[j]);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc229_b_Java",
+    "complexity": 4,
+    "total_token_count": 138,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner kbs = new Scanner(System.in);\nlong n1 = kbs.nextLong();\nlong n2 = kbs.nextLong();\ndo {\nif (n1 % 10 + n2 % 10 >= 10) {\nSystem.out.println(\"Hard\");\nreturn;\n}\nn1 /= 10;\nn2 /= 10;\n} while (n1 != 0 && n2 != 0);\nSystem.out.println(\"Easy\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc266_b_Java",
+    "complexity": 4,
+    "total_token_count": 139,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static final long big = 998244353;\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nLong n = sc.nextLong();\nLong x = n - big;\nLong sub;\nif(x < 0) {\nsub = -x;\nx += sub/big * big;\nif(x != 0)x += big;\n}else if(x >= big) {\nsub = x;\nx -= (sub/big) * big;\n}\nSystem.out.print(x);\n}\n}"
+  },
+  {
+    "subdirectory": "abc349_a_Java",
+    "complexity": 3,
+    "total_token_count": 140,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[]args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint [] a = new int[n];\nint count = 0;\nfor(int i = 0;i < (n - 1);i ++){\na[i] = sc.nextInt();\ncount = count + a[i];\n}\nif(count == 0){\nSystem.out.println(count);\n}else{\nSystem.out.println(-count);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc297_d_Java",
+    "complexity": 3,
+    "total_token_count": 140,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong a = sc.nextLong(),\nb = sc.nextLong();\nsc.close();\nlong cnt = 0;\nif( a < b) {\nlong tmp = b;\nb = a;\na = tmp;\n}\nwhile(b > 0){\ncnt += a / b;\na %= b;\nlong tmp = b;\nb = a;\na = tmp;\n}\nSystem.out.println(cnt - 1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc348_a_Java",
+    "complexity": 4,
+    "total_token_count": 141,
+    "code": "import java.util.*;\npublic class Main_4{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nList<String> strList = new ArrayList<>();\nfor(int i=1; i<=n; i++){\nif(i%3 == 0){\nstrList.add(\"x\");\n}else{\nstrList.add(\"o\");\n}\n}\nfor(String str : strList){\nSystem.out.print(str);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc237_a_Java",
+    "complexity": 3,
+    "total_token_count": 141,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String args[]) {\nScanner scn = new Scanner(System.in);\nlong num = scn.nextLong();\nlong num2 = (long) Math.pow(2, 31);\nlong num3 = (long) Math.pow(-2, 31);\nif (num3 <= num && num < num2) {\nSystem.out.println(\"Yes\");\n} else {\nSystem.out.println(\"No\");\n}\nscn.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc314_a_Java",
+    "complexity": 1,
+    "total_token_count": 141,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[] args){\nScanner scan = new Scanner(System.in);\nint n = scan.nextInt();\nString pi = \"3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679\";\nSystem.out.println(pi.substring(0, n+2));\n}\n}"
+  },
+  {
+    "subdirectory": "abc277_a_Java",
+    "complexity": 4,
+    "total_token_count": 141,
+    "code": "import java.util.Scanner;\npublic class Main{\npublic static void main(String []args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint x = sc.nextInt();\nint []arr = new int[n];\nfor (int i = 0;i < n;i++) {\narr[i] = sc.nextInt();\n}\nfor (int i = 0;i < n;i++) {\nif (arr[i] == x) {\nSystem.out.println(i + 1);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc296_a_Java",
+    "complexity": 4,
+    "total_token_count": 141,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString s = sc.next();\nboolean ok = false;\nfor(int i=0;i<n-1;i++){\nif(s.charAt(i)==s.charAt(i+1)){\nok=true;\nbreak;\n}\n}\nif(ok) System.out.println(\"No\");\nelse System.out.println(\"Yes\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc306_b_Java",
+    "complexity": 3,
+    "total_token_count": 142,
+    "code": "import java.math.BigInteger;\nimport java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nBigInteger plus = BigInteger.ONE;\nBigInteger ans = BigInteger.ZERO;\nfor(int i = 0;i < 64;i++) {\nint a = sc.nextInt();\nif(a == 1) {\nans = ans.add(plus);\n}\nplus = plus.multiply(BigInteger.TWO);\n}\nSystem.out.print(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc255_a_Java",
+    "complexity": 3,
+    "total_token_count": 142,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner input = new Scanner(System.in);\nint a = input.nextInt() - 1;\nint b = input.nextInt() - 1;\nint [][] A = new int[2][2];\nfor(int i = 0; i < 2; i++) {\nfor(int j = 0; j < 2; j++) {\nA[i][j] = input.nextInt();\n}\n}\nSystem.out.println(A[a][b]);\n}\n}"
+  },
+  {
+    "subdirectory": "abc313_a_Java",
+    "complexity": 3,
+    "total_token_count": 143,
+    "code": "import java.util.Scanner;\npublic class Main_4 {\npublic static void main(final String[] args) {\ntry (Scanner sc = new Scanner(System.in)) {\nfinal int N = sc.nextInt();\nfinal int P = sc.nextInt();\nint saikyo = 0;\nfor (int i = 1; i < N; i++) {\nfinal int P2 = sc.nextInt();\nif (saikyo < P2) {\nsaikyo = P2;\n}\n}\nSystem.out.println(Math.max(saikyo - P + 1, 0));\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc233_a_Java",
+    "complexity": 3,
+    "total_token_count": 143,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString input = scan.nextLine();\nint X = Integer.parseInt(input.split(\" \")[0]);\nint Y = Integer.parseInt(input.split(\" \")[1]);\nint sum = X;\nint stiker = 0;\nwhile(true) {\nif(sum >= Y) {break;}\nstiker ++;\nsum += 10;\n}\nSystem.out.println(stiker);\n}\n}"
+  },
+  {
+    "subdirectory": "abc323_a_Java",
+    "complexity": 4,
+    "total_token_count": 145,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[]args){\nScanner sc = new Scanner(System.in);\nString n = sc.next();\nint count = 0;\nfor(int i = 1; i < n.length();i = i + 2){\nif(n.substring(i,i+1).equals(\"0\")){\ncount ++;\n}else{\nbreak;\n}\n}\nif(count==8){\nSystem.out.println(\"Yes\");\n}else{\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc306_a_Java",
+    "complexity": 2,
+    "total_token_count": 146,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint lenght = in.nextInt();\nin.nextLine();\nString cadena = in.nextLine();\nStringBuilder retorno = new StringBuilder();\nfor (int i = 0; i < cadena.length(); i++) {\nretorno.append(cadena.charAt(i)).append(cadena.charAt(i));\n}\nSystem.out.println(retorno);\n}\n}"
+  },
+  {
+    "subdirectory": "abc330_c_Java",
+    "complexity": 2,
+    "total_token_count": 147,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nlong D = sc.nextLong();\nlong k = (long)Math.sqrt(D);\nlong re = D;\nfor(long i =0;i<=k;i++) {\nlong y = (long) Math.round(Math.sqrt(D - i * i));\nlong o = Math.abs(i * i + y * y - D);\nre = Math.min(re, o);\n}\nSystem.out.print(re);\n}\n}"
+  },
+  {
+    "subdirectory": "abc327_a_Java",
+    "complexity": 3,
+    "total_token_count": 148,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) throws IOException {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nPrintWriter pw = new PrintWriter(System.out);\nint n = Integer.parseInt(br.readLine());\nString ln = br.readLine();\npw.println(ln.contains(\"ab\") || ln.contains(\"ba\") ? \"Yes\" : \"No\");\npw.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc299_a_Java",
+    "complexity": 5,
+    "total_token_count": 148,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString s = sc.next();\nint cnt = 0;\nString result = \"out\";\nfor(int i = 0; i < n; i++) {\nif(s.charAt(i) == '|') {\ncnt++;\n}\nif(cnt == 1 && s.charAt(i) == '*') {\nresult = \"in\";\n}\n}\nSystem.out.println(result);\n}\n}"
+  },
+  {
+    "subdirectory": "abc290_b_Java",
+    "complexity": 4,
+    "total_token_count": 148,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint k = sc.nextInt();\nString s[] = sc.next().split(\"\");\nint count = 0;\nfor(int i = 0; i < n; i++){\nif(s[i].equals(\"o\")){\ncount += 1;\nif(count > k){\ns[i] = \"x\";\n}\n}\nSystem.out.print(s[i]);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc352_c_Java",
+    "complexity": 3,
+    "total_token_count": 148,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong h = 0;\nlong max = 0;\nlong hold1 = 0;\nlong hold2 = 0;\nlong N = sc.nextInt();\nfor (int i = 1; i <= N; i++) {\nhold1 = sc.nextInt();\nhold2 = sc.nextInt();\nh += hold1;\nif (max < hold2-hold1) {\nmax = hold2-hold1;\n}\n}\nh+=max;\nSystem.out.println(h);\n}\n}"
+  },
+  {
+    "subdirectory": "abc337_a_Java",
+    "complexity": 4,
+    "total_token_count": 149,
+    "code": "import java.util.Scanner;\npublic class Main_1 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint sum = 0;\nfor (int i = 1; i <= n; i++) {\nsum += sc.nextInt();\nsum -= sc.nextInt();\n}\nsc.close();\nString str = \"Draw\";\nif (sum > 0) {\nstr = \"Takahashi\";\n} else if (sum < 0) {\nstr = \"Aoki\";\n}\nSystem.out.println(str);\n}\n}"
+  },
+  {
+    "subdirectory": "abc238_c_Java",
+    "complexity": 3,
+    "total_token_count": 150,
+    "code": "import java.util.Scanner;\npublic class Main {\nstatic final int mod = 998244353;\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nlong n = scan.nextLong();\nlong res = 0, p = 10, q = 1;\nwhile (true) {\nlong m = Math.min(n, p - 1) - q + 1;\nm %= mod;\nres = (res + (m * (m + 1) / 2) % mod) % mod;\nif (p > n) break;\np *= 10;\nq *= 10;\n}\nSystem.out.println(res);\n}\n}"
+  },
+  {
+    "subdirectory": "abc324_a_Java",
+    "complexity": 4,
+    "total_token_count": 150,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc=new Scanner(System.in);\nint N=sc.nextInt();\nint First=sc.nextInt();\nint count=1;\nfor(int i=2;i<=N;i++){\nint next=sc.nextInt();\nif (next!=First){\ni++;\n}\nelse{\nFirst=next;\ncount++;\n}\n}\nif(count==N){\nSystem.out.print(\"Yes\");\n}\nelse{\nSystem.out.print(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc359_b_Java",
+    "complexity": 3,
+    "total_token_count": 151,
+    "code": "import java.util.Arrays;\nimport java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint a[] = Arrays.stream(new int[n*2]).map(e -> sc.nextInt()).toArray();\nint count = 0;\nfor(int i = 0; i < 2*n - 2; i++) {\nif(a[i] == a[i + 2]) {\ncount++;\n}\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc332_a_Java",
+    "complexity": 3,
+    "total_token_count": 151,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint num = sc.nextInt();\nint kijun = sc.nextInt();\nint souryou = sc.nextInt();\nint sum = 0;\nfor(int i= 0;i<num;i++) {\nint price = sc.nextInt();\nint kosuu = sc.nextInt();\nsum += price * kosuu;\n}\nif(sum < kijun) {\nsum += souryou;\n}\nSystem.out.println(sum);\n}\n}"
+  },
+  {
+    "subdirectory": "abc256_b_Java",
+    "complexity": 4,
+    "total_token_count": 151,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint[] a = new int[n];\nfor(int i = 0;i<n;i++) {\na[i] = sc.nextInt();\n}\nint ans = n;\nint total = 0;\nfor(int i = n-1;i>=0;i--) {\ntotal +=a[i];\nif(total>=4)break;\nans--;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc347_b_Java",
+    "complexity": 3,
+    "total_token_count": 152,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nString S = sc.next();\nint length = S.length();\nSet<String> partString = new HashSet<>();\nfor(int i=1;i<=length;i++){\nfor(int j=0;j<=length-i;j++){\nString temp = S.substring(j,j+i);\npartString.add(temp);\n}\n}\nSystem.out.println(partString.size());\n}\n}"
+  },
+  {
+    "subdirectory": "abc352_a_Java",
+    "complexity": 5,
+    "total_token_count": 155,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = Integer.parseInt(sc.next());\nint X = Integer.parseInt(sc.next());\nint Y = Integer.parseInt(sc.next());\nint Z = Integer.parseInt(sc.next());\nif(X<=Z&&Z<=Y||Y<=Z&&Z<=X) {\nSystem.out.print(\"Yes\");\n}else {\nSystem.out.print(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc290_c_Java",
+    "complexity": 4,
+    "total_token_count": 156,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[] args){\nScanner scan = new Scanner(System.in);\nint a = scan.nextInt();\nint b = scan.nextInt();\nHashSet<Integer> set = new HashSet<>();\nfor(int i = 0 ; i < a ; i++){\nset.add(scan.nextInt());\n}\nint arg = b;\nfor(int i = 0 ; i < b ; i++ ){\nif(!set.contains(i)){\narg = i;\nbreak;\n}\n}\nSystem.out.println(arg);\n}\n}"
+  },
+  {
+    "subdirectory": "abc267_a_Java",
+    "complexity": 5,
+    "total_token_count": 156,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scanner=new Scanner(System.in);\nString s=scanner.next();\nif(s.equals(\"Monday\")){\nSystem.out.println(5);\n} else if(s.equals(\"Tuesday\")){\nSystem.out.println(4);\n} else if(s.equals(\"Wednesday\")){\nSystem.out.println(3);\n} else if(s.equals(\"Thursday\")){\nSystem.out.println(2);\n} else{\nSystem.out.println(1);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc296_c_Java",
+    "complexity": 4,
+    "total_token_count": 157,
+    "code": "import java.util.*;\nclass Main {\npublic static void main (String[] args) {\nScanner sc = new Scanner (System.in);\nHashMap<Integer,Integer> hash = new HashMap<>();\nint num =sc.nextInt();\nint target=sc.nextInt();\nwhile(num-->0) {\nint key=sc.nextInt();\nhash.put(key, 1);\nif(hash.containsKey(key-target) || hash.containsKey(target+key)) {\nSystem.out.println(\"Yes\");\nreturn;\n}\n}\nSystem.out.println(\"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc345_b_Java",
+    "complexity": 1,
+    "total_token_count": 157,
+    "code": "import java.math.BigDecimal;\nimport java.math.RoundingMode;\nimport java.util.*;\npublic class Main_4 {\npublic static void main(String[] args) {\nScanner input = new Scanner(System.in);\nlong X = input.nextLong();\nBigDecimal x = new BigDecimal(X);\nBigDecimal divisor = new BigDecimal(\"10.0\");\nBigDecimal div = x.divide(divisor);\nSystem.out.println( div.setScale(0, RoundingMode.CEILING).toPlainString());\ninput.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc245_b_Java",
+    "complexity": 4,
+    "total_token_count": 157,
+    "code": "import java.util.*;\nimport static java.lang.Math.*;\npublic class Main_3{\npublic static void main(String[] args){\nvar in = new Scanner(System.in);\nint N = in.nextInt();\nvar A = new HashSet<Integer>();\nfor ( int i = 0 ; N > i ; i++ ){\nA.add( in.nextInt() );\n}\nint ans = 0;\nfor ( int i = 0 ; N + 1 > i ; i++ ){\nif ( !( A.contains( i ) ) ){\nans = i;\nbreak;\n}\n}\nSystem.out.println( ans );\n}\n}"
+  },
+  {
+    "subdirectory": "abc339_c_Java",
+    "complexity": 4,
+    "total_token_count": 157,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nlong min = 2000000000000000L;\nlong passengers = 0L;\nfor(int i=0; i<N; i++){\nlong A = sc.nextLong();\npassengers += A;\nif(passengers<min){\nmin = passengers;\n}\n}\nlong ans;\nif(min>=0){\nans = passengers;\n}else{\nans = min*(-1)+passengers;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc310_a_Java",
+    "complexity": 4,
+    "total_token_count": 159,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint p = sc.nextInt();\nint q = sc.nextInt();\nint minMenu = sc.nextInt();\nfor(int i=0; i<n-1; i++){\nint a = sc.nextInt();\nif(minMenu > a){\nminMenu = a;\n}\n}\nint pay = q + minMenu;\nint result = p;\nif(pay < p){\nresult = pay;\n}\nSystem.out.println(result);\n}\n}"
+  },
+  {
+    "subdirectory": "abc353_a_Java",
+    "complexity": 4,
+    "total_token_count": 159,
+    "code": "import java.util.Scanner;\npublic class Main_1 {\npublic static void main(String[] args) {\ntry (Scanner sc = new Scanner(System.in)) {\nint N = sc.nextInt();\nint[] NBox = new int[N];\nfor (int i = 0; i < N; i++) {\nNBox[i] = sc.nextInt();\n}\nint H1 = NBox[0];\nint H = -1;\nfor (int i = 1; i < N; i++) {\nif (H1 < NBox[i]) {\nH = i + 1;\nbreak;\n}\n}\nSystem.out.println(H);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "arc152_a_Java",
+    "complexity": 5,
+    "total_token_count": 161,
+    "code": "import java.util.Scanner;\npublic class Main_4 {\npublic static void main(String[] args) {\nScanner s = new Scanner(System.in);\nint N = s.nextInt();\nint L = s.nextInt();\nint last2Idx = -1;\nfor (int i=1;i<N + 1;++i) {\nint x = s.nextInt();\nif (x == 2) {\nlast2Idx = i;\n}\n}\nif (last2Idx != -1 && 2 * last2Idx > N + 1) System.out.println(\"No\");\nelse System.out.println(\"Yes\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc338_a_Java",
+    "complexity": 6,
+    "total_token_count": 162,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nchar [] s = sc.next().toCharArray();\nif(s[0] < 'A' || 'Z' < s[0]) {\nSystem.out.println(\"No\");\nreturn;\n}\nfor(int i = 1; i < s.length; i++) {\nif(s[i] < 'a' || 'z' < s[i]) {\nSystem.out.println(\"No\");\nreturn;\n}\n}\nSystem.out.println(\"Yes\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc344_b_Java",
+    "complexity": 4,
+    "total_token_count": 162,
+    "code": "import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nList<String> inputStrings = new ArrayList<>();\nwhile (sc.hasNext()) {\nString capture = sc.next();\ninputStrings.add(capture);\nif (capture.equals(\"0\")) {\nbreak;\n}\n}\nfor (int i = inputStrings.size() - 1; i >= 0 ; i--) {\nSystem.out.println(inputStrings.get(i));\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc225_b_Java",
+    "complexity": 4,
+    "total_token_count": 164,
+    "code": "import java.util.*;\npublic class Main_1 {\npublic static void main(String[] args) throws Exception {\nScanner in = new Scanner(System.in);\nint N = in.nextInt();\nint[] L = new int [N + 1];\nfor (int i = 0; i < 2*N - 2; i++) {\nint idx = in.nextInt();\nL[idx - 1] += 1;\n}\nString ans = \"No\";\nfor (int i = 0; i < N + 1; i++) {\nif (L[i] == N - 1) ans = \"Yes\";\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc280_c_Java",
+    "complexity": 4,
+    "total_token_count": 165,
+    "code": "import static java.lang.System.*;\nimport java.util.*;\npublic class Main_3{\npublic static void solve(){\nScanner sc = new Scanner(in);\nchar []ch1 = sc.next().toCharArray();\nchar []ch2 = sc.next().toCharArray();\nfor(int i = 0,j = 0; i < ch1.length; ++i,++j){\nif(ch1[i] != ch2[j]){\nout.println(i + 1);\nreturn;\n}\n}\nout.println(ch2.length);\n}\npublic static void main(String[] args) {\nsolve();\n}\n}"
+  },
+  {
+    "subdirectory": "abc240_b_Java",
+    "complexity": 4,
+    "total_token_count": 165,
+    "code": "import java.util.Scanner;\nimport java.util.Arrays;\npublic class Main{\npublic static void main(String []args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint a[] = new int[n];\nint count = 1;\nfor (int i = 0;i < n;i++)  {\na[i] = sc.nextInt();\n}\nArrays.sort(a);\nint compare = a[0];\nfor (int i = 1;i < n;i++) {\nif (compare != a[i]) {\ncount++;\n}\ncompare = a[i];\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc270_a_Java",
+    "complexity": 7,
+    "total_token_count": 166,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint t = sc.nextInt();\nint s = sc.nextInt();\nint ans = 0;\nif(t/4 == 1 || s/4 == 1 ) {\nans += 4;\n}\nt %= 4;\ns %= 4;\nif(t/2 == 1 || s/2 == 1) {\nans += 2;\n}\nt %= 2;\ns %= 2;\nif(t == 1 || s == 1) {\nans += 1;\n}\nSystem.out.print(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc232_b_Java",
+    "complexity": 3,
+    "total_token_count": 166,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[] args){\nvar in = new Scanner(System.in);\nvar kind = new HashSet<Integer>();\nchar[] ch = in.next().toCharArray();\nchar[] model = in.next().toCharArray();\nfor ( int i = 0 ; ch.length > i ; i++ ){\nkind.add( ( 26 + model[ i ] - ch[ i ] ) % 26 ) ;\n}\nString ans = \"No\";\nif ( kind.size() == 1 ){\nans = \"Yes\";\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "arc157_a_Java",
+    "complexity": 6,
+    "total_token_count": 166,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args)  {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint a = sc.nextInt();\nint b = sc.nextInt();\nint c = sc.nextInt();\nint d = sc.nextInt();\nif(Math.abs(b - c) >= 2 || ((b == 0) && (c == 0) && (a != 0) && (d != 0))) {\nSystem.out.println(\"No\");\n}\nelse {\nSystem.out.println(\"Yes\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc248_a_Java",
+    "complexity": 5,
+    "total_token_count": 167,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args){\nScanner scanner = new Scanner(System.in);\nString S = scanner.nextLine();\nboolean[] flag = new boolean[10];\nfor(int i = 0;i<10;i++){\nflag[i] = true;\n}\nfor(int i = 0;i<9;i++){\nflag[Character.getNumericValue(S.charAt(i))] = false;\n}\nfor(int i = 0;i<10;i++){\nif(flag[i]){\nSystem.out.println(i);\n}\n}\nscanner.close();\n}\n}"
+  },
+  {
+    "subdirectory": "arc145_b_Java",
+    "complexity": 2,
+    "total_token_count": 167,
+    "code": "import java.util.Scanner;\npublic class Main_6 {\npublic static void main(String[] args) {\nScanner input = new Scanner(System.in);\nLong N = input.nextLong();\nLong A = input.nextLong();\nLong B = input.nextLong();\nLong result = Long.valueOf(0);\nresult = countSet(A, B, N) - countSet(A, B, A-1);\nSystem.out.println(Math.max(result, 0));\n}\npublic static Long countSet(Long A, Long B, Long X) {\nreturn (X / A) * Math.min(A, B) + Math.min(X % A, B - 1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc249_b_Java",
+    "complexity": 5,
+    "total_token_count": 167,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString S = scan.next();\nString result = \"Yes\";\nif (S.equals(S.toLowerCase())||S.equals(S.toUpperCase())) {\nresult = \"No\";\n} else {\nfor (int i = 0; i < S.length(); i++) {\nif (S.indexOf(S.charAt(i)) != S.lastIndexOf(S.charAt(i))) {\nresult = \"No\";\n}\n}\n}\nSystem.out.println(result);\n}\n}"
+  },
+  {
+    "subdirectory": "abc340_b_Java",
+    "complexity": 3,
+    "total_token_count": 168,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nHashMap<Integer,Long> map = new HashMap<Integer,Long>();\nint n = sc.nextInt();\nint idx=0;\nfor(int i=0;i<n;i++){\nlong a =sc.nextLong();\nif(a ==1){\nmap.put(idx+1,sc.nextLong());\nidx++;\n}else {\nint b = sc.nextInt();\nSystem.out.println(map.get(idx-b+1));\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc260_a_Java",
+    "complexity": 5,
+    "total_token_count": 169,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nString S = sc.next();\nfor(int i = 0; i <= 2; i++){\nString hikaku = S.substring(i,i+1);\nint count = 0;\nfor(int j = 0; j <= 2; j++){\nif(hikaku.equals(S.substring(j,j+1))){\ncount++;\n}\n}\nif(count == 1){\nSystem.out.println(hikaku);\nreturn;\n}\n}\nSystem.out.println(-1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc276_a_Java",
+    "complexity": 3,
+    "total_token_count": 169,
+    "code": "import java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\npublic class Main_2 {\npublic static void main(String[] args) throws IOException{\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nchar[] arr = br.readLine().toCharArray();\nfor(int i = arr.length - 1;i >= 0;i--){\nif(arr[i] == 'a'){\nSystem.out.println(i+1);\nreturn;\n}\n}\nSystem.out.println(-1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc304_b_Java",
+    "complexity": 2,
+    "total_token_count": 170,
+    "code": "import java.util.*;\nimport java.math.BigDecimal;\nimport java.math.RoundingMode;\npublic class Main_1 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nBigDecimal num = BigDecimal.valueOf(sc.nextInt());\nint keta = Integer.toString(num.intValue()).length();\nif(keta<=3){\nSystem.out.println(num);\n}else{\nBigDecimal decimal = num.setScale(3-keta, RoundingMode.FLOOR);\nSystem.out.println(decimal.intValue());\n}\n}\n}"
+  },
+  {
+    "subdirectory": "arc164_a_Java",
+    "complexity": 5,
+    "total_token_count": 170,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main (String args[]){\nScanner sc=new Scanner(System.in);\nint t=sc.nextInt();\nwhile(t-->0){\nlong n=sc.nextLong();\nlong k=sc.nextLong();\nlong sum=0;\nwhile(n>0){\nsum+=n%3;\nn/=3;\n}\nif(sum<=k){\nif((k-sum)%2==0){\nSystem. out.println(\"Yes\");\n}\nelse{\nSystem. out.println(\"No\");\n}}\nelse{\nSystem.out.println(\"No\");}\n}\n}}"
+  },
+  {
+    "subdirectory": "abc342_a_Java",
+    "complexity": 5,
+    "total_token_count": 170,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString[] S = sc.nextLine().split(\"\");\nsc.close();\nif (S[0].equals(S[1])) {\nfor (int i = 2; i < S.length; i++) {\nif (!S[0].equals(S[i])) {\nSystem.out.println(i + 1);\n}\n}\n}else if(S[1].equals(S[2])) {\nSystem.out.println(1);\n}else {\nSystem.out.println(2);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc222_b_Java",
+    "complexity": 3,
+    "total_token_count": 171,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nString input1 = scanner.nextLine();\nString[] numList = input1.split(\" \");\nString input2 = scanner.nextLine();\nString[] humanList = input2.split(\" \");\nint count = 0;\nfor (int i = 0; i < Integer.parseInt(numList[0]); i++){\nif (Integer.parseInt(humanList[i]) < Integer.parseInt((numList[1]))){\ncount++;\n}\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc288_b_Java",
+    "complexity": 4,
+    "total_token_count": 173,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String args[]) {\nScanner input = new Scanner(System.in);\nint n = input.nextInt();\nint k = input.nextInt();\nTreeSet<String> set = new TreeSet<String>();\nfor(int i=0;i<k;i++) {\nString temp = input.next();\nset.add(temp);\n}\nint cnt = 0;\nIterator<String> iterator = set.iterator();\nwhile(iterator.hasNext() && cnt < k) {\nSystem.out.println(iterator.next());\ncnt++;\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc319_b_Java",
+    "complexity": 6,
+    "total_token_count": 173,
+    "code": "import java.util.*;\npublic class Main_2{\npublic static void main(String[]args){\nScanner s=new Scanner(System.in);\nint n=s.nextInt();\nStringBuilder sb=new StringBuilder();\nfor(int i=0;i<=n;i++){\nboolean find=false;\nfor(int j=1;j<=9;j++ ){\nif(n%j==0 && i%(n/j)==0){\nsb.append(j);\nfind=true;\nbreak;\n}\n}\nif(!find)\nsb.append(\"-\");\n}\nSystem.out.println(sb.toString());\n}\n}"
+  },
+  {
+    "subdirectory": "abc350_b_Java",
+    "complexity": 5,
+    "total_token_count": 173,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint Q = sc.nextInt();\nboolean[] teeth = new boolean[N + 1];\nfor (int i = 0; i < Q; i++) {\nint hole = sc.nextInt();\nif (teeth[hole]) {\nteeth[hole] = false;\n} else {\nteeth[hole] = true;\n}\n}\nint count = 0;\nfor (int i = 1; i <= N; i++) {\nif (teeth[i]) {\ncount++;\n}\n}\nSystem.out.println(N-count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc282_c_Java",
+    "complexity": 5,
+    "total_token_count": 174,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args) {\nScanner scanner =new Scanner(System.in);\nint n=scanner.nextInt();\nString s=scanner.next();\nint cnt=0;\nfor(int i=0;i<n;i++){\nif(s.charAt(i)==('\"'))cnt++;\nif(s.charAt(i)!=','){\nSystem.out.print(s.charAt(i));\n} else{\nif((cnt & 1)==1){\nSystem.out.print(\",\");\n} else{\nSystem.out.print(\".\");\n}\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc340_a_Java",
+    "complexity": 2,
+    "total_token_count": 174,
+    "code": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.stream.Stream;\npublic class Main_3 {\npublic static void main(String[] args) throws IOException {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nint[] n = Stream.of(br.readLine().split(\" \")).mapToInt(Integer::parseInt).toArray();\nfor (int i = n[0]; i <= n[1]; i += n[2]) {\nSystem.out.print(i + \" \");\n}\nbr.close();\n}\n}"
+  },
+  {
+    "subdirectory": "arc131_c_Java",
+    "complexity": 5,
+    "total_token_count": 174,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint[] a = new int[n];\nint s = 0;\nfor (int i = 0;i < n;i++) {\na[i] = sc.nextInt();\ns ^= a[i];\n}\nif (n % 2 == 1) System.out.println(\"Win\");\nelse {\nfor (int i : a) {\nif ((i ^ s) == 0) {\nSystem.out.println(\"Win\");\nreturn;\n}\n}\nSystem.out.println(\"Lose\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc245_a_Java",
+    "complexity": 2,
+    "total_token_count": 175,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString tmp = scan.nextLine();\nString[] arr = tmp.split(\" \");\nint A = Integer.parseInt(arr[0]);\nint B = Integer.parseInt(arr[1]);\nint C = Integer.parseInt(arr[2]);\nint D = Integer.parseInt(arr[3]);\nString answer = (3600* A + 60*B) < (3600 * C + 60 * D + 1) ? \"Takahashi\" : \"Aoki\";\nSystem.out.println(answer);\n}\n}"
+  },
+  {
+    "subdirectory": "abc355_a_Java",
+    "complexity": 3,
+    "total_token_count": 175,
+    "code": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\ntry (Scanner sc = new Scanner(System.in)) {\nint A = sc.nextInt();\nint B = sc.nextInt();\nArrayList<Integer> people = new ArrayList<>(Arrays.asList(1, 2, 3));\nif (A != B) {\npeople.remove(Integer.valueOf(A));\npeople.remove(Integer.valueOf(B));\nSystem.out.println(people.get(0));\n} else if (A == B) {\nSystem.out.println(-1);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc356_a_Java",
+    "complexity": 4,
+    "total_token_count": 176,
+    "code": "import java.util.Scanner;\npublic class Main{\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint[] suretu = new int[N + 1];\nfor(int i = 1;i <= N; i++){\nsuretu[i] = i;\n}\nint L = sc.nextInt();\nint R = sc.nextInt();\nint k = R;\nfor(int i = L;i <= R;i++){\nsuretu[i] = k;\nk--;\n}\nfor(int i = 1;i <= N;i++){\nSystem.out.print(suretu[i] + \" \");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc341_b_Java",
+    "complexity": 3,
+    "total_token_count": 176,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nlong S = 0, T = 0 , num = 0;\nlong[] money = new long[N];\nfor(int i=0; i<N; i++) {\nmoney[i] = sc.nextLong();\n}\nfor(int i=0; i<N-1; i++) {\nS = sc.nextLong();\nT = sc.nextLong();\nnum = money[i] / S;\nmoney[i+1] += num * T;\n}\nSystem.out.println(money[N-1]);\n}\n}"
+  },
+  {
+    "subdirectory": "abc236_c_Java",
+    "complexity": 3,
+    "total_token_count": 179,
+    "code": "import java.io.PrintWriter;\nimport java.util.*;\npublic class Main_2 {\nprivate static final Scanner sc = new Scanner(System.in);\nprivate static final PrintWriter out = new PrintWriter(System.out, false);\nprivate static final Set<String> stopLineName = new HashSet<>();\npublic static void main(String[] args) {\nsc.nextLine();\nString[] lineName = sc.nextLine().split(\" \");\nstopLineName.addAll(Arrays.asList(sc.nextLine().split(\" \")));\nfor (String line: lineName) {\nout.println(stopLineName.contains(line) ? \"Yes\" : \"No\");\n}\nout.flush();\n}\n}"
+  },
+  {
+    "subdirectory": "abc258_d_Java",
+    "complexity": 3,
+    "total_token_count": 179,
+    "code": "import java.io.BufferedInputStream;\nimport java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(new BufferedInputStream(System.in));\nint n = sc.nextInt();\nint x = sc.nextInt();\nlong ans = Long.MAX_VALUE;\nlong acc = 0;\nfor (int i = 0; i < n && i < x; i++) {\nint a = sc.nextInt(), b = sc.nextInt();\nacc = acc + a + b;\nlong left = x - i - 1;\nans = Math.min(ans, acc + left * b);\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc308_a_Java",
+    "complexity": 6,
+    "total_token_count": 180,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint[] input = new int[8];\nint tmp = 0;\nString result = \"Yes\";\nfor(int i=0; i<8; i++){\ninput[i] = sc.nextInt();\nif(input[i] < 100 || input[i] > 675){\nresult = \"No\";\nbreak;\n}\nif(input[i]%25 != 0){\nresult = \"No\";\nbreak;\n}\nif(input[i] < tmp){\nresult = \"No\";\nbreak;\n}\ntmp = input[i];\n}\nSystem.out.println(result);\n}\n}"
+  },
+  {
+    "subdirectory": "abc280_b_Java",
+    "complexity": 4,
+    "total_token_count": 182,
+    "code": "import java.util.*;\npublic class Main_1 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint[] s = new int[n];\nfor (int i = 0; i < n; i++) {\ns[i] = sc.nextInt();\n}\nint[] a = new int[n];\na[0] = s[0];\nfor (int i = 1; i < n; i++) {\na[i] = s[i] - s[i-1];\n}\nfor (int i = 0; i < n; i++) {\nSystem.out.print(a[i] + \" \");\n}\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc260_c_Java",
+    "complexity": 5,
+    "total_token_count": 182,
+    "code": "import java.util.*;\nclass Main {\nstatic int x;\nstatic int y;\npublic static void main(String[] args){\nScanner scanner = new Scanner(System.in);\nint n=scanner.nextInt();\nx=scanner.nextInt();\ny=scanner.nextInt();\nlong ans=cals(n,true);\nSystem.out.println(ans);\n}\npublic static long cals(int level,boolean isred){\nif(level==1){\nreturn isred ? 0 : 1;\n}\nif(isred){\nreturn cals(level-1,true)+cals(level,false)*x;\n} else{\nreturn cals(level-1,true)+cals(level-1,false)*y;\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc236_b_Java",
+    "complexity": 3,
+    "total_token_count": 183,
+    "code": "import java.util.Arrays;\nimport java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner scan= new Scanner(System.in);\nString row1=scan.nextLine();\nString row2=scan.nextLine();\nint n=Integer.parseInt(row1);\nint sum=0;\nfor(int i=1;i<=n;i++) {\nsum+=4*i;\n}\nint sum2=0;\nString[] str = row2.split(\" \");\nfor(int i=0;i<str.length;i++) {\nsum2+=Integer.parseInt(str[i]);\n}\nSystem.out.println(sum-sum2);\n}\n}"
+  },
+  {
+    "subdirectory": "abc278_a_Java",
+    "complexity": 4,
+    "total_token_count": 183,
+    "code": "import java.util.LinkedList;\nimport java.util.Queue;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nQueue <Integer> queue = new LinkedList<>();\nScanner sc = new Scanner(System.in);\nint x = sc.nextInt();\nint y = sc.nextInt();\nfor (int i = 0 ; i <x ; i++){\nint z = sc.nextInt();\nqueue.add(z);\n}\nfor (int i = 0 ; i < y ; i++){\nqueue.remove();\nqueue.add(0);\n}\nfor (int i = 0 ; i < x; i++)\nSystem.out.print(queue.remove()+\" \");\n}\n}"
+  },
+  {
+    "subdirectory": "abc353_b_Java",
+    "complexity": 4,
+    "total_token_count": 184,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[]args){\nScanner scan = new Scanner(System.in);\nQueue<Integer> queue = new PriorityQueue<Integer> ();\nint [] line=new int[scan.nextInt()];\nint cap = scan.nextInt();\nint on = 0;\nint count =1;\nfor(int j =0;j<line.length;j++)\nline[j]=scan.nextInt();\nfor(int i =0;i<line.length;i++){\nif(line[i]<=cap-on)\non = on + line[i];\nelse{\ncount++;\non = line[i];\n}\n}\nSystem.out.println(count);}}"
+  },
+  {
+    "subdirectory": "abc303_a_Java",
+    "complexity": 2,
+    "total_token_count": 185,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String args[]) {\nScanner scn = new Scanner(System.in);\nint num = scn.nextInt();\nString str1 = scn.next();\nString str2 = scn.next();\nstr1 = str1.replace(\"0\", \"o\").replace(\"1\",\"l\");\nstr2 = str2.replace(\"0\", \"o\").replace(\"1\",\"l\");\nif(str1.equals(str2)) {\nSystem.out.println(\"Yes\");\n}else {\nSystem.out.println(\"No\");\n}\nscn.close();\n}\n}"
+  },
+  {
+    "subdirectory": "agc062_a_Java",
+    "complexity": 4,
+    "total_token_count": 185,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint t = sc.nextInt();\nfor (int i = 0; i < t; i++) {\nint n = sc.nextInt();\nString s = sc.next();\nString newS = s.replaceAll(\"A\", \"\");\nif (newS.length() == 0) {\nSystem.out.println(\"A\");\ncontinue;\n}\nnewS = s.replace(\"BA\", \"\");\nif (newS.length() != s.length()) {\nSystem.out.println(\"A\");\ncontinue;\n}\nSystem.out.println(\"B\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc332_b_Java",
+    "complexity": 5,
+    "total_token_count": 186,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[]args){\nScanner sc=new Scanner(System.in);\nint n=sc.nextInt();\nint g=sc.nextInt();\nint m=sc.nextInt();\nint gc=0;\nint mc=0;\nfor(int i=0; i<n; i++){\nif(gc==g){\ngc=0;\n}else if(mc==0){\nmc=m;\n}else{\nif(g-gc>=mc){\ngc=gc+mc;\nmc=0;\n}else{\nmc=mc-(g-gc);\ngc=g;\n}\n}\n}\nSystem.out.println(gc+\" \"+mc);\n}\n}"
+  },
+  {
+    "subdirectory": "abc285_c_Java",
+    "complexity": 2,
+    "total_token_count": 187,
+    "code": "import java.util.Scanner;\npublic class Main {\nfinal static String ATOZ =\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString str = scan.next();\nlong ans = 0;\nans = (ATOZ.indexOf(str.charAt(str.length() -1)) + 1);\nfor(int i = str.length() - 2; i >= 0;i--) {\nans += (ATOZ.indexOf(str.charAt(i)) + 1) * (long)Math.pow(26,str.length() - i - 1);\n}\nSystem.out.print(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc298_a_Java",
+    "complexity": 4,
+    "total_token_count": 187,
+    "code": "import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = Integer.parseInt(sc.next());\nString input = sc.next();\nList<String> list = new ArrayList<>();\nfor (int i = 0; i < n; i++) {\nchar c = input.charAt(i);\nlist.add(String.valueOf(c));\n}\nif (list.contains(\"o\") && !list.contains(\"x\")) {\nSystem.out.println(\"Yes\");\n} else {\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc331_a_Java",
+    "complexity": 3,
+    "total_token_count": 188,
+    "code": "import java.util.*;\npublic class Main_3{\npublic static void main(String[]args){\nScanner sc = new Scanner(System.in);\nint month = sc.nextInt();\nint day = sc.nextInt();\nint y = sc.nextInt();\nint m = sc.nextInt();\nint d = sc.nextInt();\nif(day == d){\nif(month == m){\nSystem.out.println((y + 1) + \" \" + \"1 \" + \"1\");\n}else{\nSystem.out.println(y +\" \" + (m + 1) +\" \" + \"1\" );\n}\n}else{\nSystem.out.println(y + \" \" + m + \" \" + (d + 1));\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc261_a_Java",
+    "complexity": 5,
+    "total_token_count": 188,
+    "code": "import java.math.BigInteger;\nimport java.util.*;\npublic class Main_3 {\nstatic int N=(int)110;\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint l1=sc.nextInt(),r1=sc.nextInt();\nint l2=sc.nextInt(),r2=sc.nextInt();\nint max=Math.max(l1,l2);\nint min=0;\nif (l2<r1&&r1<=r2||l1<r2&&r2<=r1){\nmin=Math.min(r1,r2);\nSystem.out.println(min-max);\nreturn;\n}\nSystem.out.println(0);\n}\n}"
+  },
+  {
+    "subdirectory": "abc304_a_Java",
+    "complexity": 4,
+    "total_token_count": 188,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner input = new Scanner(System.in);\nint N = input.nextInt();\ndouble minAge = Math.pow(10, 9);\nint minAgeIndex = 0;\nString[] nameList = new String[N];\nfor (int i = 0; i < N; i++) {\nnameList[i] = input.next();\nint currentAge = input.nextInt();\nif (currentAge < minAge) {\nminAge = currentAge;\nminAgeIndex = i;\n}\n}\nfor (int i = minAgeIndex; i < minAgeIndex + N; i++) {\nSystem.out.println(nameList[(i + N)%N]);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc337_c_Java",
+    "complexity": 4,
+    "total_token_count": 189,
+    "code": "import java.util.* ;\npublic class Main{\npublic static void main(String[] args){\nScanner sc= new Scanner(System.in);\nint N= sc.nextInt(); int ans[]= new int[N+1];\nArrays.fill(ans,0); int root=0;\nfor(int i=1;i<=N;i++){\nint ps= sc.nextInt();\nif(ps== -1){\nroot= i;\nSystem.out.print(root+\" \");\n}\nelse{\nans[ps]= i;\n}\n}\nint i=1;\nwhile(i<N){\nSystem.out.print(ans[root]+\" \");\nroot= ans[root];\ni++ ;\n}\nSystem.exit(0);\n}\n}"
+  },
+  {
+    "subdirectory": "abc259_a_Java",
+    "complexity": 5,
+    "total_token_count": 190,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nIOHandler io = new IOHandler();\nint n = io.nextInt();\nint m = io.nextInt();\nint x = io.nextInt();\nint t = io.nextInt();\nint d = io.nextInt();\nio.close();\nio.output(m >= x ? t : d*(m-x) + t);\n}\nprivate static class IOHandler {\nprivate Scanner sc = new Scanner(System.in);\nprivate void close() {this.sc.close();}\nprivate int nextInt() {return this.sc.nextInt();}\nprivate void output(int result) {System.out.println(result);}\n}\n}"
+  },
+  {
+    "subdirectory": "abc301_a_Java",
+    "complexity": 6,
+    "total_token_count": 192,
+    "code": "import java.util.Scanner;\npublic class Main_2{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString s = sc.next();\nint cntT = 0;\nint cntA = 0;\nfor(int i = 0; i < n; i++){\nchar c = s.charAt(i);\nif(c == 'A') cntA++;\nelse cntT++;\n}\nboolean ans = false;\nif(cntA < cntT) ans = true;\nelse if(cntA > cntT) ans = false;\nelse ans = (s.charAt(n-1) != 'T');\nSystem.out.println(ans ? 'T' : 'A');\n}\n}"
+  },
+  {
+    "subdirectory": "abc315_b_Java",
+    "complexity": 4,
+    "total_token_count": 192,
+    "code": "import java.util.*;\npublic class Main_2\n{\npublic static void main(String[] args)\n{\nScanner s=new Scanner(System.in);\nint n=s.nextInt();\nint[] a=new int[n];\nint sum=0;\nfor(int i=0;i<n;i++)\n{\na[i]=s.nextInt();\nsum=sum+a[i];\n}\nint mid=(sum+1)/2;\nint x=0;\nfor(int i=0;i<n;i++)\n{\nx=x+a[i];\nif(x>=mid)\n{\nint y=x-mid;\nint z=a[i]-y;\nSystem.out.println((i+1)+\" \"+z);\nbreak;\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc331_b_Java",
+    "complexity": 5,
+    "total_token_count": 194,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint S = sc.nextInt();\nint M = sc.nextInt();\nint L = sc.nextInt();\nint ans = Integer.MAX_VALUE;\nfor (int i=0; i<=18; i++) {\nfor (int j=0; j<=18; j++) {\nfor (int k=0; k<=18; k++) {\nif (6*i + 8*j + 12*k >= N) {\nans = Math.min(ans, S*i + M*j + L*k);\n}\n}\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc295_a_Java",
+    "complexity": 4,
+    "total_token_count": 195,
+    "code": "import java.util.*;\npublic class Main_4 {\npublic static void main(String[] args) {\nScanner sc=new Scanner(System.in);\nString tmp=sc.nextLine();\nint N=Integer.parseInt(tmp);\ntmp=sc.nextLine();\nString[] W=tmp.split(\" \");\nString[] S={ \"and\", \"not\", \"that\", \"the\", \"you\"};\nfor(int i=0;i<N;i++){\nfor(int j=0;j<S.length;j++){\nif( W[i].equals(S[j]) ){\nSystem.out.println(\"Yes\");\nreturn ;\n}\n}\n}\nSystem.out.println(\"No\");\nreturn ;\n}\n}"
+  },
+  {
+    "subdirectory": "abc338_b_Java",
+    "complexity": 5,
+    "total_token_count": 195,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner input = new Scanner(System.in);\nString S = input.next();\nvar frequency = new HashMap<Character, Integer>();\nchar maxChar = S.charAt(0);\nfor (char c : S.toCharArray()) {\nfrequency.put(c, frequency.getOrDefault(c, 0) + 1);\nif (frequency.get(c) > frequency.get(maxChar) || ((frequency.get(c).equals(frequency.get(maxChar)) ) && c < maxChar)){\nmaxChar = c;\n}\n}\nSystem.out.printf(\"%c\\n\", maxChar);\ninput.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc342_b_Java",
+    "complexity": 4,
+    "total_token_count": 195,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nint pnum = sc.nextInt();\nint [] order = new int [pnum];\nfor(int i = 0; i < pnum; i++){\nint person = sc.nextInt();\norder[person - 1] = i;\n}\nint qnum = sc.nextInt();\nfor(int i = 0; i < qnum; i++){\nint query1 = sc.nextInt();\nint query2 = sc.nextInt();\nif (order[query1 - 1] < order[query2 - 1]){\nSystem.out.println(query1);\n}else{\nSystem.out.println(query2);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc296_b_Java",
+    "complexity": 4,
+    "total_token_count": 196,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nString[] str = {\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\"};\nint[] num = {1, 2, 3, 4, 5, 6, 7, 8};\nfor(int i = 0; i < 8; i++){\nString[] m = sc.nextLine().split(\"\");\nfor(int j = 0; j < 8; j++){\nif(m[j].equals(\"*\")){\nSystem.out.println(str[j] + \"\" + num[7 - i]);\nreturn;\n}\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc326_c_Java",
+    "complexity": 5,
+    "total_token_count": 196,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nlong M = sc.nextLong();\nlong[] A = new long[N+1];\nfor(int i=1;i<=N;i++) {\nA[i]=sc.nextLong();\n}\nA[0]=-1;\nArrays.sort(A);\nint r=1;\nlong ans = 0;\nfor(int l=1;l<=N;l++) {\nwhile(r<=N && A[r] < A[l]+M ) {\nr++;\n}\nans=Math.max(ans, r-l);\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc297_a_Java",
+    "complexity": 4,
+    "total_token_count": 196,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String args[]) {\nScanner scn = new Scanner(System.in);\nint num1 = scn.nextInt();\nint num2 = scn.nextInt();\nint[] array = new int[num1];\nint cnt =0;\nfor(int i =0; i<array.length; i++) {\narray[i] = scn.nextInt();\n}\nfor(int i =0; i<array.length-1; i++) {\nif((array[i+1]-array[i])<=num2) {\nSystem.out.println(array[i+1]);\nreturn;\n}\n}\nSystem.out.println(\"-1\");\nscn.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc281_c_Java",
+    "complexity": 4,
+    "total_token_count": 196,
+    "code": "import java.util.Scanner;\nclass Main {\npublic static void main(String args[]){\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nlong T = sc.nextLong();\nint A[] = new int[N];\nlong sum = 0;\nfor (int i = 0; i < N; i++){\nA[i] = sc.nextInt();\nsum += A[i];\n}\nT %= sum;\nfor (int i = 0; i < N; i++){\nif (T > A[i]){\nT -= A[i];\n} else{\nSystem.out.print(i + 1);\nSystem.out.print(\" \");\nSystem.out.print(T);\nsc.close();\nSystem.exit(0);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc356_d_Java",
+    "complexity": 3,
+    "total_token_count": 197,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\ntry(Scanner sc = new Scanner(System.in);) {\nlong n = sc.nextLong();\nlong m = sc.nextLong();\nlong l = 60;\nlong mod = 998244353;\nlong ans = 0;\nfor(long i = 0; i < l; i++) {\nif((m >> i & 1) > 0) {\nlong k = (n + 1) / (2L << i);\nlong r = (n + 1) % (2L << i);\nans += k << i;\nans += Math.max(r - (1L << i), 0);\nans %= mod;\n}\n}\nSystem.out.println(ans);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc358_b_Java",
+    "complexity": 5,
+    "total_token_count": 199,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n=sc.nextInt();\nint a=sc.nextInt();\nint[] t = new int[n];\nint t1=0;\nfor(int i=0;i<n;i++){\nt[i]=sc.nextInt();\n}\nfor(int i=0;i<n;i++){\nif(i>=1 && t[i]<t[i-1]){\nt[i]=t[i-1]+a;\nSystem.out.println(t[i]);\n}\nelse{\nt[i]=t[i]+a;\nSystem.out.println(t[i]);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc333_c_Java",
+    "complexity": 6,
+    "total_token_count": 201,
+    "code": "import java.util.Scanner;\nclass Main {\npublic static void main(String[] args){\nScanner sc=new Scanner(System.in);\nint n=sc.nextInt();\nlong[] repunit=new long[12];\nfor(int i=0;i<12;i++){\nrepunit[i]=Long.parseLong(\"1\".repeat(i+1));\n}\nint count=0;\nfor(int i=0;i<12;i++){\nfor(int j=0;j<=i;j++){\nfor(int k=0;k<=j;k++){\ncount++;\nif(count==n){\nSystem.out.println(repunit[i]+repunit[j]+repunit[k]);\n}\n}\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "arc145_a_Java",
+    "complexity": 5,
+    "total_token_count": 201,
+    "code": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\npublic class Main_4 {\npublic static void main(String[] args) throws IOException {\nfinal BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nfinal int n = Integer.parseInt(br.readLine());\nfinal String s = br.readLine();\nbr.close();\nif ((s.charAt(0) == 'A' && s.charAt(n - 1) == 'B') || (n == 2 && s.charAt(0) != s.charAt(1))) {\nSystem.out.println(\"No\");\n} else {\nSystem.out.println(\"Yes\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc246_c_Java",
+    "complexity": 4,
+    "total_token_count": 202,
+    "code": "import java.util.*;\npublic class Main_4 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint l = sc.nextInt();\nint k = sc.nextInt();\nint x = sc.nextInt();\nlong[] items = new long[l];\nfor(int i = 0;i<l;i++) {\nitems[i] = sc.nextLong();\nif(items[i]>=x) {\nlong remainder = Math.min(items[i]/x, k);\nk-=remainder;\nitems[i]-=x*remainder;\n}\n}\nArrays.sort(items);\nlong sum = 0;\nfor(int i = 0;i<l-k;i++) {\nsum+=items[i];\n}\nSystem.out.println(sum);\n}\n}"
+  },
+  {
+    "subdirectory": "abc295_d_Java",
+    "complexity": 3,
+    "total_token_count": 202,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nString s = in.next();\nint bits = 0;\nlong ans=0;\nHashMap<Integer, Integer> map = new HashMap<>();\nmap.put(bits, 1);\nfor(int i=0; i<s.length(); i++) {\nint digit = Integer.parseInt(s.substring(i, i+1));\nbits = bits ^ (1 << digit);\nif(map.containsKey(bits)) {\nans += map.get(bits);\nmap.put(bits, map.get(bits)+1);\n}\nelse {\nmap.put(bits, 1);\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc262_c_Java",
+    "complexity": 6,
+    "total_token_count": 205,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nlong same = 0;\nint[] a = new int[n + 1];\nlong ans = 0;\nfor(int i = 1;i <= n;i++) {\nint p = sc.nextInt();\nif(p == i) {\nsame++;\n}a[i] = p;\n}ans += (same - 1) * same/2;\nlong other = 0;\nfor(int i = 1;i<= n;i++) {\nif(a[i] == i) {\ncontinue;\n}if(a[a[i]] == i) {\nother++;\n}\n}System.out.print(ans + other/2);\n}\n}"
+  },
+  {
+    "subdirectory": "abc223_b_Java",
+    "complexity": 2,
+    "total_token_count": 206,
+    "code": "import java.util.*;\nimport java.util.stream.*;\nimport java.io.*;\npublic class Main{\nstatic int[] order = new int[26];\npublic static void main(String[] args)throws Exception{\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nScanner sc = new Scanner(System.in);\nString S = sc.nextLine();\nint len = S.length();\nString[] arr = new String[len];\nfor(int i = 0; i < len; i++){\narr[i] = S.substring(i, len) + S.substring(0, i);\n}\nArrays.sort(arr);\nSystem.out.println(arr[0]);\nSystem.out.println(arr[len-1]);\n}\n}"
+  },
+  {
+    "subdirectory": "abc294_d_Java",
+    "complexity": 4,
+    "total_token_count": 207,
+    "code": "import java.util.*;\npublic class Main_2\n{\npublic static void main(String[] args)\n{\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint q = sc.nextInt();\nInteger minWeit = 1;\nSet<String> call = new LinkedHashSet<>();\nfor (int i=1; i<=q; i++)\n{\nint e = sc.nextInt();\nif (e == 1)\n{\ncall.add(minWeit.toString());\nminWeit++;\n}\nelse if (e == 2)\n{\nString p = sc.next();\ncall.remove(p);\n}\nelse\n{\nIterator it = call.iterator();\nString s = it.next().toString();\nSystem.out.println(s);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc292_c_Java",
+    "complexity": 8,
+    "total_token_count": 208,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args)throws Exception {\nScanner scanner = new Scanner(System.in);\nint n=scanner.nextInt();\nint ans=0;\nfor(int i=1;i<n;i++){\nint X=i;\nint Y=n-i;\nint x=0;\nint y=0;\nfor(int j=1;j*j<=X;j++){\nif(X%j==0){\nx++;\nif(X!=j*j)x++;\n}\n}\nfor(int j=1;j*j<=Y;j++){\nif(Y%j==0){\ny++;\nif(Y!=j*j)y++;\n}\n}\nans+=x*y;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc300_a_Java",
+    "complexity": 3,
+    "total_token_count": 209,
+    "code": "import java.io.PrintWriter;\nimport java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nPrintWriter out = new PrintWriter(System.out);\nint n = Integer.parseInt(sc.next());\nint a = Integer.parseInt(sc.next());\nint b = Integer.parseInt(sc.next());\nsc.nextLine();\nint[] c = Arrays.stream(sc.nextLine().split(\" \")).mapToInt(Integer::parseInt).toArray();\nfor (int i = 0; i < n; ++i) {\nif (a + b == c[i]) {\nSystem.out.println(i + 1);\n}\n}\nout.flush();\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc253_b_Java",
+    "complexity": 5,
+    "total_token_count": 211,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint h = sc.nextInt();\nint w = sc.nextInt();\nint x1 = -1, y1 = -1, x2 = -1, y2 = -1;\nfor (int i = 0; i < h; i++) {\nString row = sc.next();\nfor (int j = 0; j < w; j++) {\nif (row.charAt(j) == 'o') {\nif (x1 == -1) {\nx1 = i;\ny1 = j;\n} else {\nx2 = i;\ny2 = j;\n}\n}\n}\n}\nint distance = Math.abs(x1 - x2) + Math.abs(y1 - y2);\nSystem.out.println(distance);\n}\n}"
+  },
+  {
+    "subdirectory": "abc349_c_Java",
+    "complexity": 5,
+    "total_token_count": 211,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString S = sc.next();\nString T = sc.next();\nString ans = \"No\";\nint n = 0;\nint limit = 3;\nif (T.charAt(2) == 'X') {\nlimit = 2;\n}\nfor (int i = 0; i < S.length(); i++) {\nchar chS = S.charAt(i);\nint numS = chS - 'a';\nchar chT = T.charAt(n);\nint numT = chT - 'A';\nif (numS == numT) {\nn++;\n}\nif (n >= limit) {\nans = \"Yes\";\nbreak;\n}\n}\nSystem.out.println(ans);\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc229_d_Java",
+    "complexity": 5,
+    "total_token_count": 213,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nScanner scan = new Scanner(System.in);\nString s = scan.nextLine(); int cnt = scan.nextInt();\nint start = 0; int end = 0; int maxCnt = 0;\nwhile(end < s.length()){\nif(s.charAt(end) == 'X'){\nend++;\nmaxCnt = Math.max(maxCnt, end - start);\ncontinue;\n}\nelse if(cnt > 0){\nend++;\ncnt--;\nmaxCnt =  Math.max(maxCnt, end - start);\ncontinue;\n}\nelse{\nif(s.charAt(start) == 'X'){\nstart++;\n}\nelse{\ncnt++;\nstart++;\n}\n}\n}\nSystem.out.println(maxCnt);\n}\n}"
+  },
+  {
+    "subdirectory": "abc293_b_Java",
+    "complexity": 5,
+    "total_token_count": 213,
+    "code": "import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\ntry (Scanner scanner = new Scanner(System.in)) {\nint N = scanner.nextInt();\nboolean[] array = new boolean[N + 1];\nfor (int i = 1; i < N + 1; i++) {\nint current = scanner.nextInt();\nif (!array[i]) {\narray[current] = true;\n}\n}\nList<Integer> result = new ArrayList<Integer>();\nfor (int i = 1; i < N + 1; i++) {\nif (!array[i])\nresult.add(i);\n}\nSystem.out.println(result.size());\nresult.forEach(item -> System.out.print(item + \" \"));\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc269_b_Java",
+    "complexity": 4,
+    "total_token_count": 214,
+    "code": "import java.util.Scanner;\nclass Main {\npublic static void main(String[] args) {\nScanner scanner=new Scanner(System.in);\nint a=Integer.MAX_VALUE;\nint b=Integer.MIN_VALUE;\nint c=Integer.MAX_VALUE;\nint d=Integer.MIN_VALUE;\nfor(int i=0;i<10;i++){\nString s=scanner.next();\nfor(int j=0;j<10;j++){\nif(s.charAt(j)=='#'){\na=Math.min(a,i+1);\nb=Math.max(b,i+1);\nc=Math.min(c,j+1);\nd=Math.max(d,j+1);\n}\n}\n}\nSystem.out.println(a+\" \"+b);\nSystem.out.println(c+\" \"+d);\n}\n}"
+  },
+  {
+    "subdirectory": "abc268_a_Java",
+    "complexity": 4,
+    "total_token_count": 216,
+    "code": "import static java.lang.System.*;\nimport java.util.*;\npublic class Main_1{\npublic static void solve(){\nScanner sc = new Scanner(in);\nint A = sc.nextInt();\nint B = sc.nextInt();\nint C = sc.nextInt();\nint D = sc.nextInt();\nint E = sc.nextInt();\nint []freq = new int[101];\n++freq[A];\n++freq[B];\n++freq[C];\n++freq[D];\n++freq[E];\nint cnt = 0;\nfor(int i = 0; i < 101; ++i){\nif(freq[i] >= 1)++cnt;\n}\nout.println(cnt);\n}\npublic static void main(String[] args) {\nsolve();\n}\n}"
+  },
+  {
+    "subdirectory": "abc270_b_Java",
+    "complexity": 5,
+    "total_token_count": 216,
+    "code": "import java.util.Scanner;\npublic class Main_6 {\npublic static void main(final String[] args) {\ntry (final Scanner sc = new Scanner(System.in)) {\nfinal int X = Integer.parseInt(sc.next());\nfinal int Y = Integer.parseInt(sc.next());\nfinal int Z = Integer.parseInt(sc.next());\nif (X * X <= Y * Y || (X ^ Y) < 0) {\nSystem.out.println(Math.abs(X));\n} else if (Z * Z <= Y * Y) {\nif ((X ^ Z) >= 0) {\nSystem.out.println(Math.abs(X));\n} else {\nSystem.out.println(Math.abs(X) + Math.abs(Z) * 2);\n}\n} else {\nSystem.out.println(-1);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc251_c_Java",
+    "complexity": 5,
+    "total_token_count": 218,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nString[] S= new String[N];\nint[] T= new int[N];\nHashSet<String> set = new HashSet<>();\nint best = -1;\nint bestscore = -1;\nfor(int i = 0; i < N;i++){\nS[i] = sc.next();\nT[i] = sc.nextInt();\n}\nfor(int  i = 0; i<N;i++){\nif(!set.contains(S[i])){\nif(T[i] > bestscore){\nbest = i;\nbestscore = T[i];\n}\nset.add(S[i]);\n}\n}\nSystem.out.println(best+1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc292_b_Java",
+    "complexity": 6,
+    "total_token_count": 218,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint n = scan.nextInt();\nint q = scan.nextInt();\nint[] circumstance = new int[n];\nfor (int i = 0; i < n; i++) {\ncircumstance[i] = 0;\n}\nfor (int k = 0; k < q; k++) {\nint query1 = scan.nextInt();\nint query2 = scan.nextInt();\nif (query1 == 1 || query1 == 2) {\ncircumstance[query2-1] = circumstance[query2-1] + query1;\n} else {\nif (circumstance[query2-1] >= 2) {\nSystem.out.println(\"Yes\");\n} else {\nSystem.out.println(\"No\");\n}\n}\n}\nscan.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc224_a_Java",
+    "complexity": 5,
+    "total_token_count": 218,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString str = sc.next();\nchar[] arr1 = {'e','r'};\nchar[] arr2 = {'s','t'};\nint count = 0;\nint j = 0;\nint k = 0;\nfor(int i = str.length()-2; i < str.length(); i++) {\nif (str.charAt(i) == arr1[j++]) {\ncount++;\n} else if (str.charAt(i)==arr2[k++]) {\ncount = 3;\n}\n}\nif (count == 2) {\nSystem.out.println(\"er\");\n} else {\nSystem.out.println(\"ist\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc274_b_Java",
+    "complexity": 6,
+    "total_token_count": 218,
+    "code": "import java.util.Scanner;\nclass Main {\npublic static void main(String args[]) {\nScanner scanner = new Scanner(System.in);\nint var = scanner.nextInt();\nint hor = scanner.nextInt();\nString check;\nint[] ans = new int[hor];\nString mark;\nfor (int i = 0; i < var; i++) {\nmark = scanner.next();\nfor (int j = 0; j < hor; j++) {\ncheck = String.valueOf(mark.charAt(j));\nif (check.equals(\".\")) {\ncontinue;\n} else {\nans[j]++;\n}\n}\n}\nfor (int k = 0; k < hor; k++) {\nSystem.out.print(ans[k]);\nif (k != hor) {\nSystem.out.print(\" \");\n}\n}\nscanner.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc354_b_Java",
+    "complexity": 3,
+    "total_token_count": 218,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) throws IOException {\nBufferedReader buf = new BufferedReader(new InputStreamReader(System.in));\nint t = Integer.parseInt(buf.readLine());\nPriorityQueue<String>pq = new PriorityQueue<>();\nlong total = 0;\nfor(int i = 0 ; i < t ; i++) {\nString[] s = buf.readLine().trim().split(\" \");\nString name = s[0];\nint rating = Integer.parseInt(s[1]);\ntotal += rating;\npq.add(name);\n}\ntotal %= t;\nwhile(total--> 0){\npq.poll();\n}\nSystem.out.println(pq.peek());\n}\n}"
+  },
+  {
+    "subdirectory": "arc134_a_Java",
+    "complexity": 5,
+    "total_token_count": 219,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args)  {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nlong l = sc.nextLong();\nlong w = sc.nextLong();\nlong a[] = new long[n];\nfor(int i = 0; i < n; i++) {\na[i] = sc.nextLong();\n}\nlong count = 0;\nlong prevRight = 0;\nfor(int i = 0 ; i < n; i++) {\nif(a[i] > prevRight) {\ncount += (a[i] - prevRight - 1)/w + 1;\n}\nprevRight = a[i] + w;\n}\nif(prevRight < l) {\ncount += (l - prevRight - 1)/w + 1;\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc248_b_Java",
+    "complexity": 1,
+    "total_token_count": 219,
+    "code": "import java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.nio.Buffer;\nimport java.util.StringTokenizer;\npublic class Main_4 {\npublic static void main(String[] args) throws IOException {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nStringTokenizer st = new StringTokenizer(br.readLine());\ndouble a = Double.parseDouble(st.nextToken());\ndouble b = Double.parseDouble(st.nextToken());\ndouble k = Double.parseDouble(st.nextToken());\nSystem.out.println((int)(Math.ceil(Math.log10(b / a) / Math.log10(k))));\n}\n}"
+  },
+  {
+    "subdirectory": "abc269_c_Java",
+    "complexity": 6,
+    "total_token_count": 220,
+    "code": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.Scanner;\npublic class Main{\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nlong n = scan.nextLong();\nArrayList<Long> list = new ArrayList<>();\nfor(int mask = 0; mask < 60; mask++) {\nif(((n >> mask) & 1) >= 1 ) list.add((long)mask);\n}\nlong max_mask = 1 << list.size();\nfor(int mask = 0; mask < max_mask; mask++){\nlong res = 0;\nfor(int i = 0; i < list.size(); i++){\nif((mask & (1 << i)) > 0) res += 1L << list.get(i);\n}\nSystem.out.println(res);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc352_b_Java",
+    "complexity": 5,
+    "total_token_count": 223,
+    "code": "import java.util.Scanner;\nimport java.util.List;\nimport java.util.ArrayList;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.nextLine();\nString t = sc.nextLine();\nsc.close();\nList<Integer> out = new ArrayList<>();\nint i = 0;\nfor (int j=0; j < t.length(); j++) {\nif (s.charAt(i) == t.charAt(j)) {\ni++;\nout.add(j+1);\nif (i == s.length()) break;\n}\n}\nStringBuilder sb = new StringBuilder();\nfor (int k : out) {\nsb.append(String.valueOf(k));\nsb.append(\" \");\n}\nSystem.out.println(sb);\n}\n}"
+  },
+  {
+    "subdirectory": "abc299_c_Java",
+    "complexity": 7,
+    "total_token_count": 223,
+    "code": "import java.util.Scanner;\nimport static java.lang.Math.max;\npublic class Main {public static void main(String[] args) {\nScanner sc=new Scanner(System.in);\nint n=sc.nextInt();\nString s=sc.next();\nint a=s.indexOf('-');\nint res=-1;\nfor(int i=0;i<s.length();i++){\nif(s.charAt(i)=='o'){\nint j=i;\nint ans=0;\nwhile(j<s.length()&&s.charAt(j)=='o') {\nans++;\nj++;\n}\nif(j!=s.length())res=max(res,ans);\nif(i!=0)res=max(res,ans);\ni=j-1;\n}\n}\nSystem.out.println(res);\n}\n}"
+  },
+  {
+    "subdirectory": "abc329_b_Java",
+    "complexity": 6,
+    "total_token_count": 223,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String args[]){\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint ans = 0;\nint max = 0;\nint secound = 0;\nint[] array = new int[N];\nboolean flg = true;\nArrayList<Integer> list = new ArrayList<>();\nfor(int i = 0; i < N; i++){\narray[i] = sc.nextInt();\nlist.add(array[i]);\nif(flg){\nmax = array[i];\nflg = false;\n}else if(max < array[i]){\nmax = array[i];\n}\n}\nlist.removeAll(Collections.singleton(max));\nfor(int num : list){\nif(secound < num){\nsecound = num;\n}\n}\nSystem.out.print(secound);\n}\n}"
+  },
+  {
+    "subdirectory": "arc129_b_Java",
+    "complexity": 3,
+    "total_token_count": 225,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint maxA = Integer.MIN_VALUE, minB = Integer.MAX_VALUE;\nStringBuilder sb = new StringBuilder();\nfor (int i = 0;i < n;i++ ) {\nmaxA = Math.max(maxA, sc.nextInt());\nminB = Math.min(minB, sc.nextInt());\nif (maxA <= minB) sb.append(0).append('\\n');\nelse sb.append((int) Math.ceil((double) (maxA - minB) / 2)).append('\\n');\n}\nsb.deleteCharAt(sb.length() - 1);\nSystem.out.println(sb);\n}\n}"
+  },
+  {
+    "subdirectory": "abc311_a_Java",
+    "complexity": 8,
+    "total_token_count": 226,
+    "code": "import java.util.*;\nclass Main {\nstatic public void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint N = Integer.parseInt(scan.next());\nString S = scan.next();\nint counter = 0;\nBoolean flagA = false;\nBoolean flagB = false;\nBoolean flagC = false;\nfor (int i=0; i < N; i++) {\nif (S.charAt(i) == 'A') {\nflagA = true;\ncounter++;\n} else if (S.charAt(i) == 'B') {\nflagB = true;\ncounter++;\n} else if (S.charAt(i) == 'C') {\nflagC = true;\ncounter++;\n}\nif (flagA == true && flagB == true && flagC == true) {\nSystem.out.println(counter);\nbreak;\n}\n}\nscan.close();\n}\n}"
+  },
+  {
+    "subdirectory": "arc133_a_Java",
+    "complexity": 7,
+    "total_token_count": 227,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint[] array = new int[N];\nfor(int i = 0; i < N; i++) {\narray[i] = sc.nextInt();\n}\nint max = 0;\nfor(int i = 0; i < N; i++) {\nif(array[i] >= max) {\nmax = array[i];\n} else {\nbreak;\n}\n}\nStringBuilder ans = new StringBuilder();\nfor(int i = 0; i < N; i++) {\nif(array[i] != max) {\nans.append(array[i]);\nif(i != N - 1) {\nans.append(\" \");\n}\n}\n}\nSystem.out.println(ans);\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc234_a_Java",
+    "complexity": 2,
+    "total_token_count": 228,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nlong t = scan.nextLong();\nif(t == 0) {\nlong ft = 3;\nlong ftt = ((ft * ft) + (ft * 2) + 3) + ((ft * ft) + (ft * 2) + 3);\nlong fttt = (ftt * ftt) + (2 * ftt) + 3;;\nSystem.out.println(fttt);\n} else {\nlong ft = (t * t) + (2 * t) + 3;\nlong ftt = ((ft * ft) + (2 * ft) + 3) + ((ft + t)*(ft + t) + (2*(ft + t)) + 3);\nlong fttt = (ftt * ftt) + (2 * ftt) + 3;\nSystem.out.println(fttt);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc243_a_Java",
+    "complexity": 4,
+    "total_token_count": 228,
+    "code": "import java.io.PrintWriter;\nimport java.math.*;\nimport java.time.*;\nimport java.time.format.DateTimeFormatter;\nimport java.util.*;\nclass Main {\nstatic void solve (Scanner in, PrintWriter out) {\nint v = in.nextInt(), a = in.nextInt(), b = in.nextInt(), c = in.nextInt();\nv = v % (a+b+c);\nif (v - a < 0) {\nout.println(\"F\");\nreturn;\n}\nv -= a;\nif (v - b < 0) {\nout.println(\"M\");\nreturn;\n}\nv -= b;\nout.println(\"T\");\n}\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nPrintWriter out = new PrintWriter(System.out);\nsolve(in, out);\nin.close();\nout.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc311_b_Java",
+    "complexity": 7,
+    "total_token_count": 228,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = Integer.parseInt(sc.next());\nint d = Integer.parseInt(sc.next());\nString s[] = new String[n];\nfor (int i=0;i<n;++i){\ns[i] = sc.next();\n}\nint cnt = 0;\nint cntf = 0;\nfor (int i=0;i<d;++i){\nfor (int j=0;j<n;++j){\nif(s[j].charAt(i) !='o'){\ncnt = 0;\nbreak;\n}\n++cnt;\nif (cnt % n == 0 && (cnt / n) > cntf){\ncntf = cnt/n;\n}\n}\n}\nSystem.out.println(cntf);\n}\n}"
+  },
+  {
+    "subdirectory": "abc233_b_Java",
+    "complexity": 3,
+    "total_token_count": 230,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString line1 = sc.nextLine();\nString[] line_1 = line1.split(\" \");\nint L = Integer.parseInt(line_1[0]);\nint R = Integer.parseInt(line_1[1]);\nString S = sc.nextLine();\nStringBuilder new_S = new StringBuilder(S);\nfor(int i = 0; i<S.length();i++){\nif ((i>=L)&(i<=R)){\nnew_S.setCharAt(i-1,S.charAt(R-i+L-1));\nnew_S.setCharAt(R-i+L-1,S.charAt(i-1));\n}\n}\nSystem.out.println(new_S);\n}\n}"
+  },
+  {
+    "subdirectory": "abc345_c_Java",
+    "complexity": 5,
+    "total_token_count": 232,
+    "code": "import java.math.*;\nimport java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nfinal String s = sc.next();\nfinal long n = s.length();\nMap<Character, Long> map = new HashMap<>();\nfor (char c : s.toCharArray()) {\nmap.put(c, map.getOrDefault(c, 0L) + 1L);\n}\nlong sum = n * (n - 1) / 2;\nlong dup = 0;\nfor (var e : map.entrySet()) {\nif (e.getValue() > 1) {\ndup += e.getValue() * (e.getValue() - 1) / 2;\n}\n}\nif (dup > 0) {\nSystem.out.println(sum - dup + 1);\n} else {\nSystem.out.println(sum);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc287_b_Java",
+    "complexity": 6,
+    "total_token_count": 232,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint m = sc.nextInt();\nString sTails[] = new String[n];\nfor(int i=0; i<n; i++){\nString tmp = sc.next();\nsTails[i] = tmp.substring(3, 6);\n}\nint count = 0;\nString[] tList = new String[m];\nfor(int i=0; i<m; i++){\ntList[i] = sc.next();\n}\nfor(int i=0; i<n; i++){\nfor(int j=0; j<m; j++){\nif(sTails[i].equals(tList[j])){\ncount++;\nbreak;\n}\n}\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc221_b_Java",
+    "complexity": 9,
+    "total_token_count": 232,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nString t = sc.next();\nboolean flag = true;\nboolean cflag = false;\nfor (int i = 0; i < s.length(); i++) {\nif (s.charAt(i) != t.charAt(i) && !cflag) {\ncflag = true;\nif (s.charAt(i+1) != t.charAt(i) || s.charAt(i) != t.charAt(i+1)) {\nflag = false;\nbreak;\n}\ni += 2;\n} else if(s.charAt(i) != t.charAt(i) && cflag) {\nflag = false;\nbreak;\n}\n}\nSystem.out.println(flag ? \"Yes\" : \"No\");\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc248_c_Java",
+    "complexity": 6,
+    "total_token_count": 232,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint n = in.nextInt(), m = in.nextInt(), k = in.nextInt();\nint MOD = 998244353;\nlong[] f = new long[k + 1];\nf[0] = 1;\nlong ans = 0;\nfor (int i = 1; i <= n; i++) {\nfor (int j = k; j >= 0; j--) {\nf[j] = 0;\nfor (int l = 1; l <= j && l <= m; l++) {\nf[j] = (f[j] + f[j - l]) % MOD;\n}\n}\n}\nfor (int j = 0; j <= k; j++) {\nans = (ans + f[j]) % MOD;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc320_b_Java",
+    "complexity": 4,
+    "total_token_count": 237,
+    "code": "import java.util.Arrays;\nimport java.util.Scanner;\npublic class Main_1 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nString ws1 = \"\";\nString ws2 = \"\";\nStringBuilder sb = new StringBuilder();\nint ans = 0;\nfor (int i = 0; i < s.length(); i++) {\nfor (int j = i; j <= s.length(); j++) {\nws1 = s.substring(i, j);\nsb.append(ws1);\nws2 = sb.reverse().toString();\nif (ws1.equals(ws2)) {\nans = Math.max(ans, ws1.length());\n}\nsb.setLength(0);\n}\n}\nSystem.out.println(ans);\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc301_d_Java",
+    "complexity": 7,
+    "total_token_count": 237,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nlong n = sc.nextLong();\nList<Integer> pos = new ArrayList<>();\nlong number = 0;\nfor (int i=0;i<s.length();i++){\nnumber = number<<1;\nchar c = s.charAt(i);\nif (c=='1'){\nnumber = number|1;\n}else if (c=='?'){\npos.add(i);\n}\n}\nif (number>n) System.out.println(-1);\nelse {\nfor (var p:pos){\np = s.length()-p-1;\nif ((number|(1L<<p))<=n){\nnumber = number| (1L <<p);\n}\n}\nSystem.out.println(number);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc244_d_Java",
+    "complexity": 11,
+    "total_token_count": 237,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nString a = sc.nextLine();\na = a.substring(0,5);\nString b = sc.nextLine();\nb = b.substring(0,5);\nboolean c = false;\nboolean d = false;\nif(a.equals(\"R G B\")||a.equals(\"G B R\")||a.equals(\"B R G\")){\nc = true;\n}\nif(b.equals(\"R G B\")||b.equals(\"G B R\")||b.equals(\"B R G\")){\nd = true;\n}\nif(c&&d||c==false&&d==false){\nSystem.out.println(\"Yes\");\n}\nelse{\nSystem.out.println(\"No\");\n}\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc324_d_Java",
+    "complexity": 3,
+    "total_token_count": 240,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main_9 {\npublic static void main(String[] args) throws IOException {\nBufferedReader buf = new BufferedReader(new InputStreamReader(System.in));\nint n = Integer.parseInt(buf.readLine());\nString s = buf.readLine();\nchar[]ch = s.toCharArray();\nArrays.sort(ch);\nlong j = Long.parseLong(new String(ch));\nint ans = 0;\nfor(long i = 0; i*i<=(long)Math.pow(10, n);i++){\nlong p = i*i;\nchar[] sub = Long.toString(p).toCharArray();\nArrays.sort(sub);\nlong d = Long.parseLong(new String(sub));\nif(d==j)ans++;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc233_d_Java",
+    "complexity": 3,
+    "total_token_count": 240,
+    "code": "import java.util.HashMap;\nimport java.util.Map;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nlong k = sc.nextLong();\nlong[] sum = new long[n + 1];\nsum[0] = 0;\nint a = 0;\nfor(int i = 0 ; i < n ; i++) {\na = sc.nextInt();\nsum[i + 1] = sum[i] + a;\n}\nMap<Long, Integer> map = new HashMap<>();\nlong ans = 0;\nfor(int i = n ; i >= 0 ; i--) {\nans += map.getOrDefault(sum[i] + k, 0);\nmap.put(sum[i] , map.getOrDefault(sum[i], 0) + 1);\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc250_a_Java",
+    "complexity": 9,
+    "total_token_count": 241,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nMyScanner sc = new MyScanner();\nint H = sc.nextInt(), W = sc.nextInt();\nint R = sc.nextInt(), C = sc.nextInt();\nint ans = 4;\nif(R==H) ans--;\nif(R==1) ans--;\nif(C==W) ans--;\nif(C==1) ans--;\nSystem.out.println(ans);\n}\n}\nclass MyScanner {\npublic Scanner sc = new Scanner(System.in);\npublic int nextInt() {\nreturn Integer.parseInt(sc.next());\n}\npublic long nextLong() {\nreturn Long.parseLong(sc.next());\n}\npublic double nextDouble() {\nreturn Double.parseDouble(sc.next());\n}\npublic String next() {\nreturn sc.next();\n}\n}"
+  },
+  {
+    "subdirectory": "abc358_d_Java",
+    "complexity": 6,
+    "total_token_count": 241,
+    "code": "import java.util.*;\npublic class Main_6 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint M = sc.nextInt();\nint[] A = new int[N];\nint[] B = new int[M];\nfor (int i = 0; i < N; i++) {\nA[i] = sc.nextInt();\n}\nfor (int i = 0; i < M; i++) {\nB[i] = sc.nextInt();\n}\nint j = 0;\nlong sum = 0;\nArrays.sort(A);\nArrays.sort(B);\nfor (int i = 0; i < N; i++) {\nif (A[i] >= B[j]) {\nj++;\nsum += A[i];\n}\nif (j >= M) {\nSystem.out.println(sum);\nreturn;\n}\n}\nSystem.out.println(-1);\nreturn;\n}\n}"
+  },
+  {
+    "subdirectory": "abc343_c_Java",
+    "complexity": 7,
+    "total_token_count": 242,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong N = sc.nextLong();\nList<Long> list = new ArrayList<>();\nfor (long i  = 0; i * i * i <= N; i++) {\nlist.add(i*i*i);\n}\nfor (int i = list.size()-1; i >= 0; i--) {\nif (checkRounded(list.get(i))) {\nSystem.out.println(list.get(i));\nbreak;\n}\n}\n}\nprivate static boolean checkRounded(long A) {\nString S = String.valueOf(A);\nchar[] arr = S.toCharArray();\nfor (int i = 0; i < arr.length/2; i++) {\nif (arr[i] != arr[arr.length-i-1]) return false;\n}\nreturn true;\n}\n}"
+  },
+  {
+    "subdirectory": "abc286_a_Java",
+    "complexity": 4,
+    "total_token_count": 242,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint p = sc.nextInt()-1;\nint q = sc.nextInt()-1;\nint r = sc.nextInt()-1;\nint s = sc.nextInt()-1;\nint[] li = new int[n];\nint[] li2 = new int[n];\nfor (int i=0;i<n;i++){\nint a = sc.nextInt();\nli[i] = a;\nli2[i] = a;\n}\nfor (int i = 0;i<= q-p; i++){\nli2[p+i] = li[r+i];\nli2[r+i] = li[p+i];\n}\nfor (int i = 0;i< n; i++){\nSystem.out.print(li2[i]+\" \");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc313_b_Java",
+    "complexity": 4,
+    "total_token_count": 242,
+    "code": "import com.sun.source.tree.Tree;\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.*;\npublic class Main_1 {\npublic static int maxDist = 0;\npublic static void main(String[] args) throws IOException {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint m = sc.nextInt();\nSet<Integer> set = new HashSet<>();\nfor (int i = 1; i <= n; i++) {\nset.add(i);\n}\nfor (int i = 0; i < m; i++) {\nint a = sc.nextInt();\nint b = sc.nextInt();\nset.remove(b);\n}\nif (set.size() != 1) {\nSystem.out.println(-1);\n} else {\nSystem.out.println(set.iterator().next());\n}\n}\n}"
+  },
+  {
+    "subdirectory": "arc128_a_Java",
+    "complexity": 6,
+    "total_token_count": 246,
+    "code": "import java.util.Scanner;\npublic class Main_1 {\npublic static void main( String args[]) {\nScanner scn = new Scanner( System.in);\nint N = scn.nextInt();\nint[] days = new int[N];\nint[] ans = new int[N];\nfor ( int i = 0; i < N; i++) {\ndays[i] = scn.nextInt();\n}\nfor ( int j = 0; j < N - 1; j++) {\nif ( days[j] > days[j + 1]) {\nans[j] = ans[j] == 1 ? 0 : 1;\nans[j + 1] = 1;\n}\n}\nStringBuilder sb = new StringBuilder();\nfor ( int k = 0; k < N; k++) {\nsb.append( ans[k] + \" \");\n}\nsb.deleteCharAt( sb.length() - 1);\nSystem.out.println( sb.toString());\n}\n}"
+  },
+  {
+    "subdirectory": "arc154_a_Java",
+    "complexity": 3,
+    "total_token_count": 247,
+    "code": "import java.math.BigInteger;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args){\nvar sc = new Scanner(System.in);\nvar N = sc.nextInt();\nvar A = sc.next().toCharArray();\nvar B = sc.next().toCharArray();\nsc.close();\nfor(var i=0; i<N; i++){\nif(A[i] > B[i]){\nvar t = A[i];\nA[i] = B[i];\nB[i] = t;\n}\n}\nBigInteger ba = new BigInteger(String.valueOf(A));\nBigInteger bb = new BigInteger(String.valueOf(B));\nBigInteger bm = BigInteger.valueOf(998244353);\nBigInteger ans = ba.multiply(bb).mod(bm);\nSystem.out.println(ans);\nSystem.out.flush();\n}\n}"
+  },
+  {
+    "subdirectory": "arc165_a_Java",
+    "complexity": 8,
+    "total_token_count": 247,
+    "code": "import java.util.HashMap;\nimport java.util.Map;\nimport java.util.Scanner;\nimport java.util.Set;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint t = in.nextInt();\nfor(int i=0; i<t; i++) {\nlong n = in.nextLong();\nSystem.out.println(solve(n) ? \"Yes\" : \"No\");\n}\n}\nprivate static boolean solve(long n) {\nlong m = n;\nlong sumOfFactors = 0;\nlong i = 2;\nwhile(m>1) {\nif(m%i > 0) {\ni++;\nif(m<i*i) {\nsumOfFactors += m;\nbreak;\n}\ncontinue;\n}\nm = m/i;\nint count = 1;\nwhile(m%i == 0) {\nm = m/i;\ncount++;\n}\nsumOfFactors = (long)Math.pow(i, count);\n}\nreturn sumOfFactors < n;\n}\n}"
+  },
+  {
+    "subdirectory": "abc321_b_Java",
+    "complexity": 5,
+    "total_token_count": 249,
+    "code": "import java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main_4 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint X = sc.nextInt();\nList<Integer> A = new ArrayList<Integer>();\nfor(int i = 0; i < N - 1; i++) {\nA.add(sc.nextInt());\n}\nfor(int i = 0; i <= 100; i++) {\nint sum = 0;\nList<Integer> A1 = new ArrayList<Integer>(A);\nA1.add(i);\nCollections.sort(A1);\nA1.remove(A1.size() - 1);\nA1.remove(0);\nfor(Integer a : A1) {\nsum += a;\n}\nif(sum >= X) {\nSystem.out.println(i);\nreturn;\n}\n}\nSystem.out.println(-1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc352_d_Java",
+    "complexity": 4,
+    "total_token_count": 249,
+    "code": "import java.util.Scanner;\nimport java.util.TreeSet;\npublic class Main {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint n = scan.nextInt();\nint k = scan.nextInt();\nint[] p = new int[n+1];\nTreeSet<Integer> pSet = new TreeSet<Integer>();\nfor (int i = 0; i < n; i++) {\np[scan.nextInt()] = i;\n}\nscan.close();\nfor (int i = 1; i < k; i++) {\npSet.add(p[i]);\n}\nint ans = n;\nfor (int j = 1; j <= n-k+1; j++) {\npSet.add( p[j+k-1]);\nans=Math.min(ans, pSet.last() - pSet.first());\npSet.remove(p[j]);\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc297_b_Java",
+    "complexity": 7,
+    "total_token_count": 250,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc=new Scanner(System.in);\nString str=sc.next();\nboolean evenOddFlag=false;\nboolean existR=false;\nif(str.indexOf(\"B\")%2==0) {\nif(str.lastIndexOf(\"B\")%2 !=0) {\nevenOddFlag=true;\n}\n}else {\nif(str.lastIndexOf(\"B\")%2 ==0) {\nevenOddFlag=true;\n}\n}\nString rr=str.substring(str.indexOf(\"R\"),str.lastIndexOf(\"R\"));\nif(rr.indexOf(\"K\")!=-1) {\nexistR=true;\n}\nif(evenOddFlag&&existR) {\nSystem.out.println(\"Yes\");\n}else {\nSystem.out.println(\"No\");\n}\nsc.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc307_b_Java",
+    "complexity": 8,
+    "total_token_count": 251,
+    "code": "import java.util.*;\npublic class Main_1 {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString s[] = new String[n];\nfor(int i = 0; i < n; i++){\ns[i] = sc.next();\n}\nfor(int i = 0; i < n; i++){\nfor(int j = 0; j < n; j++){\nif(i != j){\nboolean flag = true;\nString[] strs = (s[i] + s[j]).split(\"\");\nfor(int k = 0; k <= strs.length / 2; k++){\nif(!(strs[k].equals(strs[strs.length -1 - k]))){\nflag = false;\nbreak;\n}\n}\nif(flag){\nSystem.out.println(\"Yes\");\nreturn;\n}\n}\n}\n}\nSystem.out.println(\"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "arc129_a_Java",
+    "complexity": 3,
+    "total_token_count": 252,
+    "code": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\npublic class Main_2 {\npublic static void main(String[] args) throws IOException {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nString[] input = br.readLine().split(\" \");\nbr.close();\nlong n = Long.parseLong(input[0]);\nlong l = Long.parseLong(input[1]);\nlong r = Long.parseLong(input[2]);\nlong x = 1;\nlong ans = 0;\nwhile (r >= x) {\nif ((n ^ x) < n) {\nlong range_min = x;\nlong range_max = (x << 1) - 1;\nans += Math.max(Math.min(range_max, r) - Math.max(range_min, l) + 1, 0);\n}\nx = x << 1;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc359_c_Java",
+    "complexity": 4,
+    "total_token_count": 252,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nlong Sx= scanner.nextLong();\nlong Sy= scanner.nextLong();\nlong Tx= scanner.nextLong();\nlong Ty= scanner.nextLong();\nlong cornerSx = (Sx>=0)? (Sx-Sy%2)/2*2+Sy%2 : ((Sx-1)-Sy%2)/2*2+Sy%2;\nlong cornerTx = (Ty>=0)? (Tx-Ty%2)/2*2+Ty%2 : ((Tx-1)-Ty%2)/2*2+Ty%2;\nlong num = Math.abs(cornerTx-cornerSx);\nlong h =Math.abs(Sy-Ty);\nif(num<=h) {\nSystem.out.println(h);\n}else {\nSystem.out.println((h+num)/2);\n}\nscanner.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc229_c_Java",
+    "complexity": 5,
+    "total_token_count": 252,
+    "code": "import java.util.*;\npublic class Main_2 {\nstatic ArrayList<Cheese> list = new ArrayList<>();\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt(), w = sc.nextInt();\nfor (int i = 0; i < n; i++) {\nint a = sc.nextInt();\nint b = sc.nextInt();\nlist.add(new Cheese(a,b));\n}\nlong count = 0;\nCollections.sort(list, (c1,c2) -> (c2.a - c1.a));\nfor (Cheese c : list) {\nint take = Math.min(w,c.b);\ncount += (long)take * c.a;\nw-=take;\n}\nSystem.out.println(count);\n}\n}\nclass Cheese {\nint a,b;\npublic Cheese(int a, int b) {\nthis.a = a;\nthis.b = b;\n}\npublic String toString(){\nreturn a + \" \" + b;\n}\n}"
+  },
+  {
+    "subdirectory": "abc275_b_Java",
+    "complexity": 2,
+    "total_token_count": 253,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\nstatic int Mod =  998244353;\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong a = Long.parseLong(sc.next())%Mod;\nlong b = Long.parseLong(sc.next())%Mod;\nlong c = Long.parseLong(sc.next())%Mod;\nlong d = Long.parseLong(sc.next())%Mod;\nlong e = Long.parseLong(sc.next())%Mod;\nlong f = Long.parseLong(sc.next())%Mod;\nlong ans = 0;\nlong def = 0;\nans += (a * b) % Mod;\nans = (ans * c) % Mod;\ndef += (d * e) % Mod;\ndef = (def * f) %Mod;\nans = ans - def;\nif(ans < 0)ans = Mod - (ans * (-1));\nSystem.out.print(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc267_c_Java",
+    "complexity": 4,
+    "total_token_count": 254,
+    "code": "import java.io.File;\nimport java.io.PrintWriter;\nimport java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint k = sc.nextInt();\nlong[] arr = new long[n];\nfor( int i = 0; i < n; i++) {\narr[i] = sc.nextInt();\n}\nlong summ = 0;\nlong subsum = 0;\nfor (int i = 1; i <= k; i++) {\nsubsum += arr[i-1]*i;\nsumm += arr[i-1];\n}\nlong max = subsum;\nfor (int i = k; i < n; i++) {\nsubsum = subsum-summ+arr[i]*k;\nsumm += arr[i]-arr[i-k];\nmax = Math.max(max, subsum);\n}\nSystem.out.println(max);\n}\n}"
+  },
+  {
+    "subdirectory": "abc313_c_Java",
+    "complexity": 6,
+    "total_token_count": 254,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint n = in.nextInt();\nlong[] A = new long[n];\nlong[] B = new long[n];\nlong sum = 0;\nfor (int i = 0; i < n; i++) {\nA[i] = in.nextInt();\nsum += A[i];\n}\nArrays.sort(A);\nArrays.fill(B, sum / n);\nfor (int i = 0; i < sum % n; i++) {\nB[n - 1 - i]++;\n}\nlong res = 0;\nfor (int i = 0; i < n; i++) {\nres += Math.abs(A[i] - B[i]);\n}\nSystem.out.println(res / 2);\n}\n}\nclass Pair {\npublic int first;\npublic char second;\npublic Pair() {\n}\npublic Pair(int first, char second) {\nthis.first = first;\nthis.second = second;\n}\n}"
+  },
+  {
+    "subdirectory": "abc349_d_Java",
+    "complexity": 5,
+    "total_token_count": 256,
+    "code": "import java.util.Scanner;\nimport java.util.ArrayList;\nimport java.util.List;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong L = sc.nextLong();\nlong R = sc.nextLong();\nList<List<Long>> ans = new ArrayList<>();\nwhile (L < R) {\nlong i = 0;\nwhile (L % (1L << (i + 1)) == 0 && L + (1L << (i + 1)) <= R) {\ni++;\n}\nList<Long> range = new ArrayList<>();\nrange.add(L);\nrange.add(L + (1L << i));\nans.add(range);\nL += (1L << i);\n}\nSystem.out.println(ans.size());\nfor (List<Long> range : ans) {\nSystem.out.println(range.get(0) + \" \" + range.get(1));\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc319_a_Java",
+    "complexity": 1,
+    "total_token_count": 256,
+    "code": "import java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.util.*;\npublic class Main_2{\npublic static void main(String[] args) throws Exception {\nMap<String,Integer> mp = new HashMap<>();\nmp.put(\"tourist\",3858);\nmp.put(\"ksun48\",3679);\nmp.put(\"Benq\",3658);\nmp.put(\"Um_nik\",3648);\nmp.put(\"apiad\",3638);\nmp.put(\"Stonefeang\",3630);\nmp.put(\"ecnerwala\",3613);\nmp.put(\"mnbvmar\",3555);\nmp.put(\"newbiedmy\",3516);\nmp.put(\"semiexp\",3481);\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nString name = br.readLine();\nSystem.out.println(mp.get(name));\n}\n}"
+  },
+  {
+    "subdirectory": "abc318_b_Java",
+    "complexity": 7,
+    "total_token_count": 257,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String args[]) {\nint n = 0;\nint a = 0;\nint b = 0;\nint c = 0;\nint d = 0;\nint ans = 0;\nboolean[][] g = new boolean[100][100];\nScanner sc = new Scanner(System.in);\nn = sc.nextInt();\nfor (int k = 0; k < n; k++) {\na = sc.nextInt();\nb = sc.nextInt();\nc = sc.nextInt();\nd = sc.nextInt();\nfor (int i = a; i < b; i++) {\nfor (int j = c; j < d; j++) {\ng[i][j] = true;\n}\n}\n}\nfor (int i = 0; i < 100; i++) {\nfor (int j = 0; j < 100; j++) {\nif (g[i][j] == true) {\nans++;\n}\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc309_c_Java",
+    "complexity": 4,
+    "total_token_count": 257,
+    "code": "import java.util.Arrays;\nimport java.util.Comparator;\nimport java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint k = sc.nextInt();\nlong total = 0;\nlong ans = 0;\nint[][] arr = new int[n][2];\nfor(int i = 0; i < n; i++) {\narr[i][0] = sc.nextInt();\narr[i][1] = sc.nextInt();\ntotal += arr[i][1];\n}\nArrays.sort(arr, Comparator.comparingInt(a -> a[0]));\nfor(int i = 0; i < n; i++) {\nif(total > k) {\ntotal -= arr[i][1];\nans = arr[i][0];\n}else {\nbreak;\n}\n}\nSystem.out.println(ans + 1);\n}\n}"
+  },
+  {
+    "subdirectory": "arc179_a_Java",
+    "complexity": 5,
+    "total_token_count": 259,
+    "code": "import java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.Comparator;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint n = scan.nextInt();\nint k = scan.nextInt();\nList<Integer> a = new ArrayList<>();\nlong sum = 0;\nfor (int i = 0; i < n; i++) {\nint tmp =scan.nextInt();\na.add(tmp);\nsum += tmp;\n}\nif (k > 0) {\nCollections.sort(a, Comparator.naturalOrder());\n} else {\nif(sum >= k) {\nCollections.sort(a, Comparator.reverseOrder());\n}else{\nSystem.out.println(\"No\");\nreturn;\n}\n}\nSystem.out.println(\"Yes\");\nfor (Integer integer : a) {\nSystem.out.print(integer + \" \");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc357_d_Java",
+    "complexity": 6,
+    "total_token_count": 260,
+    "code": "import java.util.*;\npublic class Main {\nstatic Scanner sc = new Scanner(System.in);\nstatic long m = 998244353;\nprivate static long mod(long a) { return ((a % m) + m) % m; }\nprivate static long mul(long a, long b) { return mod(mod(a) * mod(b)); }\nprivate static long mexp(long a, long p) {\nlong res = 1;\nwhile(p > 0) { if((p & 1) == 1) res = mul(res, a); a = mul(a, a); p >>= 1; }\nreturn res;\n}\npublic static void main(String[] args) {\nlong n = sc.nextLong(); int len = String.valueOf(n).length();\nlong req = mexp(10, len);\nlong num = mexp(req, n) - 1, den = mexp(req - 1, m - 2);\nSystem.out.println(mul(n, mul(num, den)));\n}\n}"
+  },
+  {
+    "subdirectory": "arc140_b_Java",
+    "complexity": 8,
+    "total_token_count": 260,
+    "code": "import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint n = in.nextInt();\nString s = in.next();\nList<Integer> list = new ArrayList<>();\nfor(int i = 1; i < n - 1; i++){\nif(s.charAt(i) == 'R'){\nint l = i;\nwhile(l - 1 >= 0 && s.charAt(l - 1) == 'A'){\nl --;\n}\nint r = i;\nwhile(r + 1 < n && s.charAt(r + 1) == 'C'){\nr ++;\n}\nlist.add(Math.min(i - l, r - i));\n}\n}\nint sum = 0;\nfor(int e : list){\nsum += e;\n}\nSystem.out.println(Math.min(2*list.size(), sum));\nin.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc328_c_Java",
+    "complexity": 6,
+    "total_token_count": 261,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint q = sc.nextInt();\nchar[] s = sc.next().toCharArray();\nint[] ss = new int[n+1];\nss[0] = 0;\nss[1] = 0;\nfor (int i = 1; i < n; i++) {\nif(s[i]==s[i-1]) {\nss[i+1] = ss[i]+1;\n}else {\nss[i+1] = ss[i];\n}\n}\nfor (int i = 0; i < q; i++) {\nint l = sc.nextInt()-1;\nint r = sc.nextInt()-1;\nint ans = ss[r+1] - ss[l];\nif(l>0) {\nif(s[l]==s[l-1])ans--;\n}\nSystem.out.println(ans);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc237_c_Java",
+    "complexity": 8,
+    "total_token_count": 262,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String [] args) {\nScanner sc = new Scanner(System.in);\nString s = sc.next();\nint x = 0;\nfor(int i = 0; i < s.length(); i++) {\nif(s.charAt(i) =='a') {\nx++;\n}else break;\n}\nint y = 0;\nfor(int i = 0; i < s.length(); i++) {\nif(s.charAt(s.length()-i-1) =='a') {\ny++;\n}else break;\n}\nif(x > y) {\nSystem.out.println(\"No\");\nreturn ;\n}\nfor(int i = x; i < (s.length()-y); i++){\nif(s.charAt(i) != s.charAt(x +s.length()-y-1-i)){\nSystem.out.println(\"No\");\nreturn;\n}\n}\nSystem.out.println(\"Yes\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc241_b_Java",
+    "complexity": 5,
+    "total_token_count": 264,
+    "code": "import java.util.*;\npublic class Main_1 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nString row1 = scan.nextLine();\nString row2 = scan.nextLine();\nString row3 = scan.nextLine();\nString n = row1.split(\" \")[0];\nString m = row1.split(\" \")[1];\nString[] arr1 = row2.split(\" \");\nString[] arr2 = row3.split(\" \");\nint count = 0;\nok : for( int i = 0 ; i < arr2.length ; i++) {\nfor( int j = 0 ; j<arr1.length ; j++) {\nif( arr2[i].equals(arr1[j])) {\ncount++;\narr1[j] = \"\";\ncontinue ok;\n}\n}\n}\nif(count==Integer.parseInt(m)) {\nSystem.out.println(\"Yes\");\n}else {\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc229_a_Java",
+    "complexity": 8,
+    "total_token_count": 265,
+    "code": "import java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.nio.Buffer;\nimport java.util.StringTokenizer;\npublic class Main_1 {\npublic static void main(String[] args) throws IOException {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nint count = 0;\nString s = br.readLine();\ns += br.readLine();\nfor(char c: s.toCharArray()){\nif(c == '#'){\ncount++;\n}\n}\nif(count == 2 && ((s.charAt(1) == '#' && s.charAt(2) == '#') ||(s.charAt(0) == '#' && s.charAt(3) == '#') )){\nSystem.out.println(\"No\");\n} else {\nSystem.out.println(\"Yes\");\n}\nbr.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc289_c_Java",
+    "complexity": 7,
+    "total_token_count": 266,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint N = in.nextInt();\nint M = in.nextInt();\nint[] C = new int[M];\nint[] a = new int[M];\nfor(int i=0;i<M;i++){\nC[i] = in.nextInt();\nfor(int j=0;j<C[i];j++){\nint num = in.nextInt();\nnum--;\na[i] |= (1<<num);\n}\n}\nint count =0;\nfor(int combination=0; combination < (1<<M); combination++){\nint sumUnion = 0;\nfor(int i=0; i<M; i++){\nif((combination>>i & 1) == 1 ){\nsumUnion |= a[i];\n}\n}\nif(sumUnion == (1<<N) - 1){\ncount++;\n}\n}\nSystem.out.print(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc342_c_Java",
+    "complexity": 6,
+    "total_token_count": 267,
+    "code": "import java.util.*;\npublic class Main{\nstatic String s,t,t1;\nstatic char c,d;\nstatic int n;\nstatic StringBuilder ans;\npublic static void main(String[]args){\nScanner sc=new Scanner(System.in);\nn=sc.nextInt();\ns=sc.next();\nchar a[]=s.toCharArray();\nint q=sc.nextInt();\nchar change[]=new char[26];\nfor(int i=0;i<26;i++){\nchange[i]=(char)(i+'a');\n}\nwhile(q-->0){\nt=sc.next();\nt1=sc.next();\nc=t.charAt(0);\nd=t1.charAt(0);\nfor(int i=0;i<26;i++){\nif(change[i]==c)change[i]=d;\n}\n}\nfor(int i=0;i<n;i++){\nSystem.out.print(change[a[i]-'a']);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc356_b_Java",
+    "complexity": 7,
+    "total_token_count": 268,
+    "code": "import java.util.Scanner;\npublic class Main_3\n{\npublic static void main(String[] args)\n{\nScanner sc = new Scanner(System.in) ;\nint N = sc.nextInt();\nint M = sc.nextInt();\nint A[] = new int[M];\nfor(int j=0;j<M;j++)\n{\nA[j] = sc.nextInt();\n}\nint X[][] = new int[N][M];\nfor(int i=0;i<N;i++)\n{\nfor(int j=0;j<M;j++)\n{\nX[i][j]=sc.nextInt();\n}\n}\nString hantei = \"Yes\";\nint sum[] = new int[M];\nfor(int j=0;j<M;j++)\n{\nfor(int i=0;i<N;i++)\n{\nsum[j]+=X[i][j];\n}\nif(A[j]>sum[j])\n{\nhantei = \"No\";\nbreak;\n}\n}\nSystem.out.println(hantei);\n}\n}"
+  },
+  {
+    "subdirectory": "abc238_b_Java",
+    "complexity": 3,
+    "total_token_count": 269,
+    "code": "import java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.HashSet;\nimport java.util.Scanner;\nimport java.util.Set;\npublic class Main_4 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint A[] = new int[N];\nSet<Integer> ans_set = new HashSet<>();\nint tmp = 0;\nans_set.add(360);\nfor(int i=0;i<N;i++) {\nA[i]=sc.nextInt();\ntmp=tmp+A[i];\nans_set.add(tmp%360);\n}\nArrayList<Integer> ans = new ArrayList<>(ans_set);\nint maekaku = 0;\nint max=0;\nCollections.sort(ans);\nfor(int kaku:ans) {\nmax=Math.max(Math.abs(maekaku-kaku), max);\nmaekaku=kaku;\n}\nSystem.out.println(max);\n}\n}"
+  },
+  {
+    "subdirectory": "abc322_c_Java",
+    "complexity": 8,
+    "total_token_count": 271,
+    "code": "import java.util.HashSet;\nimport java.util.Scanner;\npublic class Main_2{\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint M = sc.nextInt();\nint[] fireworks = new int[M];\nfor (int i = 0; i < M; i++) {\nfireworks[i] = sc.nextInt();\n}\nHashSet<Integer> set = new HashSet<>();\nfor (int num : fireworks) {\nset.add(num);\n}\nint[] result = new int[N + 1];\nfor (int i = 1; i <= N; i++) {\nif (set.contains(i))\nresult[i] = i;\n}\nint store = N;\nfor (int i = N - 1; i >= 1; i--) {\nif (result[i] == 0) result[i] = store;\nelse store = result[i];\n}\nfor (int i = 1; i <= N; i++) {\nSystem.out.println(result[i] - i);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc308_b_Java",
+    "complexity": 6,
+    "total_token_count": 273,
+    "code": "import java.util.ArrayList;\nimport java.util.LinkedList;\nimport java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nint N = scanner.nextInt();\nint M = scanner.nextInt();\nArrayList<String> list = new ArrayList<>();\nint[] price = new int[M];\nString[] strs = new String[N];\nfor(int i = 0; i < N; i++) {\nstrs[i] = scanner.next();\n}\nfor(int i = 0; i < M; i++) {\nString str = scanner.next();\nlist.add(str);\n}\nint default_price = scanner.nextInt();\nfor(int i = 0; i < M; i++) {\nprice[i] = scanner.nextInt();\n}\nint result = 0;\nfor(String key : strs) {\nint money = list.contains(key) ? price[list.indexOf(key)] : default_price;\nresult += money;\n}\nSystem.out.println(result);\n}\n}"
+  },
+  {
+    "subdirectory": "abc330_d_Java",
+    "complexity": 7,
+    "total_token_count": 274,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scan = new Scanner(System.in);\nint n = scan.nextInt();\nint[][] s = new int[n][n];\nint[] x = new int[n];\nint[] y = new int[n];\nfor(int i = 0; i < n; i++){\nString tmp = scan.next();\nfor(int j = 0; j < n; j++){\nif(tmp.charAt(j) == 'o'){\ns[i][j] = 1;\nx[i]++;\ny[j]++;\n}else{\ns[i][j] = 0;\n}\n}\n}\nlong cnt = 0;\nfor(int i = 0; i < n; i++){\nfor(int j = 0; j < n; j++){\nif(s[i][j] == 1){\ncnt += (x[i]-1)*(y[j]-1);\n}\n}\n}\nSystem.out.println(cnt);\n}\n}"
+  },
+  {
+    "subdirectory": "abc357_c_Java",
+    "complexity": 9,
+    "total_token_count": 274,
+    "code": "import java.util.*;\npublic class Main{\npublic static void main(String[] args){\nint n;\nScanner sc=new Scanner(System.in);\nn=sc.nextInt();\nint r=(int)Math.pow(3,n);\nchar[][] ans=new char[r][r];\nfor(int i=0;i<r;i++){\nfor(int j=0;j<r;j++){\nans[i][j]='#';\nif(i%3==1&&j%3==1) ans[i][j]='.';\nelse{\nfor (int k = 3; k <= r/3; k *= 3) {\nif (i/k%3 == 1 && j/k%3 == 1) {\nans[i][j]='.';\nbreak;\n}\n}\n}\n}\n}\nfor(int i=0;i<r-1;i++) System.out.println(new String(ans[i]));\nSystem.out.print(new String(ans[r-1]));\n}\n}"
+  },
+  {
+    "subdirectory": "arc140_a_Java",
+    "complexity": 7,
+    "total_token_count": 278,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt(), k = sc.nextInt();\nint ans = n;\nString s = sc.next();\nchar[] str = s.toCharArray();\nfor(int i = 1; i <= n; i++){\nint cnt = 0;\nif(n % i != 0){\ncontinue;\n}\nfor(int j = 0; j < i; j++){\nint[] cs = new int[26];\nfor(int m = 0; j + i * m < s.length(); m++){\ncs[str[j + i * m] - 'a']++;\n}\nint sum = 0;\nfor(int num : cs){\nsum += num;\n}\nsum -= Arrays.stream(cs).max().getAsInt();\ncnt += sum;\n}\nif(cnt <= k){\nans = Math.min(ans, i);\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "arc137_a_Java",
+    "complexity": 7,
+    "total_token_count": 279,
+    "code": "import java.util.*;\npublic class Main_1{\nstatic void bfs(long a, long b) {\nDeque<long[]> dq = new ArrayDeque<>();\ndq.add(new long[]{a, b});\nwhile (!dq.isEmpty()) {\nint size = dq.size();\nwhile (size-- > 0) {\nlong[] poll = dq.poll();\nif (gcd(poll[0], poll[1]) == 1) {\nSystem.out.println(Math.abs(poll[1] - poll[0]));\nreturn;\n}\ndq.add(new long[]{poll[0] + 1, poll[1]});\ndq.add(new long[]{poll[0], poll[1] - 1});\n}\n}\n}\nstatic long gcd(long a, long b) {\nreturn a == 0 ? b : gcd(b % a, a);\n}\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong a = sc.nextLong(), b = sc.nextLong();\nbfs(a, b);\n}\n}"
+  },
+  {
+    "subdirectory": "abc355_b_Java",
+    "complexity": 6,
+    "total_token_count": 280,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint M = sc.nextInt();\nList<Integer> A = new ArrayList<>();\nList<Integer> B = new ArrayList<>();\nList<Integer> C = new ArrayList<>();\nfor (int i = 0; i < N; i++)\nA.add(sc.nextInt());\nfor (int i = 0; i < M; i++)\nB.add(sc.nextInt());\nC.addAll(A);\nC.addAll(B);\nC.sort(Comparator.naturalOrder());\nfor (int i = 0; i < C.size() - 1; i++) {\nboolean b1 = A.contains(C.get(i));\nboolean b2 = A.contains(C.get(i + 1));\nif (b1 && b2) {\nSystem.out.println(\"Yes\");\nreturn;\n}\n}\nSystem.out.println(\"No\");\n}\n}"
+  },
+  {
+    "subdirectory": "abc224_b_Java",
+    "complexity": 8,
+    "total_token_count": 280,
+    "code": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\nimport java.util.Scanner;\npublic class Main{\npublic static void main(String[] args){\nScanner scan=new Scanner (System.in);\nint h=scan.nextInt();\nint w=scan.nextInt();\nint [][]ar2=new int[h][w];\nfor(int i=0;i<h;i++){\nfor(int j=0; j<w ;j++){\nar2[i][j]=scan.nextInt();\n}\n}\nString ans=\"Yes\";\nfor(int i=0;i<h;i++){\nfor(int j=0; j<w ;j++){\nif(i>0){\nif(i==j){\nif(ar2[i][j]+ar2[i-1][j-1]<=ar2[i][j-1]+ar2[i-1][j]){\ncontinue;\n}else {\nans=\"No\";\n}\n}\n}\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "arc151_c_Java",
+    "complexity": 7,
+    "total_token_count": 283,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main {\npublic static void main(String[] args) throws IOException {\nBufferedReader bf = new BufferedReader(new InputStreamReader(System.in));\nString[] s = bf.readLine().split(\" \");\nlong a=Long.parseLong(s[0]); int b=Integer.parseInt(s[1]);\nif(b==0) System.out.println(a%2==0?\"Aoki\":\"Takahashi\");\nelse{\nlong p=1,q=-1;\nlong sum=0;\nfor(int i=0; i<b; i++){\ns = bf.readLine().split(\" \");\nlong x=Long.parseLong(s[0]),y=Long.parseLong(s[1]);\nif(q==-1) sum^=x-1;\nelse if(q==y) sum^=1;\nq=y; p=x;\n}\nsum^=a-p;\nSystem.out.println(sum>0?\"Takahashi\":\"Aoki\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc253_c_Java",
+    "complexity": 7,
+    "total_token_count": 284,
+    "code": "import java.util.*;\nclass Main {\npublic static void main(String[] args){\nScanner scanner = new Scanner(System.in);\nint q=scanner.nextInt();\nNavigableMap<Integer,Integer> s =new TreeMap<>();\nfor(int i=0;i<q;i++){\nint t=scanner.nextInt();\nif(t==1){\nint x=scanner.nextInt();\nif(s.containsKey(x)){\ns.put(x,s.get(x)+1);\n} else{\ns.put(x,1);\n}\n} else if(t==2){\nint x=scanner.nextInt();\nint c=scanner.nextInt();\nif(s.containsKey(x)){\nif(s.get(x)<=c){\ns.remove(x);\n} else{\ns.put(x,s.get(x)-c);\n}\n}\n} else{\nint maxnum=s.lastEntry().getKey();\nint minnum=s.firstEntry().getKey();\nSystem.out.println(maxnum-minnum);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc247_b_Java",
+    "complexity": 9,
+    "total_token_count": 286,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) throws IOException {\nScanner sc = new Scanner(System.in);\nint t = sc.nextInt();\nString[] sar = new String[t*2];\nfor(int i=0; i<sar.length; i+=2) {\nsar[i] = sc.next();\nsar[i+1] = sc.next();\n}\nfor(int i=0; i<sar.length; i++) {\nif(sar[i].equals(\"\")) continue;\nString temp = sar[i];\nfor(int j=i+2; j<sar.length; j++) {\nif(temp.equals(sar[j])) {\nsar[j] = \"\";\nsar[i] = \"\";\n}\n}\n}\nString answer = \"Yes\";\nfor(int i=0; i<sar.length; i+=2) {\nif(sar[i].equals(\"\") && sar[i+1].equals(\"\")) {\nanswer=\"No\";\nbreak;\n}\n}\nSystem.out.println(answer);\n}\n}"
+  },
+  {
+    "subdirectory": "abc243_b_Java",
+    "complexity": 8,
+    "total_token_count": 289,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint[] car1 = new int[n];\nint[] car2 = new int[n];\nfor(int i=0; i<n; i++) {\ncar1[i] = Integer.parseInt(sc.next());\n}\nfor(int i=0; i<n; i++) {\ncar2[i] = Integer.parseInt(sc.next());\n}\nint cnt1 = 0;\nint cnt2 = 0;\nfor(int i=0; i<n; i++) {\nif(car1[i]==car2[i]) cnt1++;\n}\nfor(int i=0; i<n; i++) {\nfor(int j=0; j<n; j++) {\nif(car1[i]==car2[j]) {\ncnt2++;\nbreak;\n}\n}\n}\nSystem.out.println(cnt1);\nSystem.out.println(cnt2-cnt1);\n}\n}"
+  },
+  {
+    "subdirectory": "arc148_a_Java",
+    "complexity": 6,
+    "total_token_count": 292,
+    "code": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.StringTokenizer;\npublic class Main_4 {\npublic static void main(String[] args) throws IOException {\nfinal BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nfinal int n = Integer.parseInt(br.readLine());\nfinal StringTokenizer st_a = new StringTokenizer(br.readLine());\nbr.close();\nfinal long[] array_a = new long[n];\nfor (int i = 0; i < n; i++) {\narray_a[i] = Long.parseLong(st_a.nextToken());\n}\nlong g = 0;\nfor (int i = 0; i < n - 1; i++) {\ng = gcd(Math.abs(array_a[i] - array_a[i + 1]), g);\n}\nSystem.out.println(g != 1 ? 1 : 2);\n}\nstatic long gcd(long a, long b) {\nreturn b == 0 ? a : gcd(b, a % b);\n}\n}"
+  },
+  {
+    "subdirectory": "arc136_d_Java",
+    "complexity": 9,
+    "total_token_count": 293,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint[] arr = new int[n];\nfor(int i = 0 ; i < n ; i++){\narr[i] = sc.nextInt();\n}\nint[] f = new int[(int)1e6];\nfor(int i = 0 ; i < n ; i++){\nf[arr[i]]++;\n}\nfor(int p = 1 ; p < 1e6 ;p = p * 10){\nfor(int i = 0 ; i < 1e6 ;i++){\nif(i / p % 10 > 0){\nf[i] += f[i - p];\n}\n}\n}\nlong ans = 0;\nnext:for(int i = 0 ; i < n ; i++){\nint x = arr[i];\nans += f[999999 - x];\nfor(;x > 0 ; x /= 10){\nif(x % 10 > 4){\ncontinue next;\n}\n}\nans--;\n}\nSystem.out.println(ans / 2);\n}\n}"
+  },
+  {
+    "subdirectory": "abc301_b_Java",
+    "complexity": 8,
+    "total_token_count": 293,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args)\n{\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint[] a = new int[n];\nfor(int i = 0; i < n; i++) a[i] = sc.nextInt();\nList<Integer> ans = new ArrayList<>();\nans.add(a[0]);\nfor(int i = 1; i < n; i++){\nint tmp = a[i] - a[i - 1];\nif(tmp > 1){\nfor(int j = a[i - 1] + 1; j < a[i]; j++){\nans.add(j);\n}\nans.add(a[i]);\n} else if(tmp < 0){\nfor(int j = a[i - 1] - 1; j > a[i]; j--){\nans.add(j);\n}\nans.add(a[i]);\n} else {\nans.add(a[i]);\n}\n}\nfor(int num: ans){\nSystem.out.print(num + \" \");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc265_b_Java",
+    "complexity": 5,
+    "total_token_count": 295,
+    "code": "import java.net.InterfaceAddress;\nimport java.util.*;\npublic class Main_3\n{\npublic static int N;\npublic static int M;\npublic static long  T;\npublic static int[]A= new int[100009];\npublic static int[] booleanBonus = new int[100009];\npublic  static Scanner sc = new Scanner(System.in);\npublic static void main(String[] args)\n{\nN = sc.nextInt();\nM = sc.nextInt();\nT = sc.nextInt();\nfor(int i=1;i<=N-1;i++)A[i]=sc.nextInt();\nfor(int i=1;i<=M;i++)\n{\nint X,Y;\nX = sc.nextInt();\nY = sc.nextInt();\nbooleanBonus[X]=Y;\n}\nfor(int i=1;i<=N-1;i++)\n{\nT+=booleanBonus[i];\nif(T<=A[i])\n{\nSystem.out.print(\"No\");\nSystem.exit(0);\n}\nT-=A[i];\n}\nSystem.out.println(\"Yes\");\nSystem.exit(0);\n}\n}"
+  },
+  {
+    "subdirectory": "abc282_b_Java",
+    "complexity": 9,
+    "total_token_count": 295,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nint num = Integer.parseInt(scanner.next());\nint problem = Integer.parseInt(scanner.next());\nString[] score = new String[num];\nfor (int i = 0; i < num; i++) {\nscore[i] = scanner.next();\n}\nint count = 0;\nfor (int i = 0; i < num - 1; i++) {\nfor (int j = 0; j < num; j++) {\nboolean flg = true;\nif (i >= j) {\ncontinue;\n}\nString[] numbers1 = score[i].split(\"\");\nString[] numbers2 = score[j].split(\"\");\nfor (int k = 0; k < problem; k++) {\nif (numbers1[k].equals(\"o\")) {\ncontinue;\n} else {\nif (numbers2[k].equals(\"o\")) {\ncontinue;\n} else {\nflg = false;\nbreak;\n}\n}\n}\nif (flg) {\ncount++;\n}\n}\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc285_e_Java",
+    "complexity": 5,
+    "total_token_count": 296,
+    "code": "import java.io.BufferedInputStream;\nimport java.util.Scanner;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(new BufferedInputStream(System.in));\nint n = sc.nextInt();\nlong[] arr = new long[n];\nlong[] presum = new long[n + 1];\nfor (int i = 0; i < n; i++) {\narr[i] = sc.nextLong();\npresum[i + 1] = presum[i] + arr[i];\n}\nlong[] pack = new long[n + 1];\nfor (int i = 1; i <= n; i++) {\nint b = i - 1;\nlong val = 0;\nif (b % 2 == 0) {\nval = presum[b / 2] * 2;\n} else {\nval = presum[(b + 1) / 2] * 2 - arr[b / 2];\n}\nfor (int j = 0; j + i <= n; j++) {\npack[j + i] = Math.max(pack[j + i], pack[j] + val);\n}\n}\nSystem.out.println(pack[n]);\n}\n}"
+  },
+  {
+    "subdirectory": "abc341_d_Java",
+    "complexity": 6,
+    "total_token_count": 297,
+    "code": "import java.sql.PreparedStatement;\nimport java.util.*;\nimport java.io.*;\npublic class Main_2 {\nstatic BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nstatic PrintWriter pw = new PrintWriter(new OutputStreamWriter(System.out));\nstatic Scanner sc = new Scanner(System.in);\nstatic void cl() throws Exception{\nbr.close();\nsc.close();\npw.close();\n}\nstatic long gcd(long a, long b){\nreturn b == 0 ? a : gcd(b, a % b);\n}\npublic static void main(String[] args) throws Exception{\nlong x = sc.nextLong();\nlong y = sc.nextLong();\nlong k = sc.nextLong();\nlong c = x / gcd(x, y) * y;\nlong l = 0, r = (long) 2e18;\nwhile(l < r){\nlong mid = (l + r) / 2;\nif(k <= mid / x + mid / y - 2 * (mid / c)){\nr = mid;\n}else{\nl = mid + 1;\n}\n}\npw.print(l);\npw.flush();\ncl();\n}\n}"
+  },
+  {
+    "subdirectory": "abc281_b_Java",
+    "complexity": 9,
+    "total_token_count": 298,
+    "code": "import java.util.Scanner;\npublic class Main_3 {\npublic static void main(final String[] args) {\ntry (final Scanner sc = new Scanner(System.in)) {\nfinal String S = sc.next();\nif (S.length() != 8) {\nSystem.out.println(\"No\");\nreturn;\n}\nif (Character.isDigit(S.charAt(0)) || Character.isDigit(S.charAt(S.length() - 1))) {\nSystem.out.println(\"No\");\nreturn;\n}\nif (!(Character.isDigit(S.charAt(1)) && Character.isDigit(S.charAt(S.length() - 2)))) {\nSystem.out.println(\"No\");\nreturn;\n}\ntry {\nfinal int numS = Integer.parseInt(S.substring(1, S.length() - 1));\nif (100000 > numS || numS > 999999) {\nSystem.out.println(\"No\");\nreturn;\n}\n} catch (final NumberFormatException e) {\nSystem.out.println(\"No\");\nreturn;\n}\nSystem.out.println(\"Yes\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc355_d_Java",
+    "complexity": 6,
+    "total_token_count": 299,
+    "code": "import java.util.Comparator;\nimport java.util.Arrays;\nimport java.util.Scanner;\npublic class Main_4 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nlong result = 0;\nRange[] list = new Range[n+1];\nfor (int i=0; i<n; i++) {\nlist[i] = new Range(sc.nextInt(), sc.nextInt());\n}\nlist[n] = new Range(1000000001, 1000000001);\nArrays.sort(list, Comparator.comparingInt(value -> value.l));\nfor (int i=0; i<n; i++) {\nint left = i;\nint right = n + 1;\nint mid;\nwhile (right - left > 1) {\nmid = (left + right) / 2;\nif (list[mid].l <= list[i].r) {\nleft = mid;\n} else {\nright = mid;\n}\n}\nresult += left - i;\n}\nSystem.out.println(result);\n}\n}\nclass Range {\npublic int l;\npublic int r;\nRange(int l, int r) {\nthis.l = l;\nthis.r = r;\n}\n}"
+  },
+  {
+    "subdirectory": "abc358_c_Java",
+    "complexity": 10,
+    "total_token_count": 301,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N=sc.nextInt();\nint M=sc.nextInt();\nString[] S=new String[N];\nfor(int i=0;i<N;i++){\nS[i]=sc.next();\n}\nint ans=N;\nfor(int bit=0;bit<(1<<N);bit++){\nboolean[] exist=new boolean[M];\nint cnt=0;\nfor(int i=0;i<N;i++){\nif((bit>>i&1)==1){\ncnt++;\nfor(int j=0;j<M;j++){\nif(S[i].charAt(j)=='o'){\nexist[j]=true;\n}\n}\n}\n}\nboolean allExist=true;\nfor(int j=0;j<M;j++){\nif(!exist[j]){\nallExist=false;\nbreak;\n}\n}\nif(allExist){\nans=Math.min(ans,cnt);\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc336_d_Java",
+    "complexity": 5,
+    "total_token_count": 303,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\ntry(Scanner sc = new Scanner(System.in);) {\nint n = Integer.parseInt(sc.next());\nint[] a = new int[n];\nfor(int i = 0; i < n; i++) a[i] = Integer.parseInt(sc.next());\nint[] l = new int[n];\nint[] r = new int[n];\nl[0] = Math.min(a[0], 1);\nfor(int i = 1; i < n; i++) l[i] = Math.min(a[i], l[i - 1] + 1);\nr[n - 1] = Math.min(a[n - 1], 1);\nfor(int i = n - 2; i >= 0; i--) r[i] = Math.min(a[i], r[i + 1] + 1);\nint ans = 0;\nfor(int i = 0; i < n; i++) ans = Math.max(ans, Math.min(l[i], r[i]));\nSystem.out.println(ans);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc271_c_Java",
+    "complexity": 9,
+    "total_token_count": 303,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint N = Integer.parseInt(sc.next());\nint end = 0;\nint db = 0;\nint a = 0;\nTreeSet<Integer> set = new TreeSet<>();\nfor(int i = 0; i<N; i++){\na = Integer.parseInt(sc.next());\nif(set.contains(a)){\ndb++;\ncontinue;\n}\nset.add(a);\n}\nset.add(0);\nwhile(db > 1){\nif(!(set.contains(end + 1))){\ndb -= 2;\nset.add(end + 1);\n}\nset.remove(end);\nend++;\n}\nif(db == 1)set.add(1000000001);\nwhile(set.size() > 2){\nif(!(set.contains(end + 1))){\nset.pollLast();\nset.pollLast();\nset.add(end + 1);\n}\nset.remove(end);\nend++;\n}\nif(set.contains(end + 1)){\nend++;\n}\nSystem.out.println(end);\n}\n}"
+  },
+  {
+    "subdirectory": "arc176_b_Java",
+    "complexity": 4,
+    "total_token_count": 303,
+    "code": "import java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.io.PrintWriter;\npublic class Main_4 {\npublic static void main(String[] args) throws Exception {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nint t = Integer.parseInt(br.readLine());\nint[] x = new int[] {6, 2, 4, 8};\nPrintWriter pw = new PrintWriter(System.out);\nfor (int z = 0; z < t; z++) {\nString[] sa = br.readLine().split(\" \");\nlong n = Long.parseLong(sa[0]);\nlong m = Long.parseLong(sa[1]);\nlong k = Long.parseLong(sa[2]);\nif (k + 1 == m && n >= k) {\npw.println(0);\n} else {\nlong a = m - k;\nlong b = Math.max(n - k, 0);\nlong c = b / a;\nlong n2 = n - a * c;\nint p = (int) (n2 % 4);\npw.println(x[p]);\n}\n}\npw.flush();\n}\n}"
+  },
+  {
+    "subdirectory": "abc252_d_Java",
+    "complexity": 4,
+    "total_token_count": 306,
+    "code": "import java.util.*;\nimport java.io.*;\nclass Main {\npublic static void main(String args[] ) throws Exception {\nBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nint n = Integer.parseInt(br.readLine());\nStringTokenizer st = new StringTokenizer(br.readLine());\nint[] a = new int[n];\nArrays.setAll(a, i->Integer.parseInt(st.nextToken()));\nMap<Integer, Integer> freq = new TreeMap<>();\nfor(int x:a)\nfreq.put(x, freq.getOrDefault(x, 0) + 1);\nlong ans = n * (n - 1L) / 2L * (n - 2L) / 3L, copy = 0L;\nint l = freq.size();\nfor(int x:freq.values()) {\ncopy += x * (x - 1L) / 2L * (n - x);\nif(x >= 3)\ncopy += x * (x - 1L) / 2L * (x - 2L) / 3L;\n}\nSystem.out.println(ans - copy);\n}\n}"
+  },
+  {
+    "subdirectory": "abc261_d_Java",
+    "complexity": 7,
+    "total_token_count": 307,
+    "code": "import java.util.Scanner;\npublic class Main_1 {\npublic static void main(String[] args) {\nScanner in = new Scanner(System.in);\nint n = in.nextInt();\nint m = in.nextInt();\nint[] sc = new int[n];\nint[] bon = new int[n + 1];\nfor (int i = 0; i < n; i++) {\nsc[i] = in.nextInt();\n}\nfor (int i = 0; i < m; i++) {\nbon[in.nextInt()] = in.nextInt();\n}\nlong[][] dp = new long[n + 1][n + 1];\nlong ans = 0;\nfor (int i = 1; i <= n; i++) {\nfor (int j = 0; j <= n; j++) {\nif (j == 0){\ndp[i][j] = ans;\n}\nelse if (j > i) break;\nelse{\ndp[i][j] = dp[i - 1][j - 1] + sc[i - 1] + bon[j];\nans = Math.max(ans, dp[i][j]);\n}\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc306_c_Java",
+    "complexity": 10,
+    "total_token_count": 307,
+    "code": "import java.io.*;\nimport java.math.BigInteger;\nimport java.util.*;\nclass Main{\nstatic int arr[];\npublic static void main(String[] args) {\nac in=new ac();\nint n=in.nextInt();\narr=new int[n+1];\nfor(int i=0;i<3*n;i++){\nint tmp=in.nextInt();\narr[tmp]++;\nif(arr[tmp]==2)in.print(tmp+\" \");\n}\nin.flush();\n}\n}\nclass ac extends PrintWriter {\nBufferedReader br;\nStringTokenizer st;\nac() {\nthis(System.in, System.out);\n}\nac(InputStream i, OutputStream o) {\nsuper(o);\nbr = new BufferedReader(new InputStreamReader(i));\n}\nString next() {\nwhile (st == null || !st.hasMoreTokens()) {\ntry {\nst = new StringTokenizer(br.readLine());\n} catch (IOException e) {\ne.printStackTrace();\n}\n}\nreturn st.nextToken();\n}\nint nextInt() {\nreturn Integer.parseInt(next());\n}\n}"
+  },
+  {
+    "subdirectory": "abc334_b_Java",
+    "complexity": 10,
+    "total_token_count": 307,
+    "code": "import java.util.*;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nlong a = sc.nextLong();\nlong m = sc.nextLong();\nlong l = sc.nextLong();\nlong r = sc.nextLong();\nlong d = 0-a;\nl+=d;\nr+=d;\nlong ans = 0;\nif(r>0 && l<0) {\nans+=r/m;\nans+=Math.abs(l)/m;\nans++;\n}else if(r>0 && l>0) {\nans+=r/m;\nans-=l/m;\nif(l%m==0) {\nans++;\n}\n}else if(r<0 && l<0) {\nlong tr = -1*l;\nlong tl = -1*r;\nans+=tr/m;\nans-=tl/m;\nif(tl%m==0) {\nans++;\n}\n}else if(r==0){\nans+=Math.abs(l)/m;\nans++;\n}else {\nans+=r/m;\nans++;\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc262_b_Java",
+    "complexity": 10,
+    "total_token_count": 308,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nint M = sc.nextInt();\nsc.nextLine();\nboolean[][] data = new boolean[N][N];\nfor (int i = 0; i < N; i++) {\nfor (int k = 0; k < N; k++) {\ndata[i][k] = false;\n}\n}\nfor (int i = 0; i < M; i++) {\nint U = sc.nextInt();\nint V = sc.nextInt();\ndata[U - 1][V - 1] = true;\ndata[V - 1][U - 1] = true;\nsc.nextLine();\n}\nsc.close();\nint count = 0;\nfor (int i = 0; i < N; i++) {\nfor (int k = i; k < N; k++) {\nif (data[i][k]) {\nfor (int n = k; n < N; n++) {\nif (data[k][n] && data[n][i]) {\ncount += 1;\n}\n}\n}\n}\n}\nSystem.out.println(count);\n}\n}"
+  },
+  {
+    "subdirectory": "abc325_b_Java",
+    "complexity": 6,
+    "total_token_count": 310,
+    "code": "import java.util.*;\npublic class Main_3 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nlong[] w = new long[n];\nlong[] x = new long[n];\nfor(int i = 0; i<n; i++){\nw[i] = sc.nextLong();\nx[i] = sc.nextLong();\n}\nlong[] suffix = new long[25];\nfor(int i = 0; i<n; i++){\nsuffix[(int)(x[i] + 9)%24] += w[i];\nsuffix[(int)(x[i]+18)%24] -= w[i];\nif(x[i] > 5 && x[i]<15)suffix[0] += w[i];\n}\nlong[] arr = new long[25];\nlong ans = suffix[0];\narr[0] = suffix[0];\nfor(int i=1;i<25; i++){\narr[i] = arr[i-1] + suffix[i];\nans = Math.max(ans, arr[i]);\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "abc283_f_Java",
+    "complexity": 8,
+    "total_token_count": 312,
+    "code": "import java.util.*;\nimport java.lang.Math.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = Integer.parseInt(sc.next());\nint[] p = new int[n];\nint[] ans = new int[n];\nfor(int i=0;i<n;i++){\np[i] = Integer.parseInt(sc.next());\nans[i]=999999;\n}\nfor(int i=0;i<n;i++){\nfor(int j=1;j<=ans[i];j++){\nif(i-j>=0){\nans[i]=Math.min(ans[i],j+Math.abs(p[i]-p[i-j]));\n}\nif(i+j<n){\nans[i]=Math.min(ans[i],j+Math.abs(p[i]-p[i+j]));\n}\n}\n}\nfor(int i=0;i<n;i++){\nif(i!=0){\nSystem.out.print(\" \");\n}\nSystem.out.print(ans[i]);\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc347_c_Java",
+    "complexity": 6,
+    "total_token_count": 312,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint N = Integer.parseInt(sc.next());\nint A = Integer.parseInt(sc.next());\nint B = Integer.parseInt(sc.next());\nTreeSet<Integer> days = new TreeSet<>();\nfor (int i = 0; i < N; i++) {\nint d = Integer.parseInt(sc.next());\ndays.add(d % (A + B));\nif (d % (A + B) == 0) {\ndays.add(A + B);\n}\n}\nTreeSet<Integer> interval = new TreeSet<>();\nint i = 0;\nint y = 0;\nfor (int x: days) {\nif (i == 0) {\ny = x;\ni++;\n} else {\ninterval.add((x - y - 1) % (A + B));\ny = x;\n}\n}\ninterval.add((A + B) - days.last() + days.first() - 1);\nif (interval.last() >= B) {\nSystem.out.println(\"Yes\");\n} else {\nSystem.out.println(\"No\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc323_b_Java",
+    "complexity": 4,
+    "total_token_count": 314,
+    "code": "import java.util.ArrayList;\nimport java.util.List;\nimport java.util.Map;\nimport java.util.Map.Entry;\nimport java.util.Scanner;\nimport java.util.TreeMap;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString[] s = new String[n];\nMap<Integer, Integer> map = new TreeMap<Integer, Integer>();\nfor (int i = 0; i < s.length; i++) {\ns[i] = sc.next();\nint win = s[i].length() - s[i].replace(\"o\", \"\").length();\nmap.put(-win*1000+(i+1),i+1);\n}\nList<Entry<Integer, Integer>>list_entries = new ArrayList<Entry<Integer, Integer>>(map.entrySet());\nint i=0;\nfor(Entry<Integer, Integer>entry:list_entries) {\nSystem.out.print(entry.getValue());\ni++;\nif(i==map.size()) {\nSystem.out.println();\n} else {\nSystem.out.print(\" \");\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc328_b_Java",
+    "complexity": 14,
+    "total_token_count": 316,
+    "code": "import java.util.Scanner;\npublic class Main {\nstatic int[] nums = {1,2,3,4,5,6,7,8,9,11,22,33,44,55,66,77,88,99};\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nint n = scanner.nextInt();\nint ct = 0;\nfor (int i=1;i<=n;i++) {\nint val = scanner.nextInt();\nif (containsNumber(i)) {\nString s = i+\"\";\nif (s.length()==2 && i<=val) {\nct += 2;\n} else if (s.length()==2 && Integer.parseInt(s.substring(0,1))<=val) {\nct++;\n} else if (s.length()==1 && Integer.parseInt(i+\"\"+i)<=val) {\nct += 2;\n} else if (s.length()==1 && i<=val) {\nct++;\n}\n}\n}\nSystem.out.println(ct);\n}\nstatic boolean containsNumber(int num) {\nfor (int i: nums) {\nif (i==num)\nreturn true;\n}\nreturn false;\n}\n}"
+  },
+  {
+    "subdirectory": "abc290_e_Java",
+    "complexity": 7,
+    "total_token_count": 317,
+    "code": "import java.util.*;\npublic class Main_2 {\nprivate static Scanner scanner = new Scanner(System.in);\npublic static void main(String[] args) {\nint n = scanner.nextInt();\nint[] a = new int[n];\nList<Integer>[] cord = new List[n + 1];\nfor (int i = 0; i <= n; i++) {\ncord[i] = new ArrayList<>();\n}\nfor (int i = 0; i < n; i++) {\na[i] = scanner.nextInt();\nif (i < n / 2) {\ncord[a[i]].add(i);\n}else {\ncord[a[i]].add(n - 1 - i);\n}\n}\nlong res = 0;\nfor (int len = 2; len <= n; len++) {\nres = res + (len / 2) * 1l * (n - len + 1);\n}\nfor (int i = 0; i <= n; i++) {\nList<Integer> list = cord[i];\nCollections.sort(list);\nlong ans = 0;\nfor (int j = 0; j < list.size(); j++) {\nres -= ans;\nans += list.get(j) + 1;\n}\n}\nSystem.out.println(res);\n}\n}"
+  },
+  {
+    "subdirectory": "arc172_c_Java",
+    "complexity": 9,
+    "total_token_count": 318,
+    "code": "import java.io.*;\nimport java.util.*;\npublic class Main {\nstatic Scanner sc;\nstatic PrintWriter out;\npublic static void main(String[] args) {\nsc = new Scanner(System.in);\nout = new PrintWriter(System.out);\nnew Main().solve();\nout.flush();\n}\npublic void solve() {\nint n = sc.nextInt();\nchar[] s = sc.next().toCharArray();\nif(s[0] == 'B') {\ns = new String(s)\n.replaceAll(\"A\", \"C\")\n.replaceAll(\"B\", \"A\")\n.replaceAll(\"C\", \"B\").toCharArray();\n}\nString t = new String(s);\nint cur = 0;\nint res = 1;\nint[] l = new int[n];\nfor(int i=1; i<n; i++) {\nif(s[i] == 'A') {\ncur++;\n} else {\ncur--;\n}\nl[i] = cur;\nif(s[i] == 'B' && (l[i]==-1 || l[i]==0 || l[i]==-2)) {\nres++;\n}\n}\nout.println(res);\n}\n}"
+  },
+  {
+    "subdirectory": "abc256_c_Java",
+    "complexity": 11,
+    "total_token_count": 318,
+    "code": "import java.util.*;\nimport static java.lang.System.out;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint h1 = sc.nextInt();\nint h2 = sc.nextInt();\nint h3 = sc.nextInt();\nint w1 = sc.nextInt();\nint w2 = sc.nextInt();\nint w3 = sc.nextInt();\nlong cnt = 0;\nfor(int i = 1;i <= 30;i++){\nfor(int j = 1;j <= 30;j++){\nfor(int k = 1;k <= 30;k++){\nfor(int l = 1;l <= 30;l++){\nint a = h1 - (i + j);\nint b = h2 - (k + l);\nint c = w1 - (i + k);\nint d = w2 - (j + l);\nif(a >= 1 && b >= 1 && c >= 1 && d >= 1){\nif((h3 - (c + d) == w3 - (a + b)) && (h3 - (c + d) >= 1))cnt++;\n}\n}\n}\n}\n}\nout.println(cnt);\n}\n}"
+  },
+  {
+    "subdirectory": "abc332_c_Java",
+    "complexity": 7,
+    "total_token_count": 320,
+    "code": "import java.io.*;\nimport java.util.StringTokenizer;\npublic class Main_1 {\npublic static void main(String[] args) throws IOException {\nBufferedReader r = new BufferedReader(new InputStreamReader(System.in));\nPrintWriter pw = new PrintWriter(System.out);\nStringTokenizer st = new StringTokenizer(r.readLine());\nint n = Integer.parseInt(st.nextToken());\nint maxM = Integer.parseInt(st.nextToken());\nString s = r.readLine();\nint m = maxM;\nint maxLogo = 0;\nint l = 0;\nfor (int i = 0; i < n; i++) {\nint curNum = Character.getNumericValue(s.charAt(i));\nif (curNum == 0) {\nm = maxM;\nl = maxLogo;\n} else if (curNum == 1) {\nif (m == 0) {\nif (l == 0) {\nmaxLogo++;\n} else {\nl--;\n}\n} else {\nm--;\n}\n} else {\nif (l == 0) {\nmaxLogo++;\n} else {\nl--;\n}\n}\n}\nSystem.out.println(maxLogo);\npw.close();\n}\n}"
+  },
+  {
+    "subdirectory": "abc298_d_Java",
+    "complexity": 5,
+    "total_token_count": 320,
+    "code": "import java.util.Deque;\nimport java.util.LinkedList;\nimport java.util.Scanner;\npublic class Main_5 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = (int) 1e6;\nlong[] mi = new long[n];\nint mod = 998244353;\nmi[0] = 1;\nfor (int i = 1; i < n; i++) {\nmi[i] = mi[i - 1] * 10;\nmi[i] %= mod;\n}\nlong ans = 1;\nDeque<Integer> deque = new LinkedList<>();\ndeque.push(1);\nint q = sc.nextInt();\nfor (int i = 0; i < q; i++) {\nint t = sc.nextInt();\nif (t == 1) {\nint d = sc.nextInt();\ndeque.push(d);\nans = ans * 10 + d;\nans %= mod;\n} else if (t == 2) {\nint size = deque.size();\nint d = deque.pollLast();\nans -= d * mi[size - 1];\nans += mod;\nans %= mod;\n} else {\nSystem.out.println((ans + mod) % mod);\n}\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc354_d_Java",
+    "complexity": 6,
+    "total_token_count": 320,
+    "code": "import java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint A = sc.nextInt();\nint B = sc.nextInt();\nint C = sc.nextInt();\nint D = sc.nextInt();\nlong dx = C - A;\nlong dy = D - B;\nlong area = 0;\nint[] even = {2,1,0,1};\nint[] odd = {1,2,1,0};\narea += (dx / 4) * 4 * dy;\nint right = (int) (C - dx % 4);\nfor (int i = right; i < C; i++) {\nif((i + 1000000000) % 4 == 0 || (i + 1000000000) % 4 == 1){\narea += dy / 4 * 6;\n}else{\narea += dy / 4 * 2;\n}\nfor(long j =D- (dy + 1000000000) % 4; j < D; j++){\nif(j % 2 == 0){\narea += even[(i + 1000000000) % 4];\n}else{\narea += odd[(i + 1000000000) % 4];\n}\n}\n}\nSystem.out.println(area);\n}\n}"
+  },
+  {
+    "subdirectory": "abc221_c_Java",
+    "complexity": 8,
+    "total_token_count": 325,
+    "code": "import java.util.Scanner;\nclass Main {\nstatic int max;\npublic static void main(String args[]) {\nScanner sc=new Scanner(System.in);\nchar[] ch=sc.next().toCharArray();\npermute(ch, 0, ch.length-1);\nSystem.out.println(max);\n}\nstatic void permute(char[] ch, int l, int r) {\nif(l==r) {\nfor(int i=1;i<ch.length;i++) {\nString s1=String.valueOf(ch).substring(0,i);\nString s2=String.valueOf(ch).substring(i);\nif(s1.charAt(0)!='0' && s2.charAt(0)!='0') {\nmax=Math.max(max, Integer.parseInt(s1)*Integer.parseInt(s2));\n}\n}\n}\nelse {\nfor(int i=l;i<=r;i++) {\nswap(ch, i, l);\npermute(ch, l+1, r);\nswap(ch, i, l);\n}\n}\n}\nstatic void swap(char[] ch, int i, int j) {\nchar temp=ch[i];\nch[i]=ch[j];\nch[j]=temp;\n}\n}"
+  },
+  {
+    "subdirectory": "abc300_f_Java",
+    "complexity": 8,
+    "total_token_count": 325,
+    "code": "import java.util.*;\npublic class Main {\nstatic int N = 300010;\nstatic int n, m,cnt;\nstatic long k;\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nn = sc.nextInt();\nm = sc.nextInt();\nk = sc.nextLong();\nString s = sc.next();\ns += s;\nint [] pre = new int [2 * n + 1];\nfor (int i = 1; i <= 2 * n ; ++i) {\nchar c = s.charAt(i - 1);\npre[i] = pre[i - 1] + (c == 'x' ? 1 : 0);\n}\nlong ret = k / pre[n] * n;\nint tmp = 0;\nm -= k / pre[n];\nk %= pre[n];\nfor(int l = 0,r = 0; r <= 2 * n; ){\nwhile(r <= 2 * n && pre[r] <= k + pre[l]) ++r;\nl++;\nif(m == 1)\ttmp = Math.max(tmp,Math.min(r,n) - l);\nelse if(m > 1)\ttmp = Math.max(tmp,r - l);\n}\nSystem.out.println(ret + tmp);\n}\n}"
+  },
+  {
+    "subdirectory": "abc274_c_Java",
+    "complexity": 4,
+    "total_token_count": 326,
+    "code": "import java.io.InputStreamReader;\nimport java.io.BufferedReader;\nimport java.io.IOException;\npublic class Main{\npublic static void main(String[] args){\nInputStreamReader input = new InputStreamReader(System.in);\nBufferedReader buff = new BufferedReader(input);\ntry {\nfinal int N = Integer.parseInt( buff.readLine());\nfinal int N_max = 2 * N + 2;\nint[] ans = new int[N_max];\nans[1] = 0;\nString[] str = buff.readLine().split(\" \");\nfor( int i = 1 ; i <= N ; i++){\nint a = Integer.parseInt(str[i-1]);\nans[2*i] = ans[a] + 1;\nans[2*i +1] = ans[a] + 1;\n}\nStringBuilder t = new StringBuilder();\nfor (int i = 1; i < N_max; i++) {\nt.append(ans[i]);\nt.append(\"\\n\");\n}\nSystem.out.print(t.toString());\nbuff.close();\n} catch (IOException e) {\nSystem.out.println(e.getMessage());\n}\n}\n}"
+  },
+  {
+    "subdirectory": "abc351_c_Java",
+    "complexity": 6,
+    "total_token_count": 329,
+    "code": "import java.util.Scanner;\nimport java.util.List;\nimport java.util.ArrayList;\npublic class Main\n{\npublic static void main(String[] args){\nArrayList<Integer> ball = new ArrayList<Integer>();\nScanner scan = new Scanner(System.in);\nint number = scan.nextInt();\nscan.nextLine();\nString inputs = scan.nextLine();\nString[] n = inputs.split(\" \");\nArrayList<Integer> inp = new ArrayList<Integer>();\nfor(int i= 0;i<n.length;i++){\ninp.add(Integer.parseInt(n[i]));\n}\nball.add(inp.get(0));\nfor(int k = 1; k<inp.size();k++){\nint addnumber = inp.get(k);\nif(ball.get(ball.size()-1) != addnumber){\nball.add(addnumber);\n}else{\nwhile(ball.get(ball.size()-1) == addnumber){\nball.remove(ball.size()-1);\naddnumber= addnumber+1;\nif(ball.size()==0){\nbreak;\n}\n}\nball.add(addnumber);\n}\n}\nSystem.out.println(ball.size());\n}\n}"
+  },
+  {
+    "subdirectory": "arc135_a_Java",
+    "complexity": 6,
+    "total_token_count": 329,
+    "code": "import java.util.*;\nimport java.io.*;\npublic class Main{\nstatic final int inf = Integer.MAX_VALUE / 2 ;\nstatic final int minf = inf * -1 ;\nstatic final String LF = \"\\n\" ;\nstatic final int mod = 998244353 ;\nstatic ArrayList<ArrayList<Integer>> G ;\nstatic HashMap<Long,Long> map ;\npublic static void main(String[] args) {\nScanner sc = new Scanner( System.in ) ;\nPrintStream ps = new PrintStream( System.out ) ;\nStringBuilder sb = new StringBuilder() ;\nlong X = sc.nextLong() ;\nmap = new HashMap<Long,Long>() ;\nfor ( long i = 1L ; i < 5L ; i++ ) map.put( i , i ) ;\nps.println( func( X ) ) ;\nsc.close() ;\nps.close() ;\n}\npublic static long func( long x ) {\nif ( map.containsKey( x ) ) return map.get( x ) ;\nlong res = ( ( func( floor( x ) ) % mod ) * ( func( ceil( x ) ) % mod ) ) % mod ;\nmap.put( x , res ) ;\nreturn res ;\n}\npublic static long floor( long x ) {\nreturn x / 2L ;\n}\npublic static long ceil( long x ) {\nreturn ( x + 1L ) / 2L ;\n}\n}"
+  },
+  {
+    "subdirectory": "abc251_b_Java",
+    "complexity": 10,
+    "total_token_count": 333,
+    "code": "import java.util.Scanner;\nimport java.util.TreeSet;\npublic class Main {\nstatic int N,W;\nstatic int[] A;\nstatic TreeSet<Integer> set = new TreeSet<>();\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nN = sc.nextInt();\nW = sc.nextInt();\nA = new int[N];\nfor(int i=0; i<N; i++) {\nA[i] = sc.nextInt();\nif(A[i]<W+1) set.add(A[i]);\n}\nsc.close();\nfor(int i=0; i<N; i++){\nfor(int j=i+1; j<N; j++){\nif(A[i]+A[j]<W+1) set.add(A[i]+A[j]);\n}\n}\nfor(int i=0; i<N; i++){\nfor(int j=i+1; j<N; j++){\nfor(int k=j+1; k<N; k++){\nif(A[i]+A[j]+A[k]<W+1) set.add(A[i]+A[j]+A[k]);\n}\n}\n}\nSystem.out.println(set.size());\n}\n}"
+  },
+  {
+    "subdirectory": "agc055_b_Java",
+    "complexity": 8,
+    "total_token_count": 333,
+    "code": "import java.util.*;\npublic class Main_1 {\npublic static void main(String[] args) throws Exception {\nScanner sc = new Scanner(System.in);\nint N = sc.nextInt();\nsc.nextLine();\nStringBuilder S = new StringBuilder(sc.nextLine());\nStringBuilder T = new StringBuilder(sc.nextLine());\nList<String> replacablePatterns = Arrays.asList(\"ABC\", \"BCA\", \"CAB\");\nfor (int i=S.length()-3; i>-1; i--) {\nif (S.length() < i+3) {\ncontinue;\n}\nif (replacablePatterns.contains(S.substring(i, i+3))) {\nS.delete(i, i+3);\n}\n}\nfor (int i=T.length()-3; i>-1; i--) {\nif (T.length() < i + 3) {\ncontinue;\n}\nif (replacablePatterns.contains(T.substring(i, i+3))) {\nT.delete(i, i+3);\n}\n}\nif (S.toString().contentEquals(T)) {\nSystem.out.println(\"YES\");\n} else {\nSystem.out.println(\"NO\");\n}\n}\n}"
+  },
+  {
+    "subdirectory": "arc137_b_Java",
+    "complexity": 6,
+    "total_token_count": 335,
+    "code": "import java.util.Scanner;\npublic class Main {\npublic static void main(String[] args)  {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nint a[] = new int[n];\nfor(int i = 0; i < n; i++) {\na[i] = sc.nextInt();\n}\nint maxDiff[] = new int[n];\nint minDiff[] = new int[n];\nint max = 0;\nint min = 0;\nfor(int i = 0; i < n; i++) {\nif(i == 0) {\nmaxDiff[i] = minDiff[i] = a[i] == 1 ? 1 : -1;\n}\nelse {\nif(a[i] == 0) {\nmaxDiff[i] = Math.max(-1, maxDiff[i - 1] - 1);\nminDiff[i] = Math.min(-1, minDiff[i - 1] - 1);\n}\nelse {\nmaxDiff[i] = Math.max(1, maxDiff[i - 1] + 1);\nminDiff[i] = Math.min(1, minDiff[i - 1] + 1);\n}\n}\nmax = Math.max(max, maxDiff[i]);\nmin = Math.min(min, minDiff[i]);\n}\nSystem.out.println(max - min + 1);\n}\n}"
+  },
+  {
+    "subdirectory": "abc348_b_Java",
+    "complexity": 7,
+    "total_token_count": 335,
+    "code": "import java.util.*;\npublic class Main {\npublic static void main(String[] args){\nScanner sc = new Scanner(System.in);\nint n = Integer.parseInt(sc.next());\nList<XY> xy = new ArrayList<XY>();\nfor(int i = 0; i < n; i++){\nxy.add(new XY(Integer.parseInt(sc.next()), Integer.parseInt(sc.next())));\n}\nsc.close();\nfor(int i = 0; i < n; i++){\nfloat farthestDist = 0;\nint farthestPoint = 0;\nfor(int j = 0; j < n; j++){\nfloat calc = (float)Math.sqrt((Math.pow(xy.get(i).x - xy.get(j).x, 2)) + (Math.pow(xy.get(i).y - xy.get(j).y, 2)));\nif(i == j){\n}\nelse if(farthestDist < calc){\nfarthestDist = calc;\nfarthestPoint = j+1;\n}\n}\nSystem.out.println(farthestPoint);\n}\n}\n}\nclass XY{\nint x;\nint y;\nXY(int x, int y){\nthis.x = x;\nthis.y = y;\n}\n}"
+  },
+  {
+    "subdirectory": "arc147_a_Java",
+    "complexity": 5,
+    "total_token_count": 335,
+    "code": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.Collections;\nimport java.util.PriorityQueue;\nimport java.util.StringTokenizer;\npublic class Main {\npublic static void main(String[] args) throws IOException {\nfinal BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nfinal int n = Integer.parseInt(br.readLine());\nfinal StringTokenizer st_a = new StringTokenizer(br.readLine());\nfinal int[] array_a = new int[n];\nfor (int i = 0; i < n; i++) {\narray_a[i] = Integer.parseInt(st_a.nextToken());\n}\nbr.close();\nfinal PriorityQueue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());\nint min = Integer.MAX_VALUE;\nfor (int a : array_a) {\nmin = Math.min(min, a);\nqueue.add(a);\n}\nint ans = 0;\nwhile (queue.size() > 1) {\nint m = queue.poll() % min;\nans++;\nif (m != 0) {\nqueue.add(m);\nmin = m;\n}\n}\nSystem.out.println(ans);\n}\n}"
+  },
+  {
+    "subdirectory": "arc180_a_Java",
+    "complexity": 6,
+    "total_token_count": 336,
+    "code": "import java.util.*;\npublic class Main {\npublic static long MOD = 1000000007;\npublic static void main(String[] args) {\nScanner sc = new Scanner(System.in);\nint n = sc.nextInt();\nString s = sc.next();\nlong ans = 1;\nlong length = 1;\nlong div = pow(2,MOD - 2);\nfor(int i = 0;i < n - 1;i++) {\nif(s.charAt(i) == s.charAt(i + 1)) {\nans = (length + 1L)/2 * ans % MOD;\nlength = 1;\n}else {\nlength++;\n}\n}ans = (length + 1L) /2  * ans % MOD;\nSystem.out.println(ans);\n}public static long pow(long a,long b) {\nString bs = Long.toBinaryString(b);\nlong[] pownum = new long[bs.length() + 1];\nlong ret = 1;\npownum[bs.length()] = a;\nfor(int i = bs.length() - 1;i >= 0;i--) {\nif(bs.charAt(i) == '1') {\nret =ret * pownum[i + 1] % MOD;\n}pownum[i] = pownum[i + 1] * pownum[i + 1] % MOD;\n}\nreturn ret;\n}\n}"
+  },
+  {
+    "subdirectory": "abc353_c_Java",
+    "complexity": 10,
+    "total_token_count": 337,
+    "code": "import java.util.Arrays;\nimport java.util.Scanner;\npublic class Main_2 {\npublic static void main(String[] args) {\nScanner scanner = new Scanner(System.in);\nint n = scanner.nextInt();\nint[] nums = new int[n];\nlong sum = 0;\nfor (int i = 0;i<n;i++) {\nnums[i] = scanner.nextInt();\nsum += nums[i];\n}\nArrays.sort(nums);\nsum = sum * (n-1);\nfor (int i = 0;i<n-1;i++) {\nint idx = binarySearch(nums, 100000000 - nums[i], i+1);\nsum -= (long) (n - idx) * 100000000;\n}\nSystem.out.println(sum);\n}\nprivate static int binarySearch(int[] nums, int target, int i) {\nint left = i;\nint right = nums.length-1;\nwhile (left < right) {\nint mid = (left + right) / 2;\nif (nums[mid] < target) {\nleft = mid + 1;\n} else if (nums[mid] >= target && (mid == i || nums[mid-1] < target)) {\nreturn mid;\n} else {\nright = mid;\n}\n}\nreturn nums[left] >= target ? left : left + 1;\n}\n}"
+  }
+]
