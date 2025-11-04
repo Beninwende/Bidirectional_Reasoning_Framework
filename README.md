@@ -2,13 +2,15 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This repository contains the code, data, and experimental results for the paper **"On Bidirectional Reasoning of LLMs for Software Engineering"** (SANER 2025). This research investigates whether fine-tuned Large Language Models (LLMs) genuinely understand their specialized tasks or merely replicate statistical patterns.
+This repository contains the code, data, and experimental results for the paper **"On Bidirectional Reasoning of LLMs for Software Engineering"**. This research investigates whether fine-tuned Large Language Models (LLMs) genuinely understand their specialized tasks or merely replicate statistical patterns.
 
 ## 🎯 Research Question
 
 **When fine-tuned on code transformation tasks, do LLMs genuinely understand what they are specialized to perform, or do they merely replicate statistical patterns?**
 
 We propose **bidirectional reasoning** as a test: if a model truly understands a task it was fine-tuned on, it should be able to perform its inverse without explicit reverse fine-tuning.
+
+![Workflow Diagram](workflow.png)
 
 ## 📦 Reproducibility
 
@@ -19,34 +21,15 @@ We propose **bidirectional reasoning** as a test: if a model truly understands a
 - **Test case execution reports** (hundreds of individual test reports) are not included due to their large size.
 - All evaluation scripts and code for dataset generation are included, enabling full reproduction of all experiments and results.
 
-## 🔑 Key Contributions
-
-### 1. Bidirectional Reasoning Framework (BRF)
-A principled methodology for evaluating semantic understanding in task-specialized LLMs. BRF tests whether models comprehend transformations or replicate patterns by assessing their ability to perform inverse transformations.
-
-### 2. Cognitive Specialization Phenomenon
-We document a systematic failure mode where standard fine-tuning produces models achieving **70-96% forward accuracy** yet **complete inability (0%) to reverse transformations syntactically**. Despite generating code that compiles and passes tests, models reproduce obfuscated inputs as output with **99-100% structural similarity**.
-
-### 3. Remediation Strategy Evaluation
-We investigate whether existing training methodologies can overcome cognitive specialization:
-- **Bidirectional Fine-Tuning (BFT)**: Enables bidirectional capabilities through explicit reverse supervision (57-80% reverse accuracy) but requires 2× data and degrades forward performance.
-- **Contrastive Fine-Tuning (CFT)**: Shows mixed results—emergent bidirectionality on lexical transformations (39-52% reverse vs. 0% baseline) but complete failure on structural and semantic transformations.
-
-## 📊 Main Findings
-
-- **Cognitive Specialization**: Fine-tuned models achieve 70-96% forward accuracy but 0% reverse capability with verbatim reproduction of obfuscated patterns.
-- **Transformation Complexity Hierarchy**: Strong negative correlation (Spearman's ρ = -0.91) between transformation complexity and model performance.
-- **Error Profile**: 69% of failures are semantic (code compiles but produces incorrect outputs), 27% runtime errors, 4% compilation failures.
-- **CFT Emergence**: Proof-of-concept that emergent bidirectionality is achievable in principle (39-52% on lexical tasks) but current approaches fail on complex transformations.
 
 ## 📁 Repository Structure
 
 ```
 Bidirectional_Study/
 │
-├── Experiment1/                     # Standard Fine-Tuning (SFT)
+├── Experiment1/                     # Standard Fine-Tuning (SFT & BFT)
 │   ├── API_Model_fine_tuning.py     # OpenAI API fine-tuning
-│   ├── open-source-model-fine-tuning.py  # LoRA fine-tuning
+│   ├── open-source-model-fine-tuning.py  # LoRA fine-tuning 
 │   ├── Auto-Correction_Loop.py      # Iterative correction
 │   ├── compare_codebleu.py          # CodeBLEU evaluation
 │   ├── Test_Cases_Evaluation.py     # Functional correctness testing
@@ -101,7 +84,7 @@ Evaluates baseline fine-tuning performance on forward obfuscation tasks:
 - `Test_Cases_Evaluation.py`: Functional correctness testing
 
 ### Experiment 3: Prompting Strategies and Readability
-**Location**: `Experiment3/`
+**Location**: `Experiment2/`
 
 Investigates whether advanced prompting strategies can enable reverse reasoning:
 - **Prompting Strategies**: Simple prompting, Few-shot learning, Chain-of-Thought (CoT), Augmented reasoning
@@ -112,7 +95,7 @@ Investigates whether advanced prompting strategies can enable reverse reasoning:
 - `generate_deobfuscated_Code_Prompting_Strategy.py`: Multiple prompting strategies
 - `Readability_Computation.py`: Code readability analysis
 
-### Experiment 4: Contrastive Fine-Tuning (CFT)
+### Experiment 3: Contrastive Fine-Tuning (CFT)
 **Location**: `Experiment4-Contrastive-Fine-tuning/`
 
 Investigates whether contrastive learning can enable emergent bidirectional reasoning:
@@ -209,75 +192,6 @@ python Contrastive_Fine-tuning.py
 python Open-source-Model_Contrastive_FT.py
 ```
 
-## 📈 Evaluation Metrics
-
-### 1. Semantic Correctness
-- **Compilation Success**: Whether generated code compiles
-- **Execution Validity**: Whether code runs without runtime errors
-- **Test Case Pass Rate**: Functional correctness on test suites (16 tests per snippet on average)
-
-### 2. Syntactic Similarity
-- **CodeBLEU**: Token-level and structural similarity (lower = more transformation for obfuscation, higher = better recovery for deobfuscation)
-- **AST Syntax Similarity**: Jaccard index over identifier sets (measures identifier substitution)
-- **AST Structure Similarity**: Jaccard index over structural node sets (measures control-flow changes)
-
-### 3. Readability
-- **JSEP 2018 Model**: Comprehensive readability score [0,1] based on lexical, structural, and cognitive features
-- **Token Count**: Syntactic complexity using BERT-base encoder
-- **Cyclomatic Complexity**: Logical complexity using Lizard
-
-## 📊 Key Results Summary
-
-### Forward Task (Obfuscation)
-- **SFT Performance**: 66.1% average test case pass rate (best: 81.3% GPT-4.1-mini on Variable Renaming)
-- **Self-Correction**: Improves performance by 17.6% (Variable Renaming), 18.2% (Dead Code), 10.1% (Encryption)
-- **Error Distribution**: 69% semantic failures, 27% runtime errors, 4% compilation failures
-
-### Reverse Task (Deobfuscation)
-- **SFT Performance**: 0% syntactic transformation (99-100% verbatim reproduction)
-- **BFT Performance**: 57.7% average (explicit reverse supervision)
-- **CFT Performance**: 42.2% average on lexical transformations only (39-52% range)
-
-### Transformation Complexity
-- **Variable Renaming (Lexical)**: Most successful (66.1% forward, up to 52% reverse with CFT)
-- **Dead Code Insertion (Structural)**: Moderate (46.5% forward, 0% reverse with SFT/CFT)
-- **Literal Encryption (Semantic)**: Most challenging (17.5% forward, 0% reverse)
-
-## 📝 Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@inproceedings{bidirectional-reasoning-llms-2025,
-  title={On Bidirectional Reasoning of LLMs for Software Engineering},
-  author={Author Names},
-  booktitle={Proceedings of the 32nd IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-  year={2025},
-  publisher={IEEE}
-}
-```
-
-## 🔍 Related Papers
-
-- **Bidirectional Reasoning Framework**: A test of semantic understanding through inverse task performance
-- **Cognitive Specialization**: Systematic failure mode in standard fine-tuning
-- **Contrastive Fine-Tuning**: Investigation of emergent bidirectionality
-
-## ⚠️ Limitations and Future Work
-
-### Current Limitations
-- **Language Scope**: Experiments limited to Java (generalization to other languages not verified)
-- **Model Coverage**: 6 models evaluated (advanced reasoning models excluded due to lack of fine-tuning access)
-- **Dataset Size**: 10,000 training samples (1,000 for API), 300 evaluation samples
-- **CFT Hyperparameters**: Selected based on preliminary experiments (not exhaustive grid search)
-- **Repository Size**: Full 10K training datasets and individual test case reports not included due to GitHub size limitations (all code for reproduction provided)
-
-### Future Directions
-- Cross-language validation (Python, C++, JavaScript)
-- Expanded evaluation sets (500+ samples)
-- Alternative CFT formulations and ablation studies
-- Investigation of architectural vs. pre-training effects
-- Human evaluation studies for deobfuscation quality
 
 ## 📄 License
 
@@ -286,17 +200,6 @@ This project is for research purposes. Please ensure compliance with OpenAI's te
 ## 👥 Authors
 
 See the paper for author information.
-
-## 🙏 Acknowledgments
-
-- CodeNet dataset for training data
-- ConDefects dataset for evaluation data
-- Obfuscator tool for deterministic obfuscation
-- JSEP 2018 readability model
-
-## 📧 Contact
-
-For questions or collaboration opportunities, please contact the research team.
 
 ---
 
