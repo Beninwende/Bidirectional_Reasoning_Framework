@@ -166,7 +166,7 @@ python Test_Cases_Evaluation.py
 python Auto-Correction_Loop.py
 ```
 
-### Running Prompting Strategies (Experiment 3)
+### Running Prompting Strategies (Experiment 2)
 
 ```bash
 cd Experiment3
@@ -180,7 +180,7 @@ python Readability_Computation.py
 
 **Note**: The `rsm.jar` file (83MB) for readability computation has been removed due to GitHub file size limits. Download it separately from the [JSEP 2018 paper authors](https://github.com/sealuzh/tools/tree/master/Readability).
 
-### Running Contrastive Fine-Tuning (Experiment 4)
+### Running Contrastive Fine-Tuning (Experiment 3)
 
 ```bash
 cd Experiment4-Contrastive-Fine-tuning
