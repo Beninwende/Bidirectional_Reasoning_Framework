@@ -58,10 +58,6 @@ Bidirectional_Study/
 │   ├── Deadcode_Obfuscator_Tool.json
 │   └── Literals-Encrypt_Obfuscator_Tool.json
 │
-├── paper/                            # Latest paper draft (LaTeX + figures)
-│   ├── 00-main.tex
-│   ├── 00-main.pdf
-│   └── figures/
 └── README.md                         # This file
 ```
 
@@ -71,7 +67,7 @@ Bidirectional_Study/
 
 ## 📐 Reverse metric (Acc_rev)
 
-In the latest paper draft, reverse success (`Acc_rev`) requires the semantic gate plus joint improvement toward the original on CodeBLEU, identifiers, and structure.
+Reverse success (`Acc_rev`) requires the semantic gate plus joint improvement toward the original on CodeBLEU, identifiers, and structure.
 Reported mean tool CodeBLEU references: Identifier Renaming 0.50, Dead Code Insertion 0.33, Literal Encryption 0.22.
 
 ## 🔬 Experiments
