@@ -1,0 +1,64 @@
+\section{Discussion}
+\label{sec:discussion}
+
+The principal implication is methodological. Forward-only evaluation can certify
+a fine-tuned model that has quietly lost capability on the inverse task. In
+software engineering that risk spans more than one benchmark. Developers move
+between paired tasks such as translation and back-translation and compilation and
+decompilation. Mutation and repair raise a similar operational risk.
+They fall outside Definition~\ref{def:pair}, because a mutant changes program
+behavior. A pipeline that checks only the trained direction can promote the model variant that is least reliable once the workflow demands reversal, inspection, or rollback.
+
+The risk extends beyond obfuscation. Security workflows couple forward and
+reverse transformations, and recent work delegates both decompilation and
+obfuscation to language models~\cite{tan2024llm4decompile, mohseni2025obfuscate}.
+Modernization workflows do the same for translation, where forward translations
+already carry functional bugs~\cite{pan2024lost, eniser2024rust}. Our checks on
+translation and compilation show the same directional loss in those domains. The
+governing claim concerns validation discipline. When a deployment context
+contains a meaningful inverse task, that inverse must be evaluated in its own
+right.
+
+The mechanism evidence warrants a narrow reading. On Identifier Renaming, the
+chain-of-thought probe agrees with a reasoning-generation gap. The model surfaces
+the reverse identifier mapping yet generates the obfuscated code unchanged. The
+behavior fits an account in which standard fine-tuning strengthens a forward
+generation prior more than it preserves the bidirectional relation between source
+and transformed code. The lexical result does not establish this as the sole
+mechanism, and we do not claim that it carries unchanged to the harder tasks.
+
+The recovery results fix the limits of what can be concluded. BFT shows that the
+reverse direction is not inherently unreachable on the lexical and structural
+tasks. Explicit supervision restores much of $\mathrm{Acc}_{\text{rev}}$ on
+Identifier Renaming and Dead Code Insertion. CFT shows that part of the lexical
+loss is recoverable without reverse labels, which points to a representational
+component. Literal Encryption bounds these interventions. Full reverse
+supervision fails there, so the present evidence cannot reduce the phenomenon to
+one cause. The defensible summary is that directional capability loss interacts
+with task complexity, and that the interaction becomes severe once the inverse
+demands algorithmic recovery.
+
+BRF follows from this finding as an instrument rather than a theory of model
+cognition. It is a low-cost diagnostic that asks whether adaptation to a forward
+transformation has introduced a hidden regression in the reverse direction. The
+logic is the logic of regression testing. A local improvement is not sufficient
+evidence of system reliability when the same change can break another part of the
+workflow, and bidirectional evaluation supplies the missing check.
+
+Several threats to validity remain. The main experiments use Java and six
+decoder-only models, which limits the external validity of the exact percentages.
+We mitigate this by spanning open and proprietary models and by adding the
+translation and compilation checks. The strongest evidence of genuine capability
+loss appears on Identifier Renaming, where the GPT models show measurable
+baseline transformation ability and lose the reverse direction after standard
+fine-tuning. On the harder tasks, the data supports the behavioral claim of
+directional collapse more firmly than the stronger claim that an
+already-demonstrated reverse skill was destroyed.
+
+The study also stops short of direct representation analysis. We do not measure
+internal geometry, activation dynamics, or decoding-time competition between
+forward and reverse continuations, and those analyses are the natural next step.
+Evaluation on encoder-decoder models, retrieval-augmented systems, and hybrid
+symbolic-neural pipelines is also needed. The present results justify that
+effort, since fine-tuning can reshape a code model in a directionally asymmetric
+way that ordinary evaluation leaves invisible.

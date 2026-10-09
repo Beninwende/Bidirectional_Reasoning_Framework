@@ -1,0 +1,161 @@
+\section{Background}
+\label{sec:background}
+ 
+\subsection{Paired Program Transformations}
+\label{sec:bg-pairs}
+ 
+Many software engineering tasks come in pairs.
+Translation has back-translation.
+Compilation has decompilation.
+Obfuscation has deobfuscation.
+Research on bidirectional transformations studies such pairs in a formal way~\cite{czarnecki2009bx}.
+Lenses are one well-known formalism in this line~\cite{foster2007lenses}.
+A lens couples a forward function with a backward function.
+Round-trip laws tie the two functions together.
+These laws ask for exact recovery of the source.
+ 
+Learned code transformations rarely meet this condition.
+Identifier renaming discards the original names.
+Deobfuscation tools can only predict plausible names~\cite{raychev2015jsnice,bichsel2016deguard}.
+Many programs are therefore valid deobfuscations of one obfuscated program.
+Some task pairs are also not inverses in any strict sense.
+Mutation testing injects faults on purpose~\cite{jia2011mutation}.
+A mutant thus differs in behavior from its source.
+Its repair does not undo a semantics-preserving step.
+ 
+Prior work gives no definition of an inverse pair for learned code transformations.
+We use the following one.
+Let $\mathcal{P}$ be a set of programs.
+Let $p \equiv q$ denote that $p$ and $q$ pass the same test suite.
+Let $d$ be a distance over program form, such as lexical or structural similarity.
+ 
+\begin{definition}[Forward/inverse pair]
+\label{def:pair}
+A transformation $T:\mathcal{P}\rightarrow\mathcal{P}$ is a valid forward task if $T(p) \equiv p$ for every $p \in \mathcal{P}$.
+The inverse task of $T$ takes $T(p)$ as input.
+A solution is any program $q$ with $q \equiv T(p)$ and $d(q,p) < d(T(p),p)$.
+\end{definition}
+ 
+The definition keeps semantic equivalence.
+It replaces exact recovery with measurable progress toward the source form.
+It accepts many correct inverse outputs.
+Obfuscation, translation, and compilation satisfy it.
+Mutation and repair do not.
+A mutant changes behavior.
+BRF (Section~\ref{sec:theorical}) applies to the pairs that satisfy Definition~\ref{def:pair}.
+ 
+\subsection{Obfuscation as a Controlled Testbed}
+\label{sec:bg-obfuscation}
+ 
+Obfuscation turns a program into an equivalent program that is harder to understand~\cite{collberg2002watermarking}.
+Collberg and Thomborson classify obfuscating transformations by the program aspect they change.
+Obfuscation is common in practice.
+Wermke et al. measure its use across a large set of Google Play apps~\cite{wermke2018obfuscation}.
+Dong et al. study obfuscation techniques in Android apps in the wild~\cite{dong2018android}.
+Both studies report identifier renaming as the most common technique.
+Dong et al. also observe string encryption in real apps.
+Our three obfuscation types follow these observations (Section~\ref{sec:framework_instantiation}).
+ 
+Deobfuscation has a long research history.
+Yadegari et al. simplify obfuscated executables through semantics-based analysis~\cite{yadegari2015generic}.
+JSNice predicts names and types for minified JavaScript~\cite{raychev2015jsnice}.
+DeGuard recovers identifier names in obfuscated Android apps~\cite{bichsel2016deguard}.
+DIRE predicts variable names in decompiled code~\cite{lacomis2019dire}.
+Schrittwieser et al. survey how well obfuscation resists code analysis~\cite{schrittwieser2016protecting}.
+ 
+This history explains our choice of testbed.
+The forward direction is cheap to supply with existing obfuscators.
+Forward training pairs are therefore abundant.
+The inverse direction must recover lost information.
+Reverse supervision is therefore scarce~\cite{10.1145/3728886}.
+The three types range from lexical to semantic changes.
+This range lets us relate the size of the effect to the difficulty of the inverse.
+The translation and compilation checks extend the study to two other pairs (Section~\ref{sec:transl-compil}).
+ 
+\subsection{Adapting Code LLMs to One Task}
+\label{sec:bg-adaptation}
+ 
+LLMs now support a wide range of software engineering tasks~\cite{hou2024llm4se}.
+Practitioners often adapt a pre-trained model to a single task.
+Parameter-efficient fine-tuning makes this adaptation affordable~\cite{hu2022lora}.
+LoRA trains low-rank updates.
+It keeps the base weights frozen. 
+LoRA also forgets less of the base model than full fine-tuning~\cite{biderman2024lora}.
+Weyssow et al. compare such techniques for code generation~\cite{weyssow2025peft}.
+ 
+Adapted models are then shared and reused.
+Jiang et al. study pre-trained model reuse on Hugging Face~\cite{jiang2023reuse}.
+They report missing model attributes.
+They also report gaps between claimed and actual performance.
+A reused checkpoint thus comes with limited information about what it can still do.
+%Evaluation after adaptation usually reports the target task.
+Adaptation studies typically report the target task, for example code generation~\cite{weyssow2025peft} or decompilation~\cite{tan2024llm4decompile}.
+This paper asks what one-direction adaptation does to the inverse task.
+ 
+\subsection{Motivation}
+\label{sec:bg-motivation}
+ 
+% Prior work offers three relevant findings.
+% Autoregressive models can learn a relation in one direction~\cite{berglund2024reversal,lv2024reversal}.
+% Fine-tuning can erase or hide earlier abilities~\cite{mccloskey1989catastrophic,kirkpatrick2017overcoming,kotha2024implicit}.
+% Code models are also affected by forgetting~\cite{weyssow2023continual}.
+% Both directions of a task can serve as an evaluation signal~\cite{allamanis2024roundtrip,gu2024cruxeval}.
+
+Prior work offers four relevant findings.
+First, autoregressive models can learn a relation in one direction~\cite{berglund2024reversal, lv2024reversal, wang2025binding}.
+Second, fine-tuning can erase or hide earlier abilities~\cite{mccloskey1989catastrophic, kirkpatrick2017overcoming, kotha2024implicit}.
+Code models are also affected by such forgetting~\cite{weyssow2023continual}.
+Third, fine-tuning can cause side effects beyond the target task.
+Benign fine-tuning weakens safety alignment~\cite{qi2024finetuning}.
+Narrow fine-tuning can cause broad misalignment~\cite{betley2025emergent}.
+Fourth, both directions of a task can serve as an evaluation signal~\cite{allamanis2024roundtrip, gu2024cruxeval}.
+
+ 
+These findings come from separate settings.
+The reversal curse is studied on factual recall.
+Forgetting is studied on tasks unrelated to the new one.
+Round-trip evaluation is applied to a model that has not been adapted.
+Studies of LLMs on translation, decompilation, and obfuscation evaluate the direction they target~\cite{pan2024lost,tan2024llm4decompile,mohseni2025obfuscate}.
+To our knowledge, no study measures the inverse of a code transformation after fine-tuning on its forward direction.
+ 
+This question has practical weight.
+Adapted checkpoints are shared and reused with incomplete documentation~\cite{jiang2023reuse}.
+Security analysis relies on both obfuscation and deobfuscation~\cite{wermke2018obfuscation,bichsel2016deguard}.
+Execution tests alone cannot reveal a failed inverse.
+A copy of the obfuscated input is equivalent to the source (Definition~\ref{def:pair}).
+It therefore passes the same tests.
+ 
+% Our study complements these lines of work.
+% It combines existing ideas in one protocol.
+% It borrows the two-direction view from round-trip evaluation.
+% It borrows the held-out control from forgetting studies.
+% It adapts reverse training and contrastive learning as recovery probes~\cite{golovneva2024reverse,jain2021contracode}.
+% The study covers one controlled testbed and two additional paired settings.
+% Its evidence on mechanism is behavioral.
+% Within this scope, it asks three questions.
+% Does forward fine-tuning preserve the inverse (RQ1)?
+% Is the loss specific to the inverse (RQ2)?
+% Can explicit supervision or contrastive training recover it (RQ3)?
+
+ Our study addresses this gap.
+We fine-tune code LLMs on one direction of a paired transformation.
+We then measure both directions, before and after fine-tuning.
+The difference between the two measurements reveals what adaptation removed.
+We call this protocol the Bidirectional Reasoning Framework (BRF).
+% It acts as a regression test for model adaptation.
+% Unrelated tasks separate a loss that targets the inverse from general forgetting.
+% Recovery strategies test whether the lost direction can be restored.
+% Additional paired settings test whether the pattern extends beyond the main testbed.
+%Our evidence on mechanism is behavioral.
+Within this scope, we ask three questions.
+Does forward fine-tuning preserve the inverse (RQ1)?
+Is the loss specific to the inverse (RQ2)?
+Can explicit supervision or contrastive training recover it (RQ3)?
+
+Three lines of research are closest to ours.
+The reversal curse describes a directional asymmetry in factual recall~\cite{berglund2024reversal}.
+We study this asymmetry on executable transformations that admit many valid outputs, and we observe it after downstream fine-tuning.
+Round-trip correctness also runs a model in both directions~\cite{allamanis2024roundtrip}.
+It evaluates a fixed model, whereas BRF compares the two directions before and after adaptation.
+Forgetting studies measure what fine-tuning removes from unrelated tasks~\cite{kotha2024implicit, weyssow2023continual}.
+We measure what it removes from the inverse of the trained task.

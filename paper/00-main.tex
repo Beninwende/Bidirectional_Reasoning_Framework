@@ -1,0 +1,304 @@
+% \documentclass[10pt,conference]{IEEEtran}
+
+\documentclass[acmtosem, screen ,review]{acmart}
+
+\usepackage[utf8]{inputenc}
+
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+    
+%\IEEEoverridecommandlockouts
+
+\settopmatter{printacmref=false}
+
+\setcopyright{none}
+\settopmatter{printfolios=true}
+
+\usepackage{pifont}
+\usepackage{xcolor}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{framecolor}{RGB}{0,0,0}
+\definecolor{backcolor}{RGB}{245,245,245}
+\definecolor{titlecolor}{RGB}{70,70,70}
+\definecolor{bleu}{rgb}{0.0,0.0,1.0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{darkblue}{rgb}{0.5,0.5,0.5}
+\definecolor{formalshade}{rgb}{.9,.9,.9}
+\definecolor{codegreen}{rgb}{0,0.5,0}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}{figures/Result_figures/}{Birdirectional-ICSE/figures/}{Birdirectional-ICSE/figures/Result_figures/}}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{fontawesome5}
+\usepackage{mdframed}
+\usepackage{amsmath}
+\usepackage{adjustbox}
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}
+\usepackage{enumitem}
+\let\Bbbk\relax
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{ifthen}
+\usepackage{textcomp}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{statistics}
+\usepackage{tcolorbox}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{framed}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{balance}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric,shadows}
+\usepackage{placeins}
+%\usepackage{cite}
+\usepackage{hyperref}
+\usepackage[nameinlink]{cleveref}
+\usepackage{makecell}
+\renewcommand\theadalign{lc}
+
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\wcircle}[1]{\ding{\numexpr171 + #1}}
+\newcommand{\bcircle}[1]{\ding{\numexpr181 + #1}}
+
+\mdfdefinestyle{niceframe}{
+    linewidth=1pt,
+    linecolor=framecolor,
+    backgroundcolor=gray!25,
+    roundcorner=5pt,
+    innertopmargin=\baselineskip,
+    frametitlefont=\bfseries\sffamily\color{titlecolor},
+    frametitlealignment=\raggedright,
+    frametitlebackgroundcolor=gray!25,
+    shadow=true,
+    shadowsize=3pt,
+    shadowcolor=black!20,
+}
+
+\newenvironment{formal}{%
+  \def\FrameCommand{%
+    \hspace{0pt}%
+    {\color{darkblue}\vrule width 2pt}%
+    {\color{formalshade}\vrule width 0pt}%
+    \colorbox{formalshade}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent\hspace{-4.55pt}%
+  \begin{adjustwidth}{}{8pt}%
+  \ding{43} \textbf{Finding.}
+}
+{%
+  \end{adjustwidth}\endMakeFramed%
+}
+
+\lstset{%
+	basicstyle={\footnotesize\ttfamily},
+	numbers=left,numberstyle=\footnotesize,xleftmargin=2em,
+	aboveskip=0pt,belowskip=0pt,
+	showstringspaces=false,tabsize=2,breaklines=true,
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    numberstyle=\tiny\color{codegray},
+    breakatwhitespace=false,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false
+}
+
+\urlstyle{rm}
+\def\UrlFont{\rm}
+
+\newboolean{showcomments}
+\setboolean{showcomments}{true}
+\ifthenelse{\boolean{showcomments}}
+ { \newcommand{\mynote}[2]{
+      \fbox{\bfseries\sffamily\scriptsize#1}
+        {\small$\blacktriangleright$\textsf{\emph{#2}}$\blacktriangleleft$}}}
+
+\newcommand{\finding}[1]{
+	\setlength{\fboxrule}{1pt}
+	\begin{center}\
+		\noindent\fcolorbox{black}{gray!10}{
+		\begin{minipage}{.92\linewidth}
+			#1
+		\end{minipage}
+	}
+	\end{center}
+	\smallskip
+}
+
+\newcommand{\se}[1]{\mynote{Serge}{\textcolor{blue}{#1}}}
+\newcommand{\js}[1]{\mynote{Jordan}{\textcolor{red}{#1}}}
+\newcommand{\tb}[1]{\mynote{Bissyande}{\textcolor{red}{#1}}}
+\newcommand{\ak}[1]{\mynote{Kader}{\textcolor{red}{#1}}}
+
+\newcommand{\rqanswer}[2]{%
+  \begin{tcolorbox}[leftrule=0.4mm,rightrule=0mm,toprule=0mm,bottomrule=0mm,left=0pt,right=0pt,top=0pt,bottom=0pt]
+  \textbf{[RQ-#1] \ding{42}} \textit{#2}
+  \end{tcolorbox}
+}
+
+%\title{Directional Capability Loss \\in Fine-Tuned Code LLMs}
+%\title{LLM Fine-Tuning Induces Directional Forgetting \\in Paired Code Transformations}
+%\title{The Inversion Curse in LLM Fine-Tuning \\ for Paired Code Transformations
+ %}
+% \author{\IEEEauthorblockN{Anonymous Author(s)}
+% % \IEEEauthorblockA{Anonymous Institution\\
+% % anonymous@anonymous.org}
+% }
+
+\begin{document}
+
+
+\title{
+%When Metrics Miss the Mark: Revealing the Fragility of Semantic Similarity Metrics with Trivial Mutations
+The Inversion Curse in LLM Fine-Tuning for Paired Code Transformations}
+
+
+\author{Serge Lionel Nikiema}
+\orcid{0009-0001-0066-3694}
+\authornote{Corresponding author (lionel.nikiema@uni.lu)}
+\affiliation{%
+  \institution{University of Luxembourg}
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{}
+
+\author{Jordan SAMHI}
+\orcid{0000-0001-6052-6184}
+\affiliation{%
+  \institution{University of Luxembourg}
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{jordan.samhi@uni.lu}
+
+
+\author{Micheline Bénédicte Moumoula}
+\orcid{0009-0005-1206-2270}
+\affiliation{%
+  \institution{University of Luxembourg }
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{micheline.moumoula@uni.lu}
+
+\author{Albérick Euraste Djiré}
+\orcid{0009-0007-0406-9573}
+\affiliation{%
+  \institution{University of Luxembourg}
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{euraste.djire@uni.lu}
+
+
+\author{Abdoul Kader Kaboré}
+\orcid{0000-0002-3151-9433}
+\affiliation{%
+  \institution{University of Luxembourg}
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{abdoulkader.kabore@uni.lu}
+
+\author{Jacques Klein}
+\orcid{0000-0003-4052-475X}
+\affiliation{%
+  \institution{University of Luxembourg}
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{jacques.klein@uni.lu}
+
+\author{Tegawendé F. Bissyandé}
+\orcid{0000-0001-7270-9869}
+\affiliation{%
+  \institution{University of Luxembourg}
+  \city{Luxembourg}
+  \country{Luxembourg}
+}
+\email{tegawende.bissyande@uni.lu}
+
+\renewcommand\shortauthors{NIKIEMA et al.}
+
+
+
+\begin{abstract}
+
+Many software engineering tasks come in pairs (e.g., translate/back-translate java to/from python). Yet, fine-tuned LLMs are usually evaluated only on the direction they were
+trained to generate. We show that this practice can conceal a
+software-engineering-relevant failure mode in which forward performance improves
+while the corresponding inverse capability degrades. We propose
+the Bidirectional Reasoning Framework (BRF), which measures this effect by evaluating a fine-tuned model
+on both a transformation and its inverse. Our study covers three paired software
+engineering settings: \wcircle{1} obfuscation and deobfuscation, \wcircle{2} translation and back-translation, and \wcircle{3} compilation and decompilation. Obfuscation serves as the
+primary controlled testbed, since forward pairs are abundant, reverse
+supervision is scarce, and the inverse tasks range from lexical rewriting to
+structural and semantic recovery. Across six LLMs, three semantics-preserving
+obfuscation types, and four prompting strategies, standard fine-tuning raises
+forward accuracy from below 5\% to between 12\% and 81.3\%, depending on transformation complexity, while reverse deobfuscation accuracy falls to 0\% regardless of that variation. The reverse outputs remain executable and semantically valid,
+yet they stay near-verbatim copies of the obfuscated input rather than moving
+back toward the original readable program. A chain-of-thought probe on lexical
+obfuscation finds that a model can state the correct reverse mapping in its
+reasoning trace and still emit the forward-style output. Balanced bidirectional
+fine-tuning recovers reverse accuracy on lexical and structural tasks, whereas
+contrastive fine-tuning recovers it only on identifier renaming, from 0\% to
+43\% average across models, without any reverse labels. The two additional settings exhibit the same
+direction of effect. Forward-only fine-tuning on Python-to-Java lowers
+Java-to-Python test-pass accuracy from 85.4\% to 63.3\%, and forward-only
+fine-tuning on C-to-assembly lowers assembly-to-C re-execution accuracy from
+16.5\% to 5.5\%. The evidence argues that any code LLM intended for a task with a
+meaningful inverse should be evaluated in both directions before deployment.
+
+\end{abstract}
+
+% \begin{IEEEkeywords}
+% Inversion Curse, Directional Capability Loss, Bidirectional Reasoning, Fine-Tuning,  LLMs
+% \end{IEEEkeywords}
+
+\keywords{Inversion Curse, Directional Capability Loss, Bidirectional Reasoning, Fine-Tuning, LLMs}
+
+\maketitle
+\input{01-introduction}
+\input{01.1-Background}
+\input{02-theorical_hypothesis}
+\input{03-experiment_setup}
+\input{04-cognitive_specialization}
+\input{04b-cs-mechanism}
+\input{05-contrastive_fine-tuning}
+\input{06-related_work}
+\input{06.1-Threat-To-Validy}
+\input{07-discussion}
+\input{08-conclusion}
+
+%\balance
+% \bibliographystyle{IEEEtran}
+% \bibliography{references}
+
+
+\bibliographystyle{ACM-Reference-Format}
+%\bibliography{sample-base}
+%\bibliographystyle{plain}
+\bibliography{references}
+
+\clearpage
+\appendix
+\input{appendix}
+
+\end{document}

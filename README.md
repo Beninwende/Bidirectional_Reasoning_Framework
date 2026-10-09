@@ -1,14 +1,14 @@
-# On Bidirectional Reasoning of LLMs for Software Engineering
+# The Inversion Curse in LLM Fine-Tuning for Paired Code Transformations
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-This repository contains the code, data, and experimental results for the paper **"On Bidirectional Reasoning of LLMs for Software Engineering"**. This research investigates whether fine-tuned Large Language Models (LLMs) genuinely understand their specialized tasks or merely replicate statistical patterns.
+This repository contains the code, data, and experimental results for the paper **"The Inversion Curse in LLM Fine-Tuning for Paired Code Transformations"**. This research studies whether forward fine-tuning on paired code transformations preserves reverse capability, or whether reverse performance collapses (the inversion curse).
 
 ## 🎯 Research Question
 
-**When fine-tuned on code transformation tasks, do LLMs genuinely understand what they are specialized to perform, or do they merely replicate statistical patterns?**
+**When fine-tuning raises forward accuracy on a paired code transformation, does the model still retain the reverse capability, or does reverse performance collapse?**
 
-We propose **bidirectional reasoning** as a test: if a model truly understands a task it was fine-tuned on, it should be able to perform its inverse without explicit reverse fine-tuning.
+We use the Bidirectional Reasoning Framework (BRF) to answer that question. After forward fine-tuning, we evaluate both the trained direction and its inverse. If the reverse direction fails while the forward direction improves, the model shows an inversion-style failure under BRF.
 
 ![Workflow Diagram](workflow.png)
 
@@ -58,12 +58,21 @@ Bidirectional_Study/
 │   ├── Deadcode_Obfuscator_Tool.json
 │   └── Literals-Encrypt_Obfuscator_Tool.json
 │
+├── paper/                            # Latest paper draft (LaTeX + figures)
+│   ├── 00-main.tex
+│   ├── 00-main.pdf
+│   └── figures/
 └── README.md                         # This file
 ```
 
 **Note**: 
 - Experiment 2 (Multi-variable Training) has been removed from the latest version of the paper and is deprecated.
 - The repository structure matches the experimental setup described in the paper.
+
+## 📐 Reverse metric (Acc_rev)
+
+In the latest paper draft, reverse success (`Acc_rev`) requires the semantic gate plus joint improvement toward the original on CodeBLEU, identifiers, and structure.
+Reported mean tool CodeBLEU references: Identifier Renaming 0.50, Dead Code Insertion 0.33, Literal Encryption 0.22.
 
 ## 🔬 Experiments
 

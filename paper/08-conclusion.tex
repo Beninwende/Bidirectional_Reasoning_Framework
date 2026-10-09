@@ -1,0 +1,24 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+Forward fine-tuning can create a hidden failure mode in code LLMs. In our
+controlled testbed, the adaptation step that raises forward obfuscation accuracy from below 5\%
+to between 12.0\% and 81.3\% before self-correction,  depending on transformation type, drives down reverse deobfuscation accuracy to 0\%. The reverse
+outputs remain executable and semantically valid, yet they stay near-verbatim
+reproductions of the obfuscated input rather than steps back toward the original
+readable program. 
+% Forward success therefore does not entail preservation of the
+% inverse capability.
+Forward success, therefore, does not preserve the inverse capability.
+
+The recovery experiments qualify that claim. Balanced bidirectional supervision
+restores much of the reverse performance on the lexical and structural tasks,
+while contrastive fine-tuning restores the lexical inverse without reverse
+labels. Literal Encryption resists all three strategies. The translation and
+compilation settings reproduce the directional trend outside the primary
+obfuscation study. When a fine-tuned code LLM is destined for a setting in which
+the inverse transformation matters, that inverse should be evaluated in its own
+right, and BRF exposes the capability loss that forward-only benchmarks miss.
+
+\noindent\textbf{Data Availability.} Code, datasets, and evaluation results are available at
+\url{https://anonymous.4open.science/r/Bidirectional_Reasoning_Framework-B111/README.md}

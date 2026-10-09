@@ -1,0 +1,164 @@
+\section{Threats to Validity}
+\label{sec:threats}
+
+\subsection{Internal Validity}
+
+% \textit{Alternative explanation of the reverse failure.}
+% A fine-tuned model may infer a forward task from any Java input~\cite{kotha2024implicit}.
+% It would then ignore the reverse instruction.
+% Three observations limit this threat.
+% First, the reverse outputs keep the size and structure of the obfuscated input.
+% A model that re-applied the forward transformation would insert more dead code or encrypt more literals.
+% Second, the reasoning trace on Identifier Renaming follows the reverse instruction.
+% Third, held-out tasks lose less than the inverse with the same checkpoint.
+% These observations do not fully separate the two explanations.
+% Our definition of the effect is behavioral.
+% Both explanations describe a model that keeps the trained direction under a reverse prompt.
+
+\textit{Alternative explanation of the reverse failure.}
+The reverse failure may not reflect a lost capability.
+After fine-tuning, the model may simply infer the forward task from any Java input and ignore the reverse instruction~\cite{kotha2024implicit}.
+Under this explanation, the failure would concern instruction following rather than the inverse itself.
+Three observations argue against it.
+First, a model that re-applied the forward transformation would change the obfuscated input further, for instance by inserting more dead code or encrypting more literals.
+The reverse outputs show no such change, since they keep the size and structure of the obfuscated input (Section~\ref{sec:reverse-eval}).
+Second, on Identifier Renaming, the reasoning trace follows the reverse instruction and proposes the correct mapping, even though the final output leaves the code unchanged (Section~\ref{sec:cs_mechanism}).
+The model therefore reads the reverse request, but does not act on it.
+Third, with the same checkpoint, unrelated tasks lose far less than the inverse, which suggests that instruction following is largely preserved.
+These observations weaken the alternative explanation.
+%A control that gives other Java tasks to the fine-tuned models would separate the two accounts.
+This limit does not affect our main claim, because we define the inversion curse by behavior rather than by cause.
+Both accounts describe a model that stays in the trained direction under a reverse prompt, so the alternative explanation is a possible cause of the effect.
+
+\textit{Training configuration.}
+The reverse failure could result from overly aggressive training rather than from forward fine-tuning itself.
+We limit this risk in two ways.
+First, we selected the training size and schedule through a preliminary study, and we kept the configuration with the best forward performance.
+Second, we used standard LoRA settings for 7B models~\cite{hu2022lora} and the provider settings for the API models.
+We did not sweep learning rates or LoRA ranks, and a milder configuration might reduce the loss.
+The reverse failure nevertheless appears in both training regimes, with 1,000 pairs for the API models and 10,000 pairs for the open-source models.
+These regimes also differ in model family and optimizer, so this comparison does not isolate the effect of training size.
+
+\textit{Prompt sensitivity.}
+Other prompts might elicit the inverse.
+We tested four prompting strategies.
+They include few-shot examples and chain-of-thought.
+None restored the reverse direction after fine-tuning.
+
+\textit{Data contamination.}
+% Pretraining data may contain the evaluation programs.
+% We evaluate on ConDefects~\cite{condefects}. % [EXISTING]
+% This dataset was built to reduce leakage concerns.
+% Contamination would also affect the baseline and the fine-tuned model alike.
+% It cannot by itself produce a drop after fine-tuning.
+% \textit{Data contamination.}
+To limit contamination between adaptation and evaluation, we fine-tune on CodeNet and evaluate on ConDefects dataset.
+Both datasets may nevertheless appear in the pretraining data of the models.
+We reduce this risk on the fine-tuning side by generating the training pairs with an obfuscator.
+The obfuscated programs are produced for this study, so their exact form is unlikely to occur in pretraining data.
+Our results also vary with the transformation type and the training strategy, which points to an effect of adaptation on obfuscated data rather than to recall of memorized programs.
+
+\subsection{Construct Validity}
+
+% \textit{Reverse recovery criterion.}
+% Our criterion counts any positive movement toward the source on any channel.
+% This choice accepts many valid deobfuscations (Definition~\ref{def:pair}).
+% It may also count small changes as recoveries.
+% The baseline reverse rates may therefore overstate full recovery.
+% This leniency does not weaken the post-fine-tuning result.
+% Under the same lenient criterion, no fine-tuned configuration recovers any program.
+% We also report the per-channel similarity values.
+% Readers can thus judge the size of each change.
+
+\textit{Reverse recovery criterion.}
+Evaluating deobfuscation is a challenge.
+Tests can confirm that an output preserves the behavior of the program, but the obfuscated input already passes the same tests.
+Deciding whether an output is actually deobfuscated therefore requires syntactic measures, and to our knowledge no single metric establishes this in a systematic way.
+We therefore use four complementary channels, each capturing a different aspect of recovery.
+An output counts as a recovery if it is valid and moves closer to the original, and we read the channels together to judge how consistent a change is.
+This broad rule accepts the many valid forms of a deobfuscated program, but it also counts small, partial changes.
+
+\textit{Semantic equivalence.}
+We use test suites as the oracle of equivalence.
+Tests cannot cover every behavior.
+Each evaluation program comes with an average of 16 tests.
+Test-based equivalence is standard in code generation and translation studies~\cite{pan2024lost}.
+
+\textit{Similarity and readability metrics.}
+CodeBLEU, AST overlap, and readability metrics are proxies for recovery.
+As mention before, no single metric captures deobfuscation quality.
+We therefore combine several independent channels.
+The readability model was built from human judgments~\cite{scalabrino2018readability}. 
+
+\textit{Reasoning traces.}
+Chain-of-thought text may not reflect the computation behind an answer~\cite{turpin2023unfaithful,jacovi2020faithfulness}.
+We use traces as behavioral evidence only.
+We make no claim about internal representations.
+
+\subsection{External Validity}
+
+\textit{Language and transformations.}
+The main study uses Java programs and three obfuscation types from one tool.
+These types cover lexical, structural, and data-flow transformations, and they match techniques observed in real Android apps~\cite{dong2018android, wermke2018obfuscation}.
+They do not cover all existing techniques.
+Industrial obfuscators also apply transformations such as control-flow flattening and reflection~\cite{dong2018android}, which we leave for future work.
+Our programs are also file-level, and they do not fully reflect real-world code such as Android applications or multi-file repositories.
+Such systems involve dependencies across files and often exceed the context size of current LLMs, which prevented us from evaluating them.
+The translation and compilation checks extend the observation to two other paired tasks, but each check uses a single model, so their results are indicative.
+
+\textit{Models.}
+\label{sec:models-ttv}
+We acknowledge that our study does not include current state-of-the-art models. Two constraints explain this choice.
+First, fine-tuning access to proprietary models is limited.
+%Anthropic does not offer it on its own platform~\cite{aws2024haikufinetuning}.
+%Google restricts it to selected Gemini versions~\cite{google2026geminituning}.
+OpenAI offers it for a few models only~\cite{azure2026finetuning}.
+
+Second, recent open-weight models are far larger than the models we fine-tuned.
+Table~\ref{tab:open-sizes} lists examples.
+Only a fraction of their weights is active for each token.
+Fine-tuning still requires the full set of weights in memory.
+% At 16-bit precision, each parameter takes two bytes.
+% The smallest model in Table~\ref{tab:open-sizes} thus needs about 460\,GB for its weights alone.
+% A 7B model needs about 14\,GB.
+LoRA reduces the number of trainable parameters~\cite{hu2022lora},
+%QLoRA reduces memory through quantization~\cite{dettmers2023qlora}. % [EXISTING]
+but does not remove the need to load the base model.
+%This requirement exceeds our academic hardware. 
+The smallest model in Table~\ref{tab:open-sizes} thus needs about 460\,GB for its weights alone.
+
+\begin{table}[t]
+\centering
+\caption{Size of recent open-weight models. Memory is the approximate size of the weights at 16-bit precision (2 bytes per parameter).}
+\label{tab:open-sizes}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Model & Total & Active & Weights (16-bit) \\
+\midrule
+DeepSeek-V4-Pro~\cite{deepseek2026v4} & 1.6T & 49B & $\approx$3.2\,TB \\
+Kimi K2~\cite{kimi2025k2} & 1T & 32B & $\approx$2.0\,TB \\
+GLM-5~\cite{glm2026glm5} & 744B & 40B & $\approx$1.5\,TB \\
+Mistral Large 3~\cite{mistral2025large3} & 675B & 41B & $\approx$1.35\,TB \\
+Qwen3.5-397B-A17B~\cite{qwen2026qwen35} & 397B & 17B & $\approx$0.8\,TB \\
+MiniMax-M2~\cite{minimax2026m2} & 230B & 10B & $\approx$460\,GB \\
+\midrule
+7B model (this study) & 7B & 7B & $\approx$14\,GB \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Our results may therefore not directly generalize to these models.
+However, the effect appears in both open-source evaluated models and proprietary models, far larger (GPT series).
+This suggests that the effect is not specific to open 7B models under LoRA.
+%It does not show that the effect holds for current frontier models.
+
+We also do not evaluate agentic systems.
+Such systems use a model together with tools, whereas fine-tuning adapts the model itself, which is the object of our study.
+An agent built on a model that has lost the inverse may inherit this limitation, although tools may compensate for part of it.
+
+\textit{Adaptation methods.}
+We study LoRA and provider fine-tuning.
+Other adaptation methods exist, such as full fine-tuning and continual-learning methods like replay or EWC~\cite{kirkpatrick2017overcoming, weyssow2023continual}.
+We therefore do not claim that our findings generalize to all these methods.
+

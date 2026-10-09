@@ -1,0 +1,64 @@
+\section{Directional Capability Loss and BRF}
+\label{sec:theorical}
+
+% The failure mode we study is not ordinary underperformance on a difficult reverse
+% task. A hard inverse can arise because the reverse mapping is underspecified,
+% structurally complex, or poorly represented in the training data. Directional
+% capability loss is a stronger condition. It arises when forward fine-tuning
+% causes the model to generate in the trained direction even when the prompt
+% requests the inverse. The distinction has practical weight in software
+% engineering, where forward and reverse tasks are operationally adjacent. A model
+% that is competent only in the trained direction can still be unsafe inside a
+% workflow that depends on rollback, inspection, or reverse analysis.
+
+
+This section defines the phenomenon we study and the framework we use to measure it.
+We first separate directional capability loss from ordinary difficulty on a reverse task, and then introduce BRF.
+
+A model can perform poorly on a reverse task for two different reasons.
+The first is that the inverse is simply hard: the reverse mapping may be underspecified, structurally complex, or rare in the training data.
+In that case, the model fails because the task exceeds its ability, before or after fine-tuning.
+The second reason is the one we study.
+Forward fine-tuning can cause a model to keep generating in the trained direction even when the prompt explicitly requests the inverse.
+We call this directional capability loss.
+It is a stronger condition than difficulty, because it concerns what fine-tuning changes rather than what the task demands.
+Section~\ref{sec:bg-motivation} discusses why this distinction matters in software engineering workflows.
+
+Let $T$ be a semantics-preserving program transformation that maps an original
+program $C_{\text{orig}}$ to a transformed program $C_{\text{trans}}$, and let
+$M_T$ be a model fine-tuned only on the forward direction of $T$. BRF evaluates
+$M_T$ on the forward mapping $C_{\text{orig}} \rightarrow C_{\text{trans}}$ and on
+the reverse mapping $C_{\text{trans}} \rightarrow C_{\text{pred}}$. Reverse
+success cannot be defined by execution alone. Since $C_{\text{trans}}$ is already
+semantically equivalent to $C_{\text{orig}}$, a model that copies the transformed
+input back will still compile and pass the tests. Reverse evaluation must
+therefore ask whether the output moves toward a readable program equivalent to
+the original (obfuscation case), rather than remaining at the transformed endpoint.
+
+
+We measure that asymmetry with a bidirectional gap. For a given model and
+transformation, BRF computes forward accuracy
+$\mathrm{Acc}_{\text{fwd}}(M_T)$ and reverse recovery
+$\mathrm{Acc}_{\text{rev}}(M_T)$ and defines:
+
+\begin{equation}
+\Delta_{\text{BRF}}(M_T) = \mathrm{Acc}_{\text{fwd}}(M_T) - \mathrm{Acc}_{\text{rev}}(M_T).
+\end{equation}
+
+A large gap does not, on its own, diagnose the phenomenon, because some inverse
+tasks are harder than their forward counterparts. We classify the pattern as the
+\textit{inversion curse} only when three conditions hold jointly: \bcircle{1} Reverse accuracy is near
+zero, 
+\bcircle{2} the outputs remain measurably closer to the transformed input than to the
+original program, and 
+\bcircle{3} stronger prompting does not improve the reverse result.
+Under these conditions the model behaves as though adaptation has bound its
+generation policy to the trained direction.
+
+BRF is deliberately lightweight. It needs no second model, no architectural
+change, and no reverse-direction training data. It adds a single evaluation pass
+and surfaces a capability that forward validation leaves untested. The remainder
+of the paper instantiates BRF on obfuscation and deobfuscation. The
+diagnostic applies to any paired software engineering task that satisfies
+Definition~\ref{def:pair}, including translation and back-translation and
+compilation and decompilation.
